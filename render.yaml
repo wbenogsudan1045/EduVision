@@ -1,7 +1,16 @@
-services:
-  - type: web
-    name: eduvision
-    env: python-3.10.14
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
+# Exported from Render on 2025-11-02T15:04:11Z
+version: "1"
+projects:
+- name: My project
+  environments:
+  - name: Production
+    services:
+    - type: web
+      name: EduVision
+      runtime: python
+      repo: https://github.com/wbenogsudan1045/EduVision
+      plan: free
+      region: oregon
+      buildCommand: pip install -r requirements.txt
+      startCommand: gunicorn app:app
+      autoDeployTrigger: commit
