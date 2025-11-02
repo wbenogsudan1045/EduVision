@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduVision - Predictive Learning Insights</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fb;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+      text-align: center;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    .tagline {
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    h2 {
+      color: #0078D7;
+      margin-bottom: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #0078D7;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background: #005a9e;
+    }
+    .result {
+      background: #e8f4ff;
+      color: #004b8d;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>EduVision Analytics Dashboard</h1>
+    <p class="tagline">Empowering Schools Through Predictive Learning Insights</p>
+
+    <div class="grid">
+
+      <!-- Linear Regression -->
+      <div class="card">
+        <h2>📈 Linear Regression</h2>
+        <form action="/predict" method="POST">
+          <input type="hidden" name="model_name" value="linear_regression">
+          <label>Study Hours per Week: <input type="number" step="0.01" name="input_study_hours_per_week" required></label>
+          <label>Average Quiz: <input type="number" step="0.01" name="input_quiz_average" required></label>
+          <label>Attendance Rate: <input type="number" step="0.01" name="input_attendance_rate" required></label>
+          <button type="submit">Predict</button>
+        </form>
+        {% if results.linear_regression %}
+        <p class="result">Predicted Final Exam Score: {{ results.linear_regression }}</p>
+        {% endif %}
+      </div>
+
+      <!-- Naive Bayes -->
+      <div class="card">
+        <h2>🧠 Naive Bayes</h2>
+        <form action="/predict" method="POST">
+          <input type="hidden" name="model_name" value="naive_bayes">
+          <label>Study Hours per Week: <input type="number" step="0.01" name="input_study_hours_per_week" required></label>
+          <label>Average Quiz: <input type="number" step="0.01" name="input_quiz_average" required></label>
+          <label>Attendance Rate: <input type="number" step="0.01" name="input_attendance_rate" required></label>
+          <button type="submit">Classify</button>
+        </form>
+        {% if results.naive_bayes %}
+        <p class="result">Pass/Fail Prediction: {{ results.naive_bayes }}</p>
+        {% endif %}
+      </div>
+
+      <!-- KNN -->
+      <div class="card">
+        <h2>🎯 KNN Recommender</h2>
+        <form action="/predict" method="POST">
+          <input type="hidden" name="model_name" value="knn">
+          <label>Interest Tags:
+            <select name="input_interest_tags" required>
+              <option value="">-- Select --</option>
+              <option>Accounting, Finance</option>
+              <option>Game Dev, Robotics</option>
+              <option>Leadership, Marketing</option>
+              <option>Programming, AI</option>
+              <option>Teaching, Research</option>
+            </select>
+          </label>
+          <label>Preferred Learning Style:
+            <select name="input_preferred_learning_style" required>
+              <option value="">-- Select --</option>
+              <option>Auditory</option>
+              <option>Kinesthetic</option>
+              <option>Reading</option>
+              <option>Visual</option>
+            </select>
+          </label>
+          <label>Parent Education Level:
+            <select name="input_parent_education_level" required>
+              <option>College</option>
+              <option>Graduate</option>
+              <option>High School</option>
+              <option>Elementary</option>
+            </select>
+          </label>
+          <button type="submit">Recommend</button>
+        </form>
+        {% if results.knn %}
+        <p class="result">Recommended Course: {{ results.knn }}</p>
+        {% endif %}
+      </div>
+
+      <!-- SVM -->
+      <div class="card">
+        <h2>✅ SVM Predictor</h2>
+        <form action="/predict" method="POST">
+          <input type="hidden" name="model_name" value="svm">
+          <label>Previous Grades: <input type="number" step="0.01" name="input_previous_grades" required></label>
+          <label>Average Quiz: <input type="number" step="0.01" name="input_quiz_average" required></label>
+          <label>Attendance Rate: <input type="number" step="0.01" name="input_attendance_rate" required></label>
+          <label>Final Exam Score: <input type="number" step="0.01" name="input_final_exam_score" required></label>
+          <button type="submit">Predict</button>
+        </form>
+        {% if results.svm %}
+        <p class="result">Outcome: {{ results.svm }}</p>
+        {% endif %}
+      </div>
+
+      <!-- Decision Tree -->
+      <div class="card">
+        <h2>🌳 Decision Tree</h2>
+        <form action="/predict" method="POST">
+          <input type="hidden" name="model_name" value="decision_tree">
+          <label>Assignment Submission Rate: <input type="number" step="0.01" name="input_assignment_submission_rate" required></label>
+          <label>Average Quiz: <input type="number" step="0.01" name="input_quiz_average" required></label>
+          <label>Attendance Rate: <input type="number" step="0.01" name="input_attendance_rate" required></label>
+          <label>Final Exam Score: <input type="number" step="0.01" name="input_final_exam_score" required></label>
+          <button type="submit">Predict</button>
+        </form>
+        {% if results.decision_tree %}
+        <p class="result">Dropout Likelihood: {{ results.decision_tree }}</p>
+        {% endif %}
+      </div>
+
+      <!-- ANN -->
+      <div class="card">
+        <h2>🤖 ANN Learning Style Predictor</h2>
+        <form action="/predict" method="POST">
+          <input type="hidden" name="model_name" value="ann">
+          <label>Course Enrolled:
+            <select name="input_course_enrolled" required>
+              <option value="">-- Select Course --</option>
+              <option>BSIT</option>
+              <option>BSBA</option>
+              <option>BSA</option>
+              <option>BSEd</option>
+              <option>BSCS</option>
+            </select>
+          </label>
+          <label>Interest Tags:
+            <select name="input_interest_tags" required>
+              <option value="">-- Select Interest --</option>
+              <option>Accounting, Finance</option>
+              <option>Game Dev, Robotics</option>
+              <option>Leadership, Marketing</option>
+              <option>Programming, AI</option>
+              <option>Teaching, Research</option>
+            </select>
+          </label>
+          <label>Socioeconomic Status:
+            <select name="input_socioeconomic_status" required>
+              <option value="">-- Select Status --</option>
+              <option>Low</option>
+              <option>Middle</option>
+              <option>High</option>
+            </select>
+          </label>
+          <button type="submit">Predict</button>
+        </form>
+        {% if results.ann %}
+        <p class="result">Predicted Learning Style: {{ results.ann }}</p>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
