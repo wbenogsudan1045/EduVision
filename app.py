@@ -20,6 +20,7 @@ def load_saved_model(name):
     if name.endswith(".h5"):
         return load_model(path)
     elif name.endswith(".pkl"):
+        with open(path, "rb") as f:
             return pickle.load(f)
     return None
 
