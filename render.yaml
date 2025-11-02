@@ -1,7 +1,7 @@
 services:
   - type: web
     name: eduvision
-    env: python
+    env: python-3.10.14
     plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
