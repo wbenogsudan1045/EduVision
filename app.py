@@ -88,6 +88,11 @@ def dashboard():
     """ML Models Dashboard"""
     return render_template("index.html", results={})
 
+@app.route('/backToHome')
+def back_to_home():
+    """Back to Home"""
+    return redirect(url_for('landing'))
+
 @app.route('/predict', methods=["POST"])
 def predict():
     """Prediction Logic"""

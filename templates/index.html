@@ -2,196 +2,411 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>EduVision - Predictive Learning Insights</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduVision Analytics - Predictive Learning Insights</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f7fb;
-      color: #333;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #F8FAFC 0%, #E0F2FE 100%);
+      color: #1E293B;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+
+    .header-banner {
+      background: linear-gradient(135deg, #0066CC 0%, #059669 100%);
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 102, 204, 0.15);
+    }
+
+    .header-banner h1 {
+      color: #FFFFFF;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .tagline {
+      color: #E0F2FE;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+    }
+
     .container {
       width: 90%;
-      max-width: 1200px;
-      margin: 40px auto;
-      text-align: center;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
-    h1 {
-      color: #2c3e50;
-      margin-bottom: 10px;
-    }
-    .tagline {
-      color: #555;
-      margin-bottom: 30px;
-    }
+
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 28px;
+      margin-top: 32px;
     }
+
     .card {
-      background: #fff;
-      border-radius: 15px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      text-align: left;
+      background: #FFFFFF;
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid #E2E8F0;
+      position: relative;
+      overflow: hidden;
     }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #0066CC 0%, #059669 100%);
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 16px rgba(0, 102, 204, 0.12);
+      transform: translateY(-2px);
+    }
+
     h2 {
-      color: #0078D7;
-      margin-bottom: 10px;
+      color: #0066CC;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
     label {
       display: block;
-      margin-top: 10px;
-      font-weight: 600;
+      font-weight: 500;
+      font-size: 14px;
+      color: #334155;
+      margin-bottom: 6px;
     }
-    input, select {
+
+    input[type="number"],
+    select {
       width: 100%;
-      padding: 8px;
-      margin-top: 5px;
+      padding: 12px 14px;
+      font-size: 15px;
       border-radius: 8px;
-      border: 1px solid #ccc;
+      border: 1.5px solid #CBD5E1;
+      background: #FFFFFF;
+      color: #1E293B;
+      transition: all 0.2s ease;
+      font-family: inherit;
     }
+
+    input[type="number"]:focus,
+    select:focus {
+      outline: none;
+      border-color: #0066CC;
+      box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+    }
+
+    input[type="number"]:hover,
+    select:hover {
+      border-color: #94A3B8;
+    }
+
     button {
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: #0078D7;
-      color: white;
+      margin-top: 8px;
+      padding: 13px 24px;
+      background: linear-gradient(135deg, #0066CC 0%, #0052A3 100%);
+      color: #FFFFFF;
       border: none;
       border-radius: 8px;
       cursor: pointer;
       width: 100%;
+      font-size: 15px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 102, 204, 0.2);
     }
+
     button:hover {
-      background: #005a9e;
+      background: linear-gradient(135deg, #0052A3 0%, #003D7A 100%);
+      box-shadow: 0 4px 8px rgba(0, 102, 204, 0.3);
+      transform: translateY(-1px);
     }
+
+    button:active {
+      transform: translateY(0);
+    }
+    .backToHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #0066CC 0%, #059669 100%);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none; /* removes underline */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 102, 204, 0.2);
+}
+
+.home-btn:hover {
+  background: linear-gradient(135deg, #0052A3 0%, #003D7A 100%);
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.3);
+  transform: translateY(-1px);
+}
+
+.home-btn:active {
+  transform: translateY(0);
+}
+
+
     .result {
-      background: #e8f4ff;
-      color: #004b8d;
-      padding: 10px;
+      background: linear-gradient(135deg, #D1FAE5 0%, #E0F2FE 100%);
+      color: #0F766E;
+      padding: 16px;
       border-radius: 8px;
-      margin-top: 10px;
+      margin-top: 16px;
       text-align: center;
+      font-weight: 600;
+      font-size: 15px;
+      border: 1.5px solid #A7F3D0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    
+
+    .result::before {
+      content: '✓';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: #059669;
+      color: white;
+      border-radius: 50%;
+      line-height: 24px;
+      font-size: 14px;
+    }
+
+    .form-group {
+      margin-bottom: 4px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .header-banner h1 {
+        font-size: 26px;
+      }
+
+      .tagline {
+        font-size: 14px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .card {
+        padding: 24px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="header-banner">
     <h1>EduVision Analytics Dashboard</h1>
-    <p class="tagline">Empowering Schools Through Predictive Learning Insights</p>
+    <p class="tagline">Empowering Philippine Schools Through Predictive Learning Insights</p>
+  </div>
 
+  <div class="container">
     <div class="grid">
 
       <!-- Linear Regression -->
       <div class="card">
-        <h2>📈 Linear Regression</h2>
-        <form action="/predict" method="POST">
+        <h2><span>📈</span> Linear Regression</h2>
+        <form action="/predict" method="POST" class="card-content">
           <input type="hidden" name="model_name" value="linear_regression">
-          <label>Study Hours per Week: <input type="number" step="0.01" name="input_study_hours_per_week" required></label>
-          <label>Average Quiz: <input type="number" step="0.01" name="input_quiz_average" required></label>
-          <label>Attendance Rate: <input type="number" step="0.01" name="input_attendance_rate" required></label>
-          <button type="submit">Predict</button>
+          <div class="form-group">
+            <label for="lr-study-hours">Study Hours per Week:</label>
+            <input type="number" id="lr-study-hours" step="0.01" name="input_study_hours_per_week" placeholder="e.g., 15.5" required>
+          </div>
+          <div class="form-group">
+            <label for="lr-quiz-avg">Average Quiz Score:</label>
+            <input type="number" id="lr-quiz-avg" step="0.01" name="input_quiz_average" placeholder="e.g., 85.0" required>
+          </div>
+          <div class="form-group">
+            <label for="lr-attendance">Attendance Rate (%):</label>
+            <input type="number" id="lr-attendance" step="0.01" name="input_attendance_rate" placeholder="e.g., 0.97" required>
+          </div>
+          <button type="submit">Predict Final Exam Score</button>
         </form>
         {% if results.linear_regression %}
-        <p class="result">Predicted Final Exam Score: {{ results.linear_regression }}</p>
+        <div class="result">Predicted Final Exam Score: {{ results.linear_regression }}</div>
         {% endif %}
       </div>
 
       <!-- Naive Bayes -->
       <div class="card">
-        <h2>🧠 Naive Bayes</h2>
-        <form action="/predict" method="POST">
+        <h2><span>🧠</span> Naive Bayes Classifier</h2>
+        <form action="/predict" method="POST" class="card-content">
           <input type="hidden" name="model_name" value="naive_bayes">
-          <label>Study Hours per Week: <input type="number" step="0.01" name="input_study_hours_per_week" required></label>
-          <label>Average Quiz: <input type="number" step="0.01" name="input_quiz_average" required></label>
-          <label>Attendance Rate: <input type="number" step="0.01" name="input_attendance_rate" required></label>
-          <button type="submit">Classify</button>
+          <div class="form-group">
+            <label for="nb-study-hours">Study Hours per Week:</label>
+            <input type="number" id="nb-study-hours" step="0.01" name="input_study_hours_per_week" placeholder="e.g., 12.0" required>
+          </div>
+          <div class="form-group">
+            <label for="nb-quiz-avg">Average Quiz Score:</label>
+            <input type="number" id="nb-quiz-avg" step="0.01" name="input_quiz_average" placeholder="e.g., 78.5" required>
+          </div>
+          <div class="form-group">
+            <label for="nb-attendance">Attendance Rate (%):</label>
+            <input type="number" id="nb-attendance" step="0.01" name="input_attendance_rate" placeholder="e.g., 0.97" required>
+          </div>
+          <button type="submit">Classify Pass/Fail</button>
         </form>
         {% if results.naive_bayes %}
-        <p class="result">Pass/Fail Prediction: {{ results.naive_bayes }}</p>
+        <div class="result">Pass/Fail Prediction: {{ results.naive_bayes }}</div>
         {% endif %}
       </div>
 
       <!-- KNN -->
       <div class="card">
-        <h2>🎯 KNN Recommender</h2>
-        <form action="/predict" method="POST">
+        <h2><span>🎯</span> KNN Course Recommender</h2>
+        <form action="/predict" method="POST" class="card-content">
           <input type="hidden" name="model_name" value="knn">
-          <label>Interest Tags:
-            <select name="input_interest_tags" required>
-              <option value="">-- Select --</option>
+          <div class="form-group">
+            <label for="knn-interests">Interest Tags:</label>
+            <select id="knn-interests" name="input_interest_tags" required>
+              <option value="">-- Select Interests --</option>
               <option>Accounting, Finance</option>
               <option>Game Dev, Robotics</option>
               <option>Leadership, Marketing</option>
               <option>Programming, AI</option>
               <option>Teaching, Research</option>
             </select>
-          </label>
-          <label>Preferred Learning Style:
-            <select name="input_preferred_learning_style" required>
-              <option value="">-- Select --</option>
+          </div>
+          <div class="form-group">
+            <label for="knn-learning-style">Preferred Learning Style:</label>
+            <select id="knn-learning-style" name="input_preferred_learning_style" required>
+              <option value="">-- Select Style --</option>
               <option>Auditory</option>
               <option>Kinesthetic</option>
               <option>Reading</option>
               <option>Visual</option>
             </select>
-          </label>
-          <label>Parent Education Level:
-            <select name="input_parent_education_level" required>
+          </div>
+          <div class="form-group">
+            <label for="knn-parent-edu">Parent Education Level:</label>
+            <select id="knn-parent-edu" name="input_parent_education_level" required>
+              <option value="">-- Select Level --</option>
               <option>College</option>
               <option>Graduate</option>
               <option>High School</option>
               <option>Elementary</option>
             </select>
-          </label>
-          <button type="submit">Recommend</button>
+          </div>
+          <button type="submit">Get Course Recommendation</button>
         </form>
         {% if results.knn %}
-        <p class="result">Recommended Course: {{ results.knn }}</p>
+        <div class="result">Recommended Course: {{ results.knn }}</div>
         {% endif %}
       </div>
 
       <!-- SVM -->
       <div class="card">
-        <h2>✅ SVM Predictor</h2>
-        <form action="/predict" method="POST">
+        <h2><span>✅</span> SVM Academic Predictor</h2>
+        <form action="/predict" method="POST" class="card-content">
           <input type="hidden" name="model_name" value="svm">
-          <label>Previous Grades: <input type="number" step="0.01" name="input_previous_grades" required></label>
-          <label>Average Quiz: <input type="number" step="0.01" name="input_quiz_average" required></label>
-          <label>Attendance Rate: <input type="number" step="0.01" name="input_attendance_rate" required></label>
-          <label>Final Exam Score: <input type="number" step="0.01" name="input_final_exam_score" required></label>
-          <button type="submit">Predict</button>
+          <div class="form-group">
+            <label for="svm-prev-grades">Previous Grades Average:</label>
+            <input type="number" id="svm-prev-grades" step="0.01" name="input_previous_grades" placeholder="e.g., 75.5" required>
+          </div>
+          <div class="form-group">
+            <label for="svm-quiz-avg">Average Quiz Score:</label>
+            <input type="number" id="svm-quiz-avg" step="0.01" name="input_quiz_average" placeholder="e.g., 82.0" required>
+          </div>
+          <div class="form-group">
+            <label for="svm-attendance">Attendance Rate (%):</label>
+            <input type="number" id="svm-attendance" step="0.01" name="input_attendance_rate" placeholder="e.g., 0.97" required>
+          </div>
+          <div class="form-group">
+            <label for="svm-exam">Final Exam Score:</label>
+            <input type="number" id="svm-exam" step="0.01" name="input_final_exam_score" placeholder="e.g., 88.5" required>
+          </div>
+          <button type="submit">Predict Outcome</button>
         </form>
         {% if results.svm %}
-        <p class="result">Outcome: {{ results.svm }}</p>
+        <div class="result">Academic Outcome: {{ results.svm }}</div>
         {% endif %}
       </div>
 
       <!-- Decision Tree -->
       <div class="card">
-        <h2>🌳 Decision Tree</h2>
-        <form action="/predict" method="POST">
+        <h2><span>🌳</span> Decision Tree Analyzer</h2>
+        <form action="/predict" method="POST" class="card-content">
           <input type="hidden" name="model_name" value="decision_tree">
-          <label>Assignment Submission Rate: <input type="number" step="0.01" name="input_assignment_submission_rate" required></label>
-          <label>Average Quiz: <input type="number" step="0.01" name="input_quiz_average" required></label>
-          <label>Attendance Rate: <input type="number" step="0.01" name="input_attendance_rate" required></label>
-          <label>Final Exam Score: <input type="number" step="0.01" name="input_final_exam_score" required></label>
-          <button type="submit">Predict</button>
+          <div class="form-group">
+            <label for="dt-submission">Assignment Submission Rate (%):</label>
+            <input type="number" id="dt-submission" step="0.01" name="input_assignment_submission_rate" placeholder="e.g., 0.85" required>
+          </div>
+          <div class="form-group">
+            <label for="dt-quiz-avg">Average Quiz Score:</label>
+            <input type="number" id="dt-quiz-avg" step="0.01" name="input_quiz_average" placeholder="e.g., 75.5" required>
+          </div>
+          <div class="form-group">
+            <label for="dt-attendance">Attendance Rate (%):</label>
+            <input type="number" id="dt-attendance" step="0.01" name="input_attendance_rate" placeholder="e.g., 0.97" required>
+          </div>
+          <div class="form-group">
+            <label for="dt-exam">Final Exam Score:</label>
+            <input type="number" id="dt-exam" step="0.01" name="input_final_exam_score" placeholder="e.g., 80.0" required>
+          </div>
+          <button type="submit">Predict Dropout Risk</button>
         </form>
         {% if results.decision_tree %}
-        <p class="result">Dropout Likelihood: {{ results.decision_tree }}</p>
+        <div class="result">Dropout Likelihood: {{ results.decision_tree }}</div>
         {% endif %}
       </div>
 
       <!-- ANN -->
       <div class="card">
-        <h2>🤖 ANN Learning Style Predictor</h2>
-        <form action="/predict" method="POST">
+        <h2><span>🤖</span> ANN Learning Style Predictor</h2>
+        <form action="/predict" method="POST" class="card-content">
           <input type="hidden" name="model_name" value="ann">
-          <label>Course Enrolled:
-            <select name="input_course_enrolled" required>
+          <div class="form-group">
+            <label for="ann-course">Course Enrolled:</label>
+            <select id="ann-course" name="input_course_enrolled" required>
               <option value="">-- Select Course --</option>
               <option>BSIT</option>
               <option>BSBA</option>
@@ -199,9 +414,10 @@
               <option>BSEd</option>
               <option>BSCS</option>
             </select>
-          </label>
-          <label>Interest Tags:
-            <select name="input_interest_tags" required>
+          </div>
+          <div class="form-group">
+            <label for="ann-interests">Interest Tags:</label>
+            <select id="ann-interests" name="input_interest_tags" required>
               <option value="">-- Select Interest --</option>
               <option>Accounting, Finance</option>
               <option>Game Dev, Robotics</option>
@@ -209,21 +425,28 @@
               <option>Programming, AI</option>
               <option>Teaching, Research</option>
             </select>
-          </label>
-          <label>Socioeconomic Status:
-            <select name="input_socioeconomic_status" required>
+          </div>
+          <div class="form-group">
+            <label for="ann-socio">Socioeconomic Status:</label>
+            <select id="ann-socio" name="input_socioeconomic_status" required>
               <option value="">-- Select Status --</option>
               <option>Low</option>
               <option>Middle</option>
               <option>High</option>
             </select>
-          </label>
-          <button type="submit">Predict</button>
+          </div>
+          <button type="submit">Predict Learning Style</button>
         </form>
         {% if results.ann %}
-        <p class="result">Predicted Learning Style: {{ results.ann }}</p>
+        <div class="result">Predicted Learning Style: {{ results.ann }}</div>
         {% endif %}
       </div>
+
+       <!-- Back to Home Button -->
+<div class="backToHome">
+  <a href="{{ url_for('back_to_home') }}" class="home-btn">Back to Home</a>
+</div>
+
 
     </div>
   </div>
