@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduVision - Naive Bayes</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #dceeff, #f8fbff);
+      margin: 0;
+      padding: 40px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+      margin-bottom: 30px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h1 {
+      text-align: center;
+      color: #0056b3;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #0078D7;
+      border-left: 4px solid #0078D7;
+      padding-left: 10px;
+      margin-top: 25px;
+    }
+
+    p {
+      line-height: 1.7;
+      margin: 8px 0;
+    }
+
+    ul {
+      margin: 10px 0 10px 25px;
+      line-height: 1.6;
+    }
+
+    .input-card label {
+      display: block;
+      margin-top: 12px;
+      font-weight: 500;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    button {
+      margin-top: 20px;
+      background: #0078D7;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #005a9e;
+    }
+
+    .result {
+      background: #e8f4ff;
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      font-weight: 500;
+      border-left: 5px solid #0078D7;
+    }
+
+    .metrics {
+      background: #f0f8ff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+      border-left: 5px solid #28a745;
+      font-family: monospace;
+      overflow-x: auto;
+    }
+
+    .highlight {
+      background: #eef9ff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      border-left: 4px solid #0078D7;
+      margin-top: 8px;
+      font-family: monospace;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .info-box {
+      background: #f8faff;
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px solid #e5ecff;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Overview -->
+    <div class="card">
+      <h1>Naive Bayes Classification Model</h1>
+      <p style="text-align:center; font-size:15px; color:#555;">
+        Classify students as <strong>Pass</strong> or <strong>Fail</strong> based on 
+        <strong>Study Hours</strong>, <strong>Attendance</strong>, and <strong>Final Exam Score</strong>.
+      </p>
+    </div>
+
+    <!-- What is Naive Bayes -->
+    <div class="card">
+      <h2>What is Naive Bayes?</h2>
+      <p>
+        <strong>Naive Bayes</strong> is a simple yet powerful classification algorithm based on 
+        <strong>Bayes’ Theorem</strong>. It calculates the probability that a given input belongs 
+        to a specific class, assuming that each feature is independent from others.
+      </p>
+      <p>
+        It’s widely used for tasks like spam detection, sentiment analysis, and academic performance 
+        prediction — where outcomes are categorized rather than continuous.
+      </p>
+      <div class="info-grid">
+        <div class="info-box"><strong>Study Hours per Week</strong> – Weekly time invested in studying.</div>
+        <div class="info-box"><strong>Attendance Rate</strong> – Student participation and presence.</div>
+        <div class="info-box"><strong>Final Exam Score</strong> – Overall exam performance indicator.</div>
+      </div>
+    </div>
+
+    <!-- What I Did & How I Did It -->
+    <div class="card">
+      <h2>What I Did & How I Did It</h2>
+      <p>
+        Using the <strong>Student Performance Dataset</strong>, I trained a <strong>Gaussian Naive Bayes</strong> model 
+        to predict whether a student would <strong>Pass</strong> or <strong>Fail</strong> based on their study habits and exam results.
+      </p>
+      <div class="highlight">
+        FEATURE_COLS = ['Study_Hours_per_Week', 'Attendance_Rate', 'Final_Exam_Score']<br>
+        TARGET_COL = 'Pass_Fail'
+      </div>
+      <p>
+        Steps Taken:
+      </p>
+      <ul>
+        <li>Preprocessed and cleaned dataset to remove missing values.</li>
+        <li>Split data into training and test sets (80/20 ratio).</li>
+        <li>Trained model using <strong>GaussianNB()</strong> from scikit-learn.</li>
+        <li>Evaluated model with accuracy, precision, recall, and F1 score metrics.</li>
+      </ul>
+    </div>
+
+    <!-- Evaluation -->
+    <div class="card">
+      <h2>Model Evaluation</h2>
+      <p>
+        The model performed exceptionally well with consistent results across all metrics, indicating strong generalization.
+      </p>
+      <div class="metrics">
+        Accuracy: 0.9789<br>
+        Precision: 0.9790<br>
+        Recall: 0.9789<br>
+        F1 Score: 0.9789
+      </div>
+
+      <h3 style="margin-top:20px;">Confusion Matrix</h3>
+      <div class="metrics">
+        [[69  2]<br>
+         [ 1 70]]
+      </div>
+
+      <h3 style="margin-top:20px;">Detailed Classification Report</h3>
+      <div class="metrics">
+        precision&nbsp;&nbsp;&nbsp;&nbsp;recall&nbsp;&nbsp;&nbsp;&nbsp;f1-score&nbsp;&nbsp;&nbsp;&nbsp;support<br>
+        Fail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.97&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;71<br>
+        Pass&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.97&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;71<br><br>
+        accuracy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;142<br>
+        macro avg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;142<br>
+        weighted avg&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;142
+      </div>
+    </div>
+
+    <!-- Input Form -->
+    <div class="card input-card">
+      <h2>Try It Yourself</h2>
+      <p>Enter details below to classify a student as Pass or Fail using the trained model:</p>
+      <form method="POST" action="{{ url_for('naive_bayes') }}">
+        <input type="hidden" name="model_name" value="naive_bayes">
+        <label>Study Hours per Week:<input type="number" name="input_Study_Hours_per_Week" required></label>
+        <label>Attendance Rate:<input type="number" name="input_Attendance_Rate" required></label>
+        <label>Final Exam Score:<input type="number" name="input_Final_Exam_Score" required></label>
+        <button type="submit">Classify Result</button>
+      </form>
+
+      {% if result %}
+      <div class="result">
+        <strong>Predicted Output:</strong> {{ result }}
+      </div>
+      {% endif %}
+    </div>
+
+    <footer>© 2025 EduVision | Naive Bayes Model Showcase</footer>
+  </div>
+</body>
+</html>

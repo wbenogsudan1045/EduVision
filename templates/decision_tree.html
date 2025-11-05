@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EduVision - Decision Tree Grade Predictor</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #dceeff, #f8fbff);
+      margin: 0;
+      padding: 40px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+      margin-bottom: 30px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h1, h2 {
+      color: #0078D7;
+      border-left: 4px solid #0078D7;
+      padding-left: 10px;
+      margin-top: 25px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 15px;
+      border-left: none;
+      color: #0056b3;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: 500;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 20px;
+      background: #0078D7;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    button:hover {
+      background: #005a9e;
+    }
+
+    .result {
+      background: #e8f4ff;
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      font-weight: 500;
+      border-left: 5px solid #0078D7;
+    }
+
+    .metrics {
+      background: #f0f8ff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 10px;
+      border-left: 5px solid #28a745;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Title Card -->
+    <div class="card">
+      <h1>Decision Tree Grade Predictor</h1>
+      <p style="text-align:center; font-size:15px; color:#555;">
+        Discover how the <strong>Decision Tree</strong> algorithm can accurately categorize student strands based on cognitive aptitude scores.
+      </p>
+    </div>
+
+    <!-- Use & Purpose -->
+    <div class="card">
+      <h2>Use and Purpose</h2>
+      <p>
+        The Decision Tree model is designed to assist educators and academic counselors in classifying students into appropriate academic strands (ABM, GAS, HUMSS, STEM). 
+        This classification helps tailor educational paths suited to each student's strengths and abilities.
+      </p>
+    </div>
+
+    <!-- Dataset and Features -->
+    <div class="card">
+      <h2>Dataset and Features</h2>
+      <p><strong>Dataset:</strong> Data_high_separation_strands</p>
+      <p><em>Note:</em> The dataset contains clearly defined categories, facilitating high model accuracy.</p>
+      <div class="metrics">
+        TARGET_COL = "StrandCategory"<br>
+        FEATURES = ['Numerical Aptitude', 'Spatial Aptitude', 'Perceptual Aptitude', 'Abstract Reasoning', 'Verbal Reasoning']
+      </div>
+    </div>
+
+    <!-- What I Did & How I Did It -->
+    <div class="card">
+      <h2>What I Did & How I Did It</h2>
+      <p>
+        The Decision Tree model was trained on the above features using the high-separation dataset. 
+        Hyperparameters were tuned to optimize classification accuracy and reduce overfitting.
+      </p>
+      <p>
+        The model splits data based on feature thresholds to maximize the information gain, allowing it to predict the strand category precisely using aptitude test inputs.
+      </p>
+    </div>
+
+    <!-- Input Form -->
+    <div class="card">
+      <h2>Try It Yourself</h2>
+      <p>Enter aptitude scores to predict the student's academic strand:</p>
+      <form method="POST" action="{{ url_for('decision_tree') }}">
+        <input type="hidden" name="model_name" value="decision_tree" />
+
+        <label>Numerical Aptitude:
+          <input type="number" step="any" min="0" max="100" name="input_Numerical Aptitude" placeholder="rate 1-10" required />
+        </label>
+
+        <label>Spatial Aptitude:
+          <input type="number" step="any" min="0" max="100" name="input_Spatial Aptitude" placeholder="rate 1-10" required />
+        </label>
+
+        <label>Perceptual Aptitude:
+          <input type="number" step="any" min="0" max="100" name="input_Perceptual Aptitude" placeholder="rate 1-10" required />
+        </label>
+
+        <label>Abstract Reasoning:
+          <input type="number" step="any" min="0" max="100" name="input_Abstract Reasoning" placeholder="rate 1-10" required />
+        </label>
+
+        <label>Verbal Reasoning:
+          <input type="number" step="any" min="0" max="100" name="input_Verbal Reasoning" placeholder="rate 1-10" required />
+        </label>
+
+        <button type="submit">Predict Strand</button>
+      </form>
+
+      {% if result %}
+      <div class="result"><strong>Predicted Output:</strong> {{ result }}</div>
+      {% endif %}
+    </div>
+
+    <!-- Model Evaluation -->
+    <div class="card">
+      <h2>Model Evaluation Metrics</h2>
+      <div class="metrics">
+Accuracy:  0.9100<br>
+Precision: 0.9160<br>
+Recall:    0.9100<br>
+F1 Score:  0.9098
+      </div>
+
+      <h3 style="margin-top: 20px;">Confusion Matrix</h3>
+      <div class="metrics">
+[[50  0  2  3]<br>
+ [ 0 33  9  0]<br>
+ [ 0  2 49  0]
+      </div>
+
+      <h3 style="margin-top: 20px;">Classification Report</h3>
+      <div class="metrics">
+            precision    recall  f1-score   support<br><br>
+       ABM       0.96      0.91      0.93        55<br>
+       GAS       0.94      0.79      0.86        42<br>
+     HUMSS       0.82      0.96      0.88        51<br>
+      STEM       0.94      0.96      0.95        52<br><br>
+  accuracy                           0.91       200<br>
+ macro avg       0.92      0.90      0.91       200<br>
+weighted avg       0.92      0.91      0.91       200
+      </div>
+
+      <p style="margin-top: 20px;">
+        <strong>Interpretation:</strong><br>
+        The Decision Tree model achieved an accuracy of <b>91%</b>, reflecting strong predictive power across all strand categories.<br>
+        The metrics indicate the model reliably distinguishes most strands, with slightly lower recall on GAS category.<br>
+        The confusion matrix highlights effective classification performance for ABM, HUMSS, and STEM, with some misclassifications in the GAS strand.
+      </p>
+    </div>
+
+    <footer>© 2025 EduVision | Decision Tree Grade Predictor</footer>
+  </div>
+</body>
+</html>

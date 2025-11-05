@@ -10,7 +10,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
-DATA_PATH = os.path.join(os.path.dirname(__file__), "eduvision_dataset.csv")
+DATA_PATH = os.path.join(os.path.dirname(__file__), "student_performance.csv")
 MODEL_DIR = "models"
 os.makedirs(MODEL_DIR, exist_ok=True)
 
@@ -18,8 +18,8 @@ df = pd.read_csv(DATA_PATH).dropna()
 print("Dataset preview:")
 print(df.head())
 
-FEATURE_COLS = ['study_hours_per_week', 'quiz_average', 'attendance_rate']
-TARGET_COL = 'final_exam_score'
+FEATURE_COLS = ['AttendanceRate', 'StudyHoursPerWeek', 'PreviousGrade']
+TARGET_COL = 'FinalGrade'
 
 missing = [c for c in FEATURE_COLS + [TARGET_COL] if c not in df.columns]
 if missing:
@@ -50,10 +50,10 @@ for feature, coef in zip(FEATURE_COLS, model.coef_):
 print("\n=== Model Evaluation ===")
 print(f"MAE: {mae:.4f}, MSE: {mse:.4f}, R²: {r2:.4f}")
 
-model_path = os.path.join(MODEL_DIR, "linear_regression_model.pkl")
-with open(model_path, "wb") as f:
-    pickle.dump(model, f)
-with open(os.path.join(MODEL_DIR, "scaler_lr.pkl"), "wb") as f:
-    pickle.dump(scaler, f)
+# model_path = os.path.join(MODEL_DIR, "linear_regression_model.pkl")
+# with open(model_path, "wb") as f:
+#     pickle.dump(model, f)
+# with open(os.path.join(MODEL_DIR, "scaler_lr.pkl"), "wb") as f:
+#     pickle.dump(scaler, f)
 
-print(f"\nSaved model → {model_path}")
+# print(f"\nSaved model → {model_path}")

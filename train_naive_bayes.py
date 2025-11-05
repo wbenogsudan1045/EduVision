@@ -10,7 +10,7 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, classification_report
 
-DATA_PATH = os.path.join(os.path.dirname(__file__), "eduvision_dataset.csv")
+DATA_PATH = os.path.join(os.path.dirname(__file__), "student_performance_dataset.csv")
 MODEL_DIR = "models"
 os.makedirs(MODEL_DIR, exist_ok=True)
 
@@ -18,8 +18,8 @@ df = pd.read_csv(DATA_PATH).dropna()
 print("Dataset preview:")
 print(df.head())
 
-FEATURE_COLS = ['study_hours_per_week', 'quiz_average', 'attendance_rate']
-TARGET_COL = 'risk_level'
+FEATURE_COLS = ['Study_Hours_per_Week', 'Attendance_Rate', 'Final_Exam_Score']
+TARGET_COL = 'Pass_Fail'
 
 missing = [c for c in FEATURE_COLS + [TARGET_COL] if c not in df.columns]
 if missing:

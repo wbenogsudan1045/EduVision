@@ -1,0 +1,1001 @@
+student_id,age,gender,socioeconomic_status,parent_education_level,attendance_rate,study_hours_per_week,quiz_average,assignment_submission_rate,engagement_index,financial_assistance,internet_access,learning_device_type,previous_grades,subject_difficulty,final_exam_score,preferred_learning_style,course_enrolled,interest_tags,pass_fail,risk_level,dropout_likelihood
+1001,22.0,Female,Low,College,0.97,11.2,45.5,0.99,0.54,No,Stable,Laptop,57.4,Moderate,87.8,Kinesthetic,BSBA,"Teaching, Research",Pass,Safe,0.48
+1002,19.0,Male,Low,High School,0.5,10.1,60.2,0.49,0.41,No,Limited,Desktop,57.7,Moderate,85.2,Visual,BSBA,"Accounting, Finance",Pass,At Risk,0.8
+1003,23.0,Male,Middle,High School,0.61,10.4,71.4,0.68,0.72,No,Stable,Smartphone,92.7,Moderate,42.2,Kinesthetic,BSIT,"Teaching, Research",Fail,At Risk,0.56
+1004,20.0,Female,High,High School,0.68,15.5,83.9,0.81,0.52,Yes,Stable,Laptop,70.0,Moderate,63.7,Reading,BSA,"Game Dev, Robotics",Fail,Moderate,0.65
+1005,22.0,Female,Low,Elementary,0.74,3.0,40.2,0.64,0.91,No,Limited,Laptop,85.5,Easy,95.8,Kinesthetic,BSIT,"Leadership, Marketing",Pass,Moderate,0.33
+1006,25.0,Male,Middle,College,0.93,7.4,68.0,0.98,1.0,Yes,Stable,Tablet,78.8,Hard,47.5,Reading,BSA,"Game Dev, Robotics",Fail,Safe,0.07
+1007,18.0,Male,Middle,High School,0.54,2.4,57.8,0.83,0.83,No,Limited,Smartphone,80.4,Moderate,84.2,Visual,BSIT,"Teaching, Research",Pass,At Risk,0.55
+1008,22.0,Female,Low,College,0.9,15.3,91.2,0.79,0.36,No,Stable,Smartphone,55.9,Hard,98.5,Reading,BSBA,"Teaching, Research",Pass,Safe,0.68
+1009,23.0,Male,Middle,Graduate,0.53,6.2,82.9,0.85,0.5,No,None,Smartphone,60.5,Easy,43.1,Kinesthetic,BSBA,"Game Dev, Robotics",Fail,At Risk,0.74
+1010,20.0,Female,Low,College,0.92,18.1,75.3,0.97,0.38,No,Stable,Laptop,85.4,Moderate,80.9,Auditory,BSA,"Programming, AI",Pass,Safe,0.65
+1011,19.0,Female,Middle,High School,0.53,11.0,56.6,0.94,0.76,No,Stable,Laptop,93.7,Moderate,68.1,Reading,BSIT,"Programming, AI",Fail,At Risk,0.6
+1012,23.0,Male,Low,Elementary,0.51,16.2,94.6,0.83,0.84,Yes,Stable,Smartphone,61.8,Moderate,74.8,Reading,BSA,"Programming, AI",Fail,At Risk,0.57
+1013,23.0,Male,Low,Graduate,0.85,19.6,42.7,0.85,0.95,Yes,Stable,Laptop,62.2,Moderate,45.1,Visual,BSBA,"Teaching, Research",Fail,Moderate,0.19
+1014,18.0,Female,Middle,Graduate,1.0,17.0,46.6,0.49,0.61,No,Limited,Laptop,71.3,Easy,42.6,Kinesthetic,BSIT,"Accounting, Finance",Fail,Safe,0.39
+1015,21.0,Female,Low,High School,0.95,17.5,63.5,0.46,0.93,Yes,Limited,Desktop,94.3,Moderate,80.0,Reading,BSIT,"Teaching, Research",Pass,Safe,0.12
+1016,20.0,Male,Low,College,0.79,8.8,47.5,0.74,0.91,Yes,Limited,Smartphone,62.1,Moderate,89.4,Reading,BSA,"Accounting, Finance",Pass,Moderate,0.28
+1017,17.0,Female,Middle,Elementary,0.96,11.5,97.4,0.41,0.52,Yes,Stable,Smartphone,68.3,Easy,86.9,Reading,BSED,"Game Dev, Robotics",Pass,Safe,0.5
+1018,23.0,Male,Low,High School,0.5,5.8,87.9,0.69,0.91,Yes,Stable,Smartphone,90.1,Moderate,72.6,Reading,BSA,"Leadership, Marketing",Fail,At Risk,0.54
+1019,21.0,Female,High,High School,0.99,4.7,55.5,0.53,0.56,No,Stable,Smartphone,50.1,Moderate,46.0,Auditory,BSBA,"Accounting, Finance",Fail,Safe,0.45
+1020,17.0,Male,Low,High School,0.75,10.6,75.3,0.61,0.51,No,Stable,Laptop,51.8,Easy,81.3,Kinesthetic,BSBA,"Programming, AI",Pass,Moderate,0.62
+1021,20.0,Male,Middle,Graduate,0.86,12.3,98.9,0.87,0.75,No,Limited,Laptop,77.2,Hard,54.5,Visual,BSBA,"Teaching, Research",Fail,Safe,0.36
+1022,16.0,Male,Middle,College,0.91,7.4,93.1,0.96,0.53,No,Stable,Laptop,90.8,Hard,94.7,Visual,BSBA,"Game Dev, Robotics",Pass,Safe,0.52
+1023,25.0,Female,Middle,High School,0.86,11.8,76.0,0.44,0.74,No,Stable,Laptop,60.7,Moderate,90.3,Auditory,BSBA,"Programming, AI",Pass,Safe,0.36
+1024,21.0,Female,Middle,College,0.77,17.9,94.2,0.72,0.73,Yes,Stable,Smartphone,71.1,Easy,82.6,Kinesthetic,BSED,"Game Dev, Robotics",Pass,Moderate,0.44
+1025,24.0,Male,Low,Graduate,0.74,11.6,99.4,0.93,0.69,No,Limited,Laptop,70.3,Moderate,96.9,Reading,BSIT,"Leadership, Marketing",Pass,Moderate,0.49
+1026,16.0,Female,High,Graduate,0.92,14.7,84.6,0.45,0.57,Yes,Limited,Laptop,71.3,Moderate,41.9,Auditory,BSA,"Teaching, Research",Fail,Safe,0.48
+1027,25.0,Male,High,Elementary,0.6,16.3,43.9,0.89,0.68,No,Limited,Laptop,78.0,Moderate,84.2,Kinesthetic,BSA,"Teaching, Research",Pass,At Risk,0.59
+1028,18.0,Male,High,High School,0.98,19.8,64.1,0.61,0.72,No,Stable,Laptop,71.1,Moderate,59.8,Reading,BSBA,"Leadership, Marketing",Fail,Safe,0.29
+1029,22.0,Female,Low,High School,0.86,12.5,90.3,0.59,0.68,Yes,Stable,Laptop,70.1,Moderate,94.4,Auditory,BSA,"Teaching, Research",Pass,Safe,0.42
+1030,19.0,Female,Low,High School,0.6,16.3,53.8,0.99,0.61,No,Limited,Laptop,71.3,Moderate,56.0,Kinesthetic,BSBA,"Accounting, Finance",Fail,At Risk,0.63
+1031,24.0,Male,Middle,High School,0.87,19.3,89.8,0.52,0.31,No,Limited,Laptop,76.6,Moderate,83.5,Visual,BSED,"Game Dev, Robotics",Pass,Safe,0.73
+1032,18.0,Female,Middle,College,0.76,18.9,47.2,0.82,0.71,No,Stable,Laptop,74.2,Moderate,92.7,Visual,BSED,"Programming, AI",Pass,Moderate,0.46
+1033,20.0,Female,Middle,High School,0.85,3.7,42.8,0.89,0.42,Yes,Limited,Laptop,88.4,Hard,42.5,Kinesthetic,BSIT,"Leadership, Marketing",Fail,Moderate,0.64
+1034,18.0,Male,High,High School,0.88,8.7,63.0,0.42,0.75,No,Limited,Smartphone,52.2,Moderate,63.9,Visual,BSED,"Accounting, Finance",Fail,Safe,0.34
+1035,22.0,Male,Low,High School,0.54,7.2,42.2,0.8,0.83,No,Limited,Laptop,87.5,Moderate,85.7,Kinesthetic,BSED,"Programming, AI",Pass,At Risk,0.55
+1036,20.0,Female,High,High School,0.75,2.7,97.4,0.97,0.65,Yes,Limited,Laptop,88.0,Hard,67.3,Reading,BSIT,"Programming, AI",Fail,Moderate,0.51
+1037,24.0,Male,Middle,High School,0.97,13.0,89.6,0.47,0.68,Yes,Stable,Smartphone,62.8,Moderate,56.0,Kinesthetic,BSA,"Leadership, Marketing",Fail,Safe,0.34
+1038,22.0,Male,High,High School,0.66,15.0,88.0,0.94,0.97,No,Stable,Laptop,70.8,Moderate,53.2,Reading,BSBA,"Accounting, Finance",Fail,Moderate,0.36
+1039,17.0,Female,Low,Elementary,0.8,17.1,77.8,0.76,0.89,Yes,Stable,Tablet,69.7,Moderate,47.9,Auditory,BSBA,"Programming, AI",Fail,Moderate,0.29
+1040,19.0,Male,Middle,High School,0.68,3.3,53.0,0.77,0.94,No,Limited,Smartphone,59.8,Moderate,91.4,Kinesthetic,BSA,"Programming, AI",Pass,Moderate,0.36
+1041,24.0,Male,Middle,High School,0.73,17.7,71.1,0.77,0.87,No,Limited,Laptop,67.9,Hard,74.5,Auditory,BSIT,"Accounting, Finance",Fail,Moderate,0.36
+1042,17.0,Female,Low,College,0.77,13.2,75.8,0.58,0.38,No,Limited,Smartphone,52.0,Moderate,44.6,Visual,BSA,"Teaching, Research",Fail,Moderate,0.71
+1043,25.0,Female,Low,High School,0.77,14.4,71.5,0.96,0.4,Yes,Stable,Laptop,62.5,Hard,63.0,Reading,BSED,"Programming, AI",Fail,Moderate,0.69
+1044,24.0,Male,High,High School,0.6,18.3,55.6,0.97,0.67,No,Limited,Smartphone,86.8,Easy,62.1,Kinesthetic,BSIT,"Game Dev, Robotics",Fail,At Risk,0.6
+1045,25.0,Male,Middle,Elementary,0.84,12.9,70.9,0.78,0.47,Yes,Limited,Laptop,62.8,Easy,50.9,Auditory,BSIT,"Accounting, Finance",Fail,Moderate,0.61
+1046,20.0,Female,Low,Graduate,0.54,7.4,69.5,0.87,0.63,Yes,Limited,Tablet,86.8,Moderate,66.1,Reading,BSIT,"Programming, AI",Fail,At Risk,0.66
+1047,17.0,Female,Middle,High School,0.57,16.7,99.8,0.77,0.58,No,Limited,Laptop,73.9,Moderate,59.9,Reading,BSBA,"Leadership, Marketing",Fail,At Risk,0.67
+1048,19.0,Female,Middle,College,0.5,7.9,93.8,0.69,0.68,Yes,Limited,Smartphone,89.6,Moderate,60.5,Visual,BSA,"Game Dev, Robotics",Fail,At Risk,0.66
+1049,22.0,Female,Middle,Graduate,0.56,1.7,67.8,0.8,0.82,Yes,Stable,Smartphone,75.9,Moderate,84.3,Visual,BSIT,"Programming, AI",Pass,At Risk,0.54
+1050,23.0,Male,Low,Elementary,0.74,16.8,77.4,0.73,0.8,No,Stable,Laptop,51.3,Moderate,53.4,Reading,BSIT,"Game Dev, Robotics",Fail,Moderate,0.41
+1051,18.0,Female,Low,College,0.8,7.6,84.9,0.76,0.66,Yes,Stable,Laptop,80.4,Easy,78.5,Reading,BSIT,"Game Dev, Robotics",Pass,Moderate,0.47
+1052,16.0,Female,Low,College,0.9,15.7,42.1,0.87,0.88,Yes,Stable,Smartphone,52.0,Hard,74.2,Kinesthetic,BSA,"Teaching, Research",Fail,Safe,0.21
+1053,19.0,Male,Middle,High School,0.55,7.9,93.7,0.69,0.6,No,Limited,Tablet,70.3,Moderate,74.1,Reading,BSBA,"Game Dev, Robotics",Fail,At Risk,0.67
+1054,17.0,Female,Middle,High School,0.93,17.4,91.6,0.42,0.93,No,Limited,Laptop,91.8,Moderate,79.8,Kinesthetic,BSED,"Teaching, Research",Pass,Safe,0.14
+1055,23.0,Male,Low,College,0.87,5.2,67.4,0.5,0.35,No,Stable,Smartphone,57.4,Moderate,72.9,Reading,BSBA,"Accounting, Finance",Fail,Safe,0.7
+1056,19.0,Female,High,High School,0.7,19.5,63.5,0.66,0.97,Yes,Stable,Desktop,67.5,Hard,92.8,Visual,BSIT,"Teaching, Research",Pass,Moderate,0.32
+1057,17.0,Female,Middle,Graduate,0.97,15.8,56.4,0.83,0.76,No,Limited,Tablet,82.8,Easy,80.5,Kinesthetic,BSBA,"Leadership, Marketing",Pass,Safe,0.26
+1058,21.0,Female,Low,High School,1.0,3.2,68.6,0.76,0.57,Yes,Stable,Laptop,89.7,Hard,72.8,Auditory,BSBA,"Programming, AI",Fail,Safe,0.43
+1059,21.0,Male,Low,College,0.6,11.7,42.7,0.79,0.44,Yes,Stable,Smartphone,80.2,Moderate,89.8,Visual,BSED,"Accounting, Finance",Pass,At Risk,0.74
+1060,25.0,Male,Low,High School,0.69,19.7,91.1,0.69,0.64,No,Stable,Laptop,61.6,Moderate,76.4,Kinesthetic,BSA,"Accounting, Finance",Pass,Moderate,0.56
+1061,19.0,Female,High,College,0.96,10.0,42.1,0.77,0.44,Yes,Stable,Desktop,80.4,Moderate,57.5,Kinesthetic,BSA,"Leadership, Marketing",Fail,Safe,0.58
+1062,21.0,Male,Middle,College,0.86,4.5,59.7,0.6,0.42,Yes,Stable,Laptop,63.4,Hard,52.4,Auditory,BSBA,"Teaching, Research",Fail,Safe,0.64
+1063,17.0,Male,Middle,Elementary,0.52,10.2,95.9,0.68,0.73,No,Stable,Laptop,82.3,Moderate,49.1,Kinesthetic,BSBA,"Programming, AI",Fail,At Risk,0.62
+1064,25.0,Male,Middle,Elementary,0.89,10.7,84.1,0.85,0.67,No,Stable,Smartphone,92.9,Moderate,94.0,Reading,BSA,"Teaching, Research",Pass,Safe,0.4
+1065,17.0,Male,Middle,High School,0.91,15.1,56.9,0.92,0.77,No,Limited,Laptop,82.5,Moderate,82.6,Auditory,BSA,"Game Dev, Robotics",Pass,Safe,0.3
+1066,25.0,Male,Middle,Elementary,0.88,14.3,55.2,0.66,0.95,Yes,Stable,Desktop,88.8,Moderate,96.2,Visual,BSED,"Teaching, Research",Pass,Safe,0.16
+1067,19.0,Male,Low,Elementary,0.9,8.6,40.3,0.43,0.67,Yes,Limited,Desktop,50.1,Hard,76.2,Visual,BSIT,"Accounting, Finance",Pass,Safe,0.4
+1068,23.0,Female,Middle,College,0.91,5.1,81.7,0.5,0.71,Yes,Stable,Smartphone,82.3,Moderate,68.4,Reading,BSBA,"Programming, AI",Fail,Safe,0.35
+1069,22.0,Female,Low,College,0.59,13.3,42.9,0.41,0.36,Yes,Stable,Laptop,87.3,Hard,43.6,Visual,BSA,"Teaching, Research",Fail,At Risk,0.79
+1070,24.0,Male,Low,College,0.62,9.0,72.0,0.79,0.8,No,Limited,Smartphone,51.8,Easy,80.3,Kinesthetic,BSBA,"Programming, AI",Pass,At Risk,0.5
+1071,23.0,Female,Middle,Graduate,0.82,3.5,97.7,0.6,0.58,No,Stable,Laptop,89.2,Easy,74.9,Kinesthetic,BSBA,"Programming, AI",Fail,Moderate,0.52
+1072,20.0,Female,Low,College,0.95,18.1,46.6,0.73,0.98,No,Stable,Laptop,61.6,Easy,99.4,Reading,BSA,"Game Dev, Robotics",Pass,Safe,0.07
+1073,17.0,Female,Low,College,0.66,14.1,93.7,0.7,0.88,No,Stable,Tablet,79.9,Moderate,54.3,Visual,BSED,"Game Dev, Robotics",Fail,Moderate,0.42
+1074,20.0,Female,Middle,College,0.79,14.0,99.5,0.45,0.67,No,Limited,Laptop,86.0,Moderate,71.8,Visual,BSBA,"Accounting, Finance",Fail,Moderate,0.47
+1075,23.0,Male,High,High School,0.84,16.6,43.7,0.64,0.39,No,Stable,Laptop,79.8,Easy,79.1,Reading,BSED,"Leadership, Marketing",Pass,Moderate,0.67
+1076,25.0,Female,Low,High School,0.73,11.1,93.0,0.53,0.9,Yes,Stable,Desktop,54.2,Easy,78.7,Auditory,BSA,"Programming, AI",Pass,Moderate,0.34
+1077,24.0,Female,Low,High School,0.86,16.5,71.0,0.65,0.86,No,Limited,Laptop,76.8,Hard,73.7,Visual,BSIT,"Leadership, Marketing",Fail,Safe,0.26
+1078,24.0,Male,Middle,High School,0.95,10.5,94.4,0.52,0.43,No,Stable,Laptop,74.7,Hard,86.6,Auditory,BSIT,"Accounting, Finance",Pass,Safe,0.59
+1079,16.0,Male,High,High School,0.81,2.3,74.3,0.9,0.51,Yes,Limited,Desktop,90.5,Hard,52.3,Visual,BSBA,"Programming, AI",Fail,Moderate,0.59
+1080,24.0,Female,Middle,High School,0.77,8.7,79.7,0.5,0.86,Yes,Limited,Laptop,68.2,Hard,83.5,Visual,BSA,"Programming, AI",Pass,Moderate,0.34
+1081,22.0,Female,Middle,College,0.72,10.5,72.6,0.98,0.43,No,None,Smartphone,64.4,Moderate,77.2,Visual,BSED,"Leadership, Marketing",Pass,Moderate,0.69
+1082,24.0,Female,Middle,College,0.79,14.7,91.9,0.65,0.94,Yes,Stable,Desktop,83.7,Easy,93.8,Visual,BSBA,"Teaching, Research",Pass,Moderate,0.26
+1083,23.0,Female,Low,Elementary,0.68,3.0,84.0,0.91,0.6,Yes,Limited,Desktop,68.6,Moderate,90.8,Kinesthetic,BSA,"Game Dev, Robotics",Pass,Moderate,0.59
+1084,16.0,Female,High,High School,0.7,3.7,71.3,0.78,0.36,No,Stable,Smartphone,79.1,Moderate,58.9,Auditory,BSA,"Teaching, Research",Fail,Moderate,0.75
+1085,23.0,Female,High,Elementary,0.77,6.0,92.1,0.84,0.87,No,Stable,Laptop,79.1,Moderate,56.6,Auditory,BSED,"Leadership, Marketing",Fail,Moderate,0.33
+1086,23.0,Male,Low,High School,0.53,6.1,54.7,0.86,0.56,No,Stable,Laptop,90.0,Moderate,98.9,Visual,BSBA,"Game Dev, Robotics",Pass,At Risk,0.7
+1087,18.0,Female,Low,High School,0.61,14.9,49.4,0.7,0.67,No,Limited,Tablet,76.9,Easy,71.6,Visual,BSA,"Teaching, Research",Fail,At Risk,0.59
+1088,16.0,Female,High,College,0.77,5.8,49.6,0.73,0.38,Yes,Stable,Tablet,72.6,Moderate,94.4,Auditory,BSA,"Game Dev, Robotics",Pass,Moderate,0.71
+1089,23.0,Male,Middle,High School,0.72,13.0,60.0,0.71,0.3,No,Stable,Smartphone,56.2,Moderate,49.8,Kinesthetic,BSA,"Programming, AI",Fail,Moderate,0.78
+1090,18.0,Male,Middle,College,0.67,10.4,54.3,0.75,0.75,Yes,Stable,Laptop,55.2,Moderate,78.6,Reading,BSED,"Teaching, Research",Pass,Moderate,0.5
+1091,18.0,Male,Middle,Graduate,0.87,11.9,95.8,0.42,0.66,No,Limited,Laptop,56.9,Moderate,88.6,Reading,BSBA,"Game Dev, Robotics",Pass,Safe,0.43
+1092,16.0,Male,Middle,Elementary,0.85,16.9,46.4,0.64,0.72,No,Limited,Laptop,57.7,Moderate,96.8,Auditory,BSBA,"Game Dev, Robotics",Pass,Moderate,0.39
+1093,20.0,Female,High,College,0.58,8.7,81.9,0.76,0.86,Yes,Limited,Smartphone,78.7,Easy,60.2,Visual,BSBA,"Game Dev, Robotics",Fail,At Risk,0.5
+1094,25.0,Female,High,College,0.94,15.6,51.4,0.76,0.75,Yes,Stable,Laptop,83.3,Easy,83.5,Visual,BSBA,"Teaching, Research",Pass,Safe,0.3
+1095,22.0,Female,High,High School,0.75,9.0,92.9,0.88,0.42,Yes,Stable,Desktop,73.8,Hard,72.3,Kinesthetic,BSIT,"Accounting, Finance",Fail,Moderate,0.68
+1096,25.0,Female,Middle,High School,0.87,7.7,97.7,0.79,0.55,Yes,Limited,Smartphone,87.3,Moderate,43.6,Reading,BSIT,"Teaching, Research",Fail,Safe,0.52
+1097,24.0,Female,High,College,0.79,19.2,67.9,1.0,0.93,Yes,Stable,Laptop,94.6,Easy,81.4,Kinesthetic,BSBA,"Leadership, Marketing",Pass,Moderate,0.27
+1098,22.0,Female,Middle,College,1.0,4.5,92.7,0.57,0.84,No,Stable,Smartphone,86.9,Hard,81.4,Reading,BSED,"Teaching, Research",Pass,Safe,0.16
+1099,24.0,Male,Middle,College,0.88,2.7,40.3,0.62,0.69,No,Limited,Laptop,81.3,Moderate,95.8,Auditory,BSIT,"Game Dev, Robotics",Pass,Safe,0.39
+1100,23.0,Female,Low,Graduate,0.85,15.6,89.2,0.63,0.48,Yes,None,Smartphone,74.0,Moderate,69.8,Reading,BSA,"Programming, AI",Fail,Moderate,0.59
+1101,17.0,Male,High,College,0.89,2.3,53.7,0.68,0.51,Yes,Limited,Smartphone,70.2,Easy,53.8,Kinesthetic,BSIT,"Teaching, Research",Fail,Safe,0.55
+1102,16.0,Male,High,Graduate,0.57,16.9,94.5,0.9,0.81,Yes,Limited,Tablet,53.8,Moderate,42.7,Kinesthetic,BSA,"Teaching, Research",Fail,At Risk,0.54
+1103,22.0,Female,Middle,College,0.6,9.3,40.1,0.54,0.9,No,None,Tablet,68.0,Moderate,64.9,Kinesthetic,BSBA,"Game Dev, Robotics",Fail,At Risk,0.46
+1104,22.0,Male,High,College,0.86,18.4,73.4,0.87,0.77,Yes,Stable,Laptop,91.0,Moderate,58.1,Auditory,BSIT,"Programming, AI",Fail,Safe,0.34
+1105,23.0,Female,Middle,College,0.75,14.7,85.4,0.64,0.87,No,Stable,Laptop,86.4,Hard,85.7,Reading,BSED,"Programming, AI",Pass,Moderate,0.35
+1106,20.0,Male,Low,Elementary,0.88,12.6,55.5,0.76,0.84,No,None,Smartphone,59.7,Moderate,61.3,Reading,BSIT,"Leadership, Marketing",Fail,Safe,0.26
+1107,18.0,Female,Low,College,0.55,19.0,51.6,0.78,0.4,No,Stable,Laptop,71.0,Moderate,96.9,Kinesthetic,BSIT,"Teaching, Research",Pass,At Risk,0.78
+1108,23.0,Male,Low,College,0.77,8.5,45.0,0.62,0.6,No,Limited,Laptop,86.8,Easy,97.7,Reading,BSIT,"Programming, AI",Pass,Moderate,0.54
+1109,21.0,Female,Middle,High School,0.69,19.1,59.6,0.71,0.41,Yes,Stable,Laptop,53.0,Moderate,77.3,Visual,BSBA,"Programming, AI",Pass,Moderate,0.72
+1110,18.0,Female,Low,Graduate,0.73,3.6,73.6,0.65,0.46,No,Stable,Smartphone,67.4,Easy,95.7,Visual,BSED,"Accounting, Finance",Pass,Moderate,0.66
+1111,16.0,Female,Middle,High School,0.8,10.2,47.0,0.44,0.91,Yes,Limited,Laptop,88.3,Moderate,85.7,Visual,BSIT,"Accounting, Finance",Pass,Moderate,0.27
+1112,18.0,Female,Middle,College,0.75,6.1,62.6,0.66,0.63,Yes,None,Smartphone,68.2,Hard,72.8,Reading,BSED,"Programming, AI",Fail,Moderate,0.53
+1113,20.0,Female,Middle,College,0.77,11.3,40.5,0.46,0.67,No,Limited,Desktop,53.5,Moderate,50.8,Auditory,BSBA,"Leadership, Marketing",Fail,Moderate,0.48
+1114,18.0,Male,Middle,College,0.74,4.1,89.1,0.64,0.42,No,Stable,Laptop,74.4,Moderate,67.5,Auditory,BSA,"Programming, AI",Fail,Moderate,0.69
+1115,16.0,Male,Middle,High School,0.7,17.0,47.7,0.76,0.52,No,Limited,Laptop,88.8,Easy,73.7,Auditory,BSIT,"Game Dev, Robotics",Fail,Moderate,0.64
+1116,20.0,Male,Middle,College,0.89,17.1,57.0,0.75,0.46,Yes,Stable,Laptop,76.6,Moderate,91.8,Auditory,BSED,"Teaching, Research",Pass,Safe,0.59
+1117,25.0,Female,Low,College,0.51,19.1,41.1,0.8,0.44,Yes,Stable,Tablet,60.2,Moderate,68.9,Visual,BSED,"Leadership, Marketing",Fail,At Risk,0.78
+1118,22.0,Male,Middle,Elementary,0.8,3.9,65.9,0.46,0.75,No,Stable,Laptop,67.3,Moderate,93.9,Visual,BSBA,"Game Dev, Robotics",Pass,Moderate,0.4
+1119,22.0,Female,Middle,Elementary,0.78,12.8,90.4,0.79,0.48,Yes,Stable,Laptop,70.3,Easy,80.5,Kinesthetic,BSIT,"Leadership, Marketing",Pass,Moderate,0.63
+1120,24.0,Female,Middle,College,0.86,10.0,63.5,0.59,0.74,No,Stable,Laptop,76.1,Moderate,48.2,Reading,BSA,"Game Dev, Robotics",Fail,Safe,0.36
+1121,25.0,Male,High,High School,0.8,7.5,50.8,0.64,0.34,No,None,Smartphone,84.2,Hard,99.7,Reading,BSED,"Teaching, Research",Pass,Moderate,0.73
+1122,25.0,Male,Low,High School,0.91,7.7,85.2,0.91,0.4,No,Limited,Laptop,54.4,Moderate,71.6,Auditory,BSIT,"Teaching, Research",Fail,Safe,0.64
+1123,18.0,Female,Middle,College,0.98,8.8,87.3,0.41,0.49,Yes,Limited,Smartphone,90.0,Hard,63.5,Visual,BSA,"Accounting, Finance",Fail,Safe,0.52
+1124,22.0,Male,High,High School,0.67,14.4,50.4,0.75,0.72,No,Stable,Desktop,50.6,Moderate,79.5,Auditory,BSED,"Game Dev, Robotics",Pass,Moderate,0.52
+1125,16.0,Female,Middle,College,0.61,12.4,86.3,0.76,0.77,Yes,None,Laptop,66.7,Moderate,46.5,Kinesthetic,BSED,"Accounting, Finance",Fail,At Risk,0.53
+1126,19.0,Female,Middle,High School,0.71,9.7,96.8,0.64,0.61,No,None,Tablet,51.2,Moderate,78.2,Reading,BSA,"Game Dev, Robotics",Pass,Moderate,0.57
+1127,19.0,Female,Middle,College,0.64,2.4,50.0,0.54,0.61,No,Limited,Laptop,67.7,Moderate,69.9,Reading,BSA,"Accounting, Finance",Fail,At Risk,0.61
+1128,20.0,Female,Middle,High School,0.81,2.5,86.3,0.54,0.81,No,Stable,Tablet,73.7,Moderate,64.4,Auditory,BSBA,"Teaching, Research",Fail,Moderate,0.34
+1129,22.0,Female,Middle,College,0.96,1.0,82.5,0.93,0.31,Yes,Stable,Smartphone,73.0,Moderate,97.2,Kinesthetic,BSIT,"Leadership, Marketing",Pass,Safe,0.7
+1130,22.0,Male,Low,High School,0.57,19.4,68.4,0.67,0.54,No,Stable,Tablet,57.5,Moderate,71.4,Reading,BSIT,"Accounting, Finance",Fail,At Risk,0.69
+1131,19.0,Male,Low,College,0.55,1.1,43.5,0.6,0.87,No,Stable,Laptop,79.1,Moderate,53.1,Kinesthetic,BSBA,"Game Dev, Robotics",Fail,At Risk,0.52
+1132,22.0,Female,Middle,High School,0.63,3.0,44.5,0.67,0.72,Yes,Stable,Laptop,52.0,Easy,67.5,Kinesthetic,BSED,"Game Dev, Robotics",Fail,At Risk,0.55
+1133,18.0,Female,High,College,0.86,7.0,91.1,0.8,0.54,Yes,None,Laptop,84.3,Hard,95.2,Auditory,BSA,"Teaching, Research",Pass,Safe,0.54
+1134,21.0,Male,Middle,College,0.8,16.3,99.4,0.49,0.93,No,Stable,Laptop,92.6,Moderate,50.6,Visual,BSA,"Game Dev, Robotics",Fail,Moderate,0.26
+1135,17.0,Male,Low,Graduate,0.55,19.3,80.6,0.67,0.84,No,Stable,Laptop,65.3,Moderate,52.8,Auditory,BSA,"Programming, AI",Fail,At Risk,0.54
+1136,25.0,Female,Middle,College,0.96,16.0,66.8,0.75,0.49,No,Stable,Laptop,73.3,Easy,40.8,Visual,BSED,"Leadership, Marketing",Fail,Safe,0.53
+1137,24.0,Male,Middle,High School,0.9,14.1,78.9,0.97,0.75,Yes,Stable,Laptop,67.1,Hard,40.9,Kinesthetic,BSA,"Accounting, Finance",Fail,Safe,0.32
+1138,20.0,Female,Low,College,0.51,10.9,75.7,0.55,0.72,Yes,Stable,Laptop,50.3,Hard,89.8,Visual,BSA,"Leadership, Marketing",Pass,At Risk,0.63
+1139,21.0,Male,Middle,High School,0.83,2.6,63.0,0.62,0.58,No,Stable,Tablet,67.4,Moderate,83.9,Kinesthetic,BSBA,"Teaching, Research",Pass,Moderate,0.52
+1140,19.0,Female,Middle,High School,0.89,19.2,43.9,0.63,0.56,Yes,Stable,Laptop,85.6,Moderate,61.3,Reading,BSED,"Accounting, Finance",Fail,Safe,0.5
+1141,25.0,Male,Middle,Elementary,0.69,15.4,89.3,0.76,0.54,No,Limited,Laptop,76.8,Moderate,81.9,Reading,BSIT,"Accounting, Finance",Pass,Moderate,0.63
+1142,22.0,Female,Middle,College,0.53,13.1,62.3,0.61,0.73,No,None,Laptop,54.6,Easy,63.7,Reading,BSBA,"Programming, AI",Fail,At Risk,0.61
+1143,24.0,Male,Low,College,0.54,15.4,89.1,0.72,0.61,No,Stable,Laptop,88.1,Easy,97.2,Auditory,BSBA,"Teaching, Research",Pass,At Risk,0.67
+1144,22.0,Male,Low,High School,0.55,14.8,55.2,0.87,0.88,No,Stable,Desktop,73.9,Moderate,98.0,Auditory,BSIT,"Game Dev, Robotics",Pass,At Risk,0.52
+1145,16.0,Female,Low,College,0.92,13.1,40.1,0.82,0.77,No,Limited,Laptop,87.9,Moderate,63.6,Kinesthetic,BSBA,"Programming, AI",Fail,Safe,0.29
+1146,16.0,Male,High,High School,0.96,19.6,49.5,0.67,0.35,Yes,Stable,Smartphone,76.1,Moderate,91.3,Reading,BSED,"Programming, AI",Pass,Safe,0.66
+1147,24.0,Female,High,High School,0.56,18.2,68.1,0.92,0.75,No,Stable,Desktop,75.2,Hard,86.4,Auditory,BSA,"Leadership, Marketing",Pass,At Risk,0.58
+1148,24.0,Male,Middle,High School,0.62,13.3,96.7,0.73,0.49,No,Limited,Tablet,54.7,Moderate,58.6,Reading,BSED,"Leadership, Marketing",Fail,At Risk,0.7
+1149,19.0,Female,High,Elementary,0.58,14.2,46.1,0.72,0.71,No,Stable,Smartphone,57.5,Moderate,53.9,Auditory,BSIT,"Leadership, Marketing",Fail,At Risk,0.59
+1150,24.0,Male,Middle,High School,0.59,2.0,91.3,0.42,0.78,Yes,Limited,Tablet,93.7,Moderate,67.5,Visual,BSIT,"Programming, AI",Fail,At Risk,0.54
+1151,18.0,Female,Middle,College,0.92,13.7,71.6,0.99,0.46,No,Stable,Desktop,60.3,Hard,86.9,Visual,BSBA,"Game Dev, Robotics",Pass,Safe,0.58
+1152,22.0,Male,Middle,College,0.67,1.8,89.6,0.47,0.62,Yes,Stable,Smartphone,94.0,Easy,97.6,Reading,BSED,"Accounting, Finance",Pass,Moderate,0.58
+1153,21.0,Female,Low,High School,0.66,12.2,57.9,0.54,0.43,No,Stable,Smartphone,73.9,Hard,85.8,Kinesthetic,BSED,"Leadership, Marketing",Pass,Moderate,0.72
+1154,23.0,Male,Low,High School,0.61,20.0,90.4,0.43,0.34,No,Limited,Smartphone,56.1,Hard,91.3,Auditory,BSIT,"Game Dev, Robotics",Pass,At Risk,0.79
+1155,24.0,Female,Middle,Elementary,0.8,11.6,86.4,0.78,0.56,No,Stable,Smartphone,54.5,Easy,76.2,Auditory,BSED,"Teaching, Research",Pass,Moderate,0.55
+1156,20.0,Female,Middle,College,0.69,10.0,53.8,0.53,0.55,Yes,Stable,Smartphone,59.4,Moderate,90.1,Visual,BSIT,"Leadership, Marketing",Pass,Moderate,0.62
+1157,16.0,Female,Low,Elementary,0.87,6.9,47.9,0.51,1.0,No,Limited,Laptop,91.7,Hard,87.1,Visual,BSED,"Accounting, Finance",Pass,Safe,0.13
+1158,18.0,Male,High,College,0.6,3.3,92.1,0.45,0.61,No,Stable,Laptop,68.6,Moderate,62.6,Kinesthetic,BSED,"Teaching, Research",Fail,At Risk,0.63
+1159,25.0,Female,Middle,Graduate,0.89,14.9,97.8,0.46,0.53,Yes,Stable,Laptop,67.8,Hard,73.1,Kinesthetic,BSED,"Teaching, Research",Fail,Safe,0.53
+1160,23.0,Male,Low,College,0.8,4.7,41.9,0.75,0.71,Yes,Limited,Laptop,64.1,Hard,88.3,Kinesthetic,BSIT,"Accounting, Finance",Pass,Moderate,0.43
+1161,21.0,Female,High,Graduate,0.56,3.2,83.9,0.81,0.36,Yes,Stable,Laptop,56.6,Moderate,42.8,Reading,BSBA,"Leadership, Marketing",Fail,At Risk,0.8
+1162,23.0,Male,High,High School,0.71,9.0,94.6,0.64,0.97,Yes,Limited,Laptop,72.0,Moderate,88.5,Visual,BSED,"Programming, AI",Pass,Moderate,0.31
+1163,24.0,Female,High,College,0.93,16.1,91.4,0.69,0.74,No,Limited,Smartphone,55.9,Hard,50.7,Reading,BSIT,"Accounting, Finance",Fail,Safe,0.31
+1164,19.0,Male,Low,College,0.96,15.2,97.9,0.81,0.83,No,Limited,Laptop,87.6,Moderate,70.9,Visual,BSIT,"Accounting, Finance",Fail,Safe,0.2
+1165,16.0,Male,Middle,College,0.73,2.0,85.6,0.41,0.42,No,Stable,Tablet,66.7,Easy,88.5,Visual,BSED,"Accounting, Finance",Pass,Moderate,0.69
+1166,16.0,Female,Middle,Elementary,0.74,9.6,66.5,0.59,0.59,Yes,None,Laptop,66.9,Easy,55.2,Auditory,BSED,"Teaching, Research",Fail,Moderate,0.56
+1167,25.0,Male,Middle,High School,0.96,10.9,58.7,0.98,0.6,Yes,Stable,Laptop,71.3,Moderate,54.7,Visual,BSBA,"Game Dev, Robotics",Fail,Safe,0.42
+1168,19.0,Male,High,High School,0.79,13.2,59.2,0.75,0.88,No,Limited,Smartphone,70.0,Hard,64.2,Visual,BSIT,"Programming, AI",Fail,Moderate,0.3
+1169,22.0,Female,Middle,College,0.52,13.4,83.5,0.55,0.3,Yes,Stable,Smartphone,94.8,Hard,93.7,Reading,BSIT,"Leadership, Marketing",Pass,At Risk,0.84
+1170,17.0,Male,High,College,0.96,7.9,84.8,0.71,0.51,No,Stable,Laptop,74.5,Moderate,40.0,Visual,BSA,"Leadership, Marketing",Fail,Safe,0.51
+1171,18.0,Male,High,College,0.62,11.7,52.0,0.61,0.99,No,Stable,Tablet,54.0,Easy,94.1,Reading,BSIT,"Game Dev, Robotics",Pass,At Risk,0.39
+1172,16.0,Male,High,Elementary,0.79,10.1,92.1,0.72,0.63,No,None,Tablet,77.3,Moderate,49.2,Kinesthetic,BSBA,"Accounting, Finance",Fail,Moderate,0.5
+1173,20.0,Female,Middle,College,0.58,17.8,82.9,0.48,0.57,No,None,Laptop,56.8,Hard,99.4,Visual,BSA,"Programming, AI",Pass,At Risk,0.67
+1174,16.0,Male,Low,High School,0.52,11.1,73.8,0.48,0.38,Yes,Stable,Laptop,51.4,Easy,97.3,Visual,BSA,"Leadership, Marketing",Pass,At Risk,0.8
+1175,23.0,Female,Middle,High School,0.66,9.4,68.3,0.49,0.98,Yes,Stable,Desktop,93.7,Moderate,69.7,Reading,BSA,"Leadership, Marketing",Fail,Moderate,0.35
+1176,16.0,Male,High,High School,0.89,8.7,72.6,0.96,0.31,Yes,Limited,Smartphone,84.8,Easy,70.8,Kinesthetic,BSED,"Accounting, Finance",Fail,Safe,0.72
+1177,16.0,Male,Low,College,0.64,11.9,49.6,0.84,0.82,No,Stable,Smartphone,94.1,Moderate,68.9,Auditory,BSED,"Game Dev, Robotics",Fail,At Risk,0.48
+1178,17.0,Male,Middle,High School,0.61,16.3,52.2,0.5,0.84,Yes,Stable,Tablet,71.5,Hard,78.1,Kinesthetic,BSIT,"Programming, AI",Pass,At Risk,0.49
+1179,17.0,Female,Low,College,0.61,11.2,45.5,0.51,0.47,Yes,Limited,Laptop,74.0,Moderate,45.4,Reading,BSA,"Game Dev, Robotics",Fail,At Risk,0.71
+1180,21.0,Male,Middle,College,0.76,13.6,49.2,0.84,0.77,No,Stable,Laptop,57.6,Moderate,42.0,Kinesthetic,BSBA,"Game Dev, Robotics",Fail,Moderate,0.41
+1181,22.0,Male,High,Elementary,0.99,15.0,67.2,0.49,0.37,Yes,None,Laptop,61.1,Moderate,43.5,Reading,BSED,"Programming, AI",Fail,Safe,0.63
+1182,20.0,Female,High,College,0.73,10.9,71.8,0.54,0.48,Yes,Stable,Smartphone,87.7,Hard,66.7,Reading,BSBA,"Programming, AI",Fail,Moderate,0.65
+1183,16.0,Male,Low,High School,0.78,9.1,41.1,0.98,0.85,Yes,Stable,Smartphone,66.0,Easy,56.5,Auditory,BSBA,"Leadership, Marketing",Fail,Moderate,0.34
+1184,16.0,Female,High,High School,0.93,17.7,87.8,0.55,0.91,No,Stable,Smartphone,87.2,Moderate,77.3,Visual,BSED,"Leadership, Marketing",Pass,Safe,0.15
+1185,18.0,Female,Middle,High School,0.77,8.9,57.7,0.8,0.73,No,Limited,Laptop,81.9,Moderate,99.5,Reading,BSED,"Programming, AI",Pass,Moderate,0.44
+1186,17.0,Male,Middle,High School,0.59,9.8,94.7,0.99,0.65,No,Stable,Laptop,58.0,Hard,63.2,Reading,BSED,"Teaching, Research",Fail,At Risk,0.62
+1187,20.0,Female,Middle,College,0.65,19.8,98.1,0.62,0.41,Yes,Limited,Laptop,72.8,Moderate,74.4,Auditory,BSED,"Leadership, Marketing",Fail,At Risk,0.73
+1188,25.0,Male,Middle,High School,0.65,1.0,51.1,0.41,0.34,No,Stable,Smartphone,80.5,Easy,64.9,Reading,BSA,"Teaching, Research",Fail,At Risk,0.78
+1189,21.0,Female,Middle,College,0.7,4.5,67.7,0.55,0.38,No,Limited,Smartphone,60.6,Moderate,90.8,Visual,BSA,"Programming, AI",Pass,Moderate,0.73
+1190,22.0,Female,Middle,College,0.71,8.3,40.1,0.9,0.46,Yes,Stable,Laptop,87.4,Moderate,94.1,Auditory,BSA,"Leadership, Marketing",Pass,Moderate,0.67
+1191,19.0,Male,Low,College,0.9,18.7,75.9,0.92,0.54,No,Stable,Tablet,74.5,Easy,92.6,Visual,BSA,"Game Dev, Robotics",Pass,Safe,0.51
+1192,22.0,Female,Middle,College,0.67,2.3,76.4,0.86,0.57,Yes,Limited,Laptop,57.4,Hard,98.5,Visual,BSIT,"Programming, AI",Pass,Moderate,0.62
+1193,23.0,Female,Middle,College,0.73,1.2,54.9,0.47,0.54,No,Stable,Desktop,76.2,Easy,41.7,Auditory,BSA,"Accounting, Finance",Fail,Moderate,0.61
+1194,16.0,Female,Low,High School,0.81,2.0,73.5,0.88,0.47,No,Stable,Laptop,95.0,Moderate,90.4,Reading,BSED,"Teaching, Research",Pass,Moderate,0.62
+1195,21.0,Female,Middle,High School,0.69,2.7,53.5,0.95,0.66,Yes,Limited,Smartphone,56.8,Moderate,85.1,Visual,BSBA,"Programming, AI",Pass,Moderate,0.54
+1196,23.0,Female,Middle,College,0.92,1.7,49.6,0.76,0.88,No,Stable,Laptop,86.8,Moderate,53.7,Visual,BSA,"Programming, AI",Fail,Safe,0.19
+1197,20.0,Male,Middle,College,0.79,10.1,79.1,0.96,0.5,No,Limited,Desktop,59.3,Moderate,97.4,Visual,BSIT,"Leadership, Marketing",Pass,Moderate,0.6
+1198,19.0,Female,Middle,High School,0.65,12.0,59.6,0.9,0.96,No,Stable,Laptop,85.2,Hard,48.9,Visual,BSED,"Leadership, Marketing",Fail,At Risk,0.38
+1199,17.0,Male,High,High School,0.86,6.2,75.4,0.8,0.91,Yes,Limited,Laptop,83.1,Moderate,80.8,Auditory,BSBA,"Leadership, Marketing",Pass,Safe,0.22
+1200,21.0,Female,Middle,High School,0.76,8.6,66.0,0.75,0.41,Yes,Stable,Laptop,63.5,Moderate,53.5,Auditory,BSBA,"Accounting, Finance",Fail,Moderate,0.69
+1201,19.5,Female,Middle,College,0.67,10.3,43.9,0.76,1.0,No,Stable,Smartphone,51.9,Easy,85.7,Visual,BSA,"Game Dev, Robotics",Fail,Moderate,0.58
+1202,22.6,Female,High,College,0.5,4.0,98.3,0.78,0.76,Yes,Stable,Tablet,76.8,Moderate,57.1,Auditory,BSA,"Leadership, Marketing",Fail,Moderate,0.7
+1203,21.9,Female,Middle,Graduate,0.68,1.9,71.7,0.84,0.79,Yes,Stable,Tablet,61.7,Hard,51.0,Visual,BSED,"Game Dev, Robotics",Pass,Moderate,0.25
+1204,23.3,Male,Low,College,0.89,10.6,81.6,0.51,0.63,Yes,Limited,Laptop,73.6,Hard,96.7,Visual,BSA,"Programming, AI",Fail,Safe,0.73
+1205,18.0,Female,Middle,College,0.84,14.2,72.9,0.54,0.46,Yes,Stable,Tablet,73.7,Easy,82.8,Visual,BSIT,"Game Dev, Robotics",Pass,At Risk,0.84
+1206,17.7,Male,Middle,Elementary,0.66,16.6,77.2,0.64,0.41,No,Stable,Laptop,68.6,Moderate,40.0,Visual,BSBA,"Programming, AI",Pass,Safe,0.18
+1207,24.5,Male,High,College,0.81,15.1,79.8,0.41,0.82,No,Stable,Smartphone,71.2,Moderate,68.0,Reading,BSED,"Programming, AI",Pass,Moderate,0.34
+1208,23.0,Male,High,Elementary,0.5,1.0,53.5,0.88,0.76,No,Stable,Laptop,50.1,Moderate,48.4,Visual,BSA,"Teaching, Research",Pass,Moderate,0.37
+1209,22.8,Female,Middle,College,0.77,11.3,69.4,0.84,0.72,Yes,Stable,Laptop,77.8,Moderate,84.5,Reading,BSED,"Programming, AI",Fail,Moderate,0.34
+1210,16.5,Female,Low,Graduate,0.88,19.5,76.6,0.9,0.89,No,None,Tablet,84.1,Moderate,40.0,Visual,BSED,"Teaching, Research",Fail,Moderate,0.72
+1211,18.9,Female,Low,College,0.67,18.1,87.4,0.65,0.66,No,Stable,Smartphone,85.8,Moderate,52.9,Visual,BSA,"Leadership, Marketing",Fail,Safe,0.29
+1212,25.0,Male,High,High School,0.75,13.5,56.0,0.45,0.51,Yes,Limited,Desktop,78.3,Easy,65.2,Auditory,BSED,"Game Dev, Robotics",Pass,Moderate,0.48
+1213,18.9,Female,Low,High School,0.77,15.4,75.4,0.45,0.75,Yes,Stable,Smartphone,56.6,Hard,80.6,Reading,BSA,"Accounting, Finance",Pass,Moderate,0.38
+1214,21.2,Female,Low,High School,0.89,6.6,82.0,0.72,0.77,No,Limited,Laptop,63.8,Moderate,82.3,Auditory,BSBA,"Teaching, Research",Fail,Safe,0.39
+1215,17.7,Female,Low,Elementary,0.72,2.2,53.3,0.69,0.89,Yes,Stable,Laptop,75.7,Moderate,63.5,Kinesthetic,BSBA,"Accounting, Finance",Pass,Moderate,0.76
+1216,18.7,Male,Middle,College,0.83,8.3,61.5,0.8,0.58,Yes,Stable,Tablet,73.3,Moderate,80.4,Kinesthetic,BSED,"Teaching, Research",Pass,Safe,0.63
+1217,24.1,Female,Middle,College,0.67,17.1,84.5,0.64,0.3,No,Limited,Laptop,66.5,Moderate,62.5,Reading,BSED,"Game Dev, Robotics",Fail,Safe,0.68
+1218,19.2,Male,Middle,High School,0.71,17.2,63.8,0.9,0.56,Yes,Stable,Laptop,67.7,Easy,48.9,Auditory,BSIT,"Accounting, Finance",Fail,Moderate,0.51
+1219,22.3,Female,Middle,Elementary,0.9,5.3,77.8,0.9,0.87,Yes,Stable,Tablet,62.9,Hard,72.2,Reading,BSA,"Leadership, Marketing",Fail,Moderate,0.21
+1220,23.7,Female,Middle,College,0.89,9.6,64.8,0.93,0.58,No,Stable,Smartphone,94.0,Moderate,99.7,Visual,BSED,"Teaching, Research",Pass,Moderate,0.28
+1221,21.8,Male,High,College,0.88,3.7,83.9,0.72,0.48,No,Stable,Smartphone,95.0,Moderate,97.5,Kinesthetic,BSA,"Teaching, Research",Pass,Moderate,0.48
+1222,19.3,Male,High,High School,0.77,8.3,60.4,0.75,0.81,No,Stable,Smartphone,73.5,Easy,76.7,Kinesthetic,BSIT,"Game Dev, Robotics",Pass,Safe,0.26
+1223,18.3,Male,Middle,College,0.66,17.6,82.6,0.86,0.44,No,Limited,Laptop,61.0,Moderate,74.4,Visual,BSIT,"Accounting, Finance",Pass,Safe,0.61
+1224,18.5,Female,Low,High School,0.91,1.0,81.9,0.59,0.32,Yes,Stable,Laptop,75.1,Easy,79.0,Kinesthetic,BSBA,"Programming, AI",Fail,At Risk,0.51
+1225,22.1,Female,Middle,College,0.95,11.5,59.8,0.64,0.65,Yes,Stable,Laptop,50.1,Moderate,73.0,Auditory,BSED,"Game Dev, Robotics",Fail,Safe,0.61
+1226,22.3,Female,Low,College,0.73,1.0,52.9,0.83,0.95,Yes,None,Smartphone,75.7,Moderate,92.1,Reading,BSA,"Leadership, Marketing",Fail,Moderate,0.65
+1227,21.7,Male,Middle,Elementary,0.82,14.3,87.0,0.79,0.67,No,Stable,Smartphone,64.2,Hard,71.1,Auditory,BSA,"Game Dev, Robotics",Pass,Moderate,0.52
+1228,21.3,Male,Low,High School,0.7,12.6,56.4,0.58,0.63,Yes,Stable,Smartphone,73.2,Moderate,73.8,Kinesthetic,BSBA,"Leadership, Marketing",Pass,At Risk,0.58
+1229,21.7,Female,Middle,Graduate,0.62,14.3,99.8,0.7,0.51,Yes,Limited,Laptop,73.6,Hard,74.5,Kinesthetic,BSA,"Game Dev, Robotics",Pass,Safe,0.58
+1230,24.5,Male,Middle,High School,1.0,13.6,52.8,0.66,0.73,No,Stable,Tablet,95.0,Hard,48.4,Visual,BSED,"Accounting, Finance",Fail,Safe,0.55
+1231,25.0,Male,Middle,College,0.67,6.7,99.8,0.52,0.42,Yes,Stable,Laptop,77.0,Hard,86.1,Auditory,BSED,"Accounting, Finance",Fail,Moderate,0.49
+1232,22.8,Male,Low,College,0.78,4.2,84.8,0.49,0.65,No,Stable,Laptop,75.8,Moderate,99.7,Auditory,BSIT,"Programming, AI",Fail,Safe,0.52
+1233,22.6,Male,Low,High School,0.69,16.4,56.1,0.66,0.68,No,Limited,Laptop,61.4,Hard,87.3,Kinesthetic,BSA,"Accounting, Finance",Pass,Safe,0.84
+1234,17.0,Male,Low,Elementary,0.8,13.0,77.8,0.65,0.73,No,Limited,Smartphone,55.6,Hard,65.9,Auditory,BSA,"Game Dev, Robotics",Pass,Safe,0.4
+1235,16.5,Male,High,Graduate,0.82,16.0,96.0,0.98,0.77,No,Stable,Smartphone,54.5,Moderate,89.3,Visual,BSIT,"Leadership, Marketing",Fail,Moderate,0.26
+1236,16.8,Male,Low,College,0.81,16.5,88.2,0.67,0.51,No,Limited,Smartphone,76.8,Moderate,68.1,Auditory,BSBA,"Teaching, Research",Fail,Moderate,0.07
+1237,20.9,Male,Middle,College,0.76,16.7,64.5,0.57,0.47,No,Limited,Laptop,66.2,Moderate,78.4,Visual,BSBA,"Game Dev, Robotics",Pass,At Risk,0.48
+1238,20.2,Female,High,College,0.71,10.8,51.7,0.44,0.64,Yes,Stable,Laptop,83.0,Hard,58.4,Auditory,BSIT,"Teaching, Research",Pass,Moderate,0.35
+1239,19.9,Female,Low,High School,0.65,19.3,75.1,0.88,0.91,Yes,Stable,Smartphone,73.8,Moderate,40.0,Auditory,BSA,"Teaching, Research",Pass,Safe,0.37
+1240,21.6,Female,Middle,College,0.73,5.9,44.7,0.91,0.64,No,Stable,Smartphone,78.3,Hard,66.5,Reading,BSIT,"Teaching, Research",Fail,Moderate,0.63
+1241,19.2,Male,Middle,Graduate,0.82,6.9,45.3,0.6,0.86,No,Stable,Smartphone,75.0,Easy,76.2,Kinesthetic,BSED,"Accounting, Finance",Pass,At Risk,0.39
+1242,19.8,Male,Low,College,0.93,7.6,83.6,0.75,0.58,Yes,Stable,Laptop,67.3,Moderate,90.1,Kinesthetic,BSIT,"Accounting, Finance",Pass,At Risk,0.66
+1243,16.4,Male,High,College,0.5,12.1,74.8,0.74,0.63,No,Stable,Desktop,55.0,Moderate,73.7,Auditory,BSED,"Programming, AI",Pass,At Risk,0.84
+1244,20.7,Female,Middle,High School,0.79,11.5,41.6,0.81,0.77,Yes,Limited,Tablet,78.7,Hard,63.4,Kinesthetic,BSIT,"Game Dev, Robotics",Pass,At Risk,0.67
+1245,20.7,Male,Low,College,0.5,13.4,60.4,0.55,0.66,Yes,None,Smartphone,78.4,Easy,92.0,Auditory,BSED,"Leadership, Marketing",Pass,Moderate,0.27
+1246,25.0,Female,High,College,0.81,14.9,66.9,0.59,0.62,Yes,Limited,Smartphone,60.9,Moderate,59.2,Auditory,BSBA,"Teaching, Research",Fail,At Risk,0.35
+1247,16.8,Female,Middle,Elementary,0.83,5.9,60.9,0.86,0.38,Yes,None,Laptop,79.5,Moderate,99.7,Reading,BSED,"Accounting, Finance",Pass,Moderate,0.28
+1248,22.2,Male,Middle,College,0.74,18.1,71.6,0.44,0.52,No,Limited,Tablet,91.0,Moderate,87.8,Visual,BSIT,"Programming, AI",Fail,Moderate,0.84
+1249,16.0,Female,Low,Elementary,0.68,1.0,51.7,0.51,0.7,Yes,Stable,Smartphone,77.8,Moderate,45.2,Reading,BSIT,"Programming, AI",Fail,Safe,0.36
+1250,18.3,Male,Middle,High School,0.75,9.1,77.0,0.74,0.51,No,Limited,Laptop,62.9,Hard,60.9,Visual,BSBA,"Game Dev, Robotics",Pass,Moderate,0.51
+1251,22.1,Female,Middle,High School,0.6,9.4,59.8,0.48,0.7,Yes,Stable,Laptop,75.3,Moderate,66.3,Auditory,BSBA,"Leadership, Marketing",Pass,Moderate,0.49
+1252,19.2,Male,Middle,High School,0.74,9.0,83.5,0.76,0.48,No,Stable,Smartphone,50.1,Moderate,60.1,Visual,BSED,"Accounting, Finance",Pass,Safe,0.35
+1253,25.0,Male,Middle,College,0.71,1.0,79.3,0.75,0.44,No,Stable,Laptop,78.5,Easy,72.3,Reading,BSBA,"Programming, AI",Fail,Moderate,0.61
+1254,20.5,Male,Low,Elementary,0.53,20.0,40.1,0.79,0.73,Yes,Limited,Laptop,77.7,Moderate,46.5,Auditory,BSA,"Game Dev, Robotics",Pass,Moderate,0.4
+1255,19.9,Female,Middle,College,0.5,18.6,65.5,0.44,0.73,No,Limited,Laptop,61.6,Easy,99.7,Auditory,BSA,"Programming, AI",Fail,Moderate,0.38
+1256,19.3,Female,High,Graduate,0.9,10.3,72.6,0.73,0.59,No,Stable,Laptop,60.8,Moderate,54.2,Auditory,BSA,"Programming, AI",Fail,Safe,0.42
+1257,25.0,Male,Low,College,0.7,16.4,62.3,0.71,0.96,No,Stable,Smartphone,56.1,Moderate,74.6,Reading,BSIT,"Programming, AI",Fail,Moderate,0.32
+1258,23.2,Female,Middle,High School,0.63,18.8,77.7,0.81,0.66,No,Stable,Smartphone,69.3,Moderate,99.7,Kinesthetic,BSIT,"Leadership, Marketing",Fail,Safe,0.55
+1259,20.0,Female,Middle,College,0.72,13.4,71.3,0.78,1.0,Yes,Stable,Smartphone,79.5,Moderate,76.4,Auditory,BSA,"Programming, AI",Pass,Moderate,0.43
+1260,22.9,Female,Low,College,0.84,4.7,59.9,0.71,0.78,Yes,Stable,Laptop,87.8,Hard,63.8,Visual,BSA,"Game Dev, Robotics",Fail,Safe,0.6
+1261,19.5,Female,Low,College,1.0,8.8,83.6,0.99,1.0,No,Stable,Smartphone,79.5,Moderate,81.6,Visual,BSED,"Game Dev, Robotics",Fail,Moderate,0.22
+1262,16.4,Male,Middle,High School,0.72,8.5,72.9,0.69,0.64,Yes,Limited,Smartphone,79.2,Moderate,76.2,Kinesthetic,BSED,"Programming, AI",Fail,Moderate,0.47
+1263,17.8,Female,Middle,Elementary,0.71,11.2,54.1,0.81,0.89,No,Stable,Laptop,57.0,Hard,73.5,Reading,BSBA,"Game Dev, Robotics",Pass,Moderate,0.55
+1264,22.1,Female,Middle,College,0.75,3.3,69.4,0.8,0.72,No,Limited,Laptop,87.5,Moderate,47.9,Reading,BSED,"Teaching, Research",Pass,Safe,0.71
+1265,20.4,Male,High,High School,0.86,7.2,83.0,0.58,0.79,No,Stable,Smartphone,69.2,Moderate,99.7,Kinesthetic,BSA,"Accounting, Finance",Pass,Moderate,0.69
+1266,18.8,Female,Middle,High School,0.65,15.6,65.3,0.59,0.53,No,Limited,Tablet,61.2,Moderate,88.4,Reading,BSIT,"Game Dev, Robotics",Fail,Moderate,0.34
+1267,19.6,Male,Middle,College,0.56,7.2,50.6,0.41,0.49,Yes,Limited,Desktop,72.9,Easy,97.4,Visual,BSA,"Game Dev, Robotics",Pass,At Risk,0.61
+1268,19.6,Female,Middle,College,0.99,11.8,57.4,0.52,1.0,Yes,Limited,Desktop,81.8,Moderate,75.6,Reading,BSED,"Accounting, Finance",Fail,Moderate,0.62
+1269,18.7,Female,Low,High School,0.83,4.9,64.7,0.77,0.4,Yes,Stable,Smartphone,81.9,Hard,81.5,Auditory,BSBA,"Programming, AI",Fail,Moderate,0.53
+1270,19.5,Female,Middle,High School,0.7,5.2,40.1,0.59,1.0,Yes,Stable,Tablet,68.4,Hard,75.4,Kinesthetic,BSIT,"Programming, AI",Fail,Moderate,0.39
+1271,21.7,Female,Low,College,0.72,4.5,45.1,0.65,0.53,No,Limited,Smartphone,66.8,Moderate,84.3,Reading,BSA,"Accounting, Finance",Fail,At Risk,0.75
+1272,23.6,Male,Middle,Elementary,0.74,17.0,76.6,1.0,0.48,Yes,Stable,Laptop,88.7,Moderate,75.8,Auditory,BSBA,"Game Dev, Robotics",Pass,Safe,0.46
+1273,23.3,Female,Low,High School,0.5,14.6,73.3,0.76,0.52,Yes,Stable,Smartphone,76.3,Moderate,50.9,Reading,BSBA,"Teaching, Research",Fail,Moderate,0.76
+1274,25.0,Male,Low,College,0.88,18.3,74.5,0.87,0.55,No,None,Tablet,72.7,Moderate,87.5,Auditory,BSIT,"Teaching, Research",Fail,Moderate,0.67
+1275,21.7,Male,High,High School,0.89,19.0,87.5,0.77,0.69,Yes,None,Laptop,71.8,Moderate,52.4,Kinesthetic,BSED,"Teaching, Research",Pass,At Risk,0.45
+1276,20.9,Female,Middle,Graduate,0.7,9.1,98.7,0.62,0.3,Yes,Stable,Tablet,67.7,Moderate,44.5,Reading,BSBA,"Programming, AI",Pass,At Risk,0.64
+1277,21.3,Male,Middle,Elementary,0.71,2.6,71.5,0.96,0.68,No,Limited,Desktop,84.4,Moderate,66.1,Auditory,BSED,"Programming, AI",Fail,Moderate,0.77
+1278,19.6,Male,Low,High School,0.76,13.6,99.8,0.64,0.64,Yes,Stable,Laptop,77.4,Moderate,65.2,Auditory,BSIT,"Game Dev, Robotics",Fail,Moderate,0.37
+1279,21.6,Female,Middle,College,0.68,10.8,99.8,0.87,0.7,No,None,Tablet,88.8,Easy,90.3,Visual,BSIT,"Game Dev, Robotics",Pass,At Risk,0.78
+1280,23.4,Female,High,Elementary,0.76,15.5,81.5,0.65,0.72,No,Limited,Laptop,73.3,Easy,60.2,Visual,BSIT,"Programming, AI",Fail,Moderate,0.28
+1281,21.1,Female,Middle,Graduate,0.7,12.1,75.3,0.7,0.81,Yes,Stable,Tablet,59.6,Easy,83.2,Reading,BSA,"Programming, AI",Pass,At Risk,0.63
+1282,19.0,Female,Low,College,0.56,13.8,92.0,0.79,0.54,No,Stable,Laptop,52.7,Hard,90.1,Visual,BSIT,"Teaching, Research",Fail,Moderate,0.74
+1283,18.1,Female,Middle,College,0.67,8.5,78.2,0.47,0.82,No,Stable,Tablet,74.8,Moderate,58.5,Kinesthetic,BSIT,"Teaching, Research",Pass,Safe,0.75
+1284,16.0,Female,Middle,High School,0.64,7.9,66.8,0.64,0.38,No,Stable,Smartphone,66.2,Hard,71.3,Kinesthetic,BSA,"Programming, AI",Pass,Moderate,0.34
+1285,21.6,Female,Middle,High School,0.98,7.9,40.1,0.79,0.78,Yes,Stable,Smartphone,69.2,Moderate,87.6,Visual,BSED,"Game Dev, Robotics",Pass,At Risk,0.71
+1286,18.7,Female,Low,Graduate,0.98,11.4,67.5,0.86,0.56,Yes,Stable,Smartphone,64.6,Moderate,92.0,Auditory,BSIT,"Programming, AI",Pass,Moderate,0.16
+1287,16.2,Female,High,High School,0.85,15.1,84.5,0.76,0.71,No,Limited,Laptop,73.3,Moderate,62.6,Kinesthetic,BSA,"Accounting, Finance",Pass,Safe,0.66
+1288,16.0,Female,Low,College,0.65,2.6,47.0,0.86,0.91,No,Limited,Laptop,75.2,Moderate,90.4,Kinesthetic,BSED,"Teaching, Research",Fail,Moderate,0.84
+1289,23.8,Male,High,High School,0.88,10.5,84.0,0.49,0.64,Yes,Stable,Smartphone,59.5,Moderate,55.8,Visual,BSIT,"Leadership, Marketing",Fail,Safe,0.48
+1290,25.0,Female,High,High School,0.81,17.7,66.8,0.41,0.52,No,Limited,Laptop,50.1,Hard,84.8,Auditory,BSED,"Teaching, Research",Fail,Moderate,0.51
+1291,16.0,Male,High,Graduate,0.97,8.5,67.6,0.87,0.63,No,Limited,Smartphone,84.2,Moderate,52.8,Reading,BSBA,"Accounting, Finance",Fail,At Risk,0.39
+1292,25.0,Male,Middle,College,0.85,16.0,65.4,0.96,1.0,No,Limited,Laptop,50.1,Easy,98.5,Kinesthetic,BSA,"Accounting, Finance",Fail,Moderate,0.37
+1293,19.0,Male,Middle,College,0.62,13.9,68.8,0.57,0.78,No,Limited,Tablet,83.4,Easy,63.4,Kinesthetic,BSBA,"Teaching, Research",Pass,Safe,0.32
+1294,20.1,Male,Middle,Graduate,0.81,14.0,91.2,0.83,0.53,No,Limited,Laptop,74.1,Hard,83.0,Visual,BSED,"Leadership, Marketing",Fail,At Risk,0.38
+1295,18.9,Female,Low,College,1.0,10.8,82.0,0.41,0.34,Yes,Limited,Laptop,95.0,Moderate,64.8,Visual,BSBA,"Programming, AI",Pass,Moderate,0.52
+1296,16.0,Female,Low,High School,0.95,9.3,44.2,1.0,0.67,No,Stable,Smartphone,75.8,Moderate,54.5,Auditory,BSA,"Programming, AI",Fail,Moderate,0.54
+1297,19.2,Male,Low,High School,0.8,12.7,82.2,1.0,0.7,No,Limited,Tablet,86.3,Easy,83.2,Visual,BSED,"Teaching, Research",Pass,Moderate,0.57
+1298,23.3,Female,Middle,High School,0.91,14.5,97.8,0.72,1.0,No,Stable,Smartphone,95.0,Moderate,73.0,Visual,BSIT,"Game Dev, Robotics",Pass,Moderate,0.4
+1299,20.0,Female,Low,College,0.57,2.4,65.7,1.0,0.69,No,Stable,Laptop,67.7,Moderate,51.0,Reading,BSIT,"Teaching, Research",Pass,Moderate,0.44
+1300,18.4,Female,Middle,College,0.52,11.5,78.1,0.53,0.79,No,Limited,Laptop,79.5,Easy,60.4,Reading,BSBA,"Leadership, Marketing",Fail,At Risk,0.48
+1301,22.8,Male,Middle,High School,0.86,4.3,55.4,0.66,0.74,Yes,None,Smartphone,66.2,Moderate,77.4,Reading,BSA,"Teaching, Research",Pass,At Risk,0.48
+1302,24.9,Male,Low,High School,0.98,12.8,86.4,0.85,0.6,No,Limited,Laptop,67.3,Moderate,79.9,Auditory,BSBA,"Accounting, Finance",Pass,At Risk,0.35
+1303,20.8,Male,Low,High School,0.51,14.5,40.1,0.83,0.94,No,Stable,Laptop,73.8,Moderate,94.7,Kinesthetic,BSED,"Game Dev, Robotics",Fail,Safe,0.4
+1304,21.7,Male,Middle,College,0.91,9.2,93.3,0.59,0.62,Yes,Limited,Laptop,82.5,Hard,54.7,Auditory,BSIT,"Game Dev, Robotics",Pass,Safe,0.73
+1305,19.1,Male,Middle,College,0.68,16.3,59.7,0.58,0.79,Yes,Stable,Laptop,86.4,Hard,83.8,Auditory,BSIT,"Game Dev, Robotics",Fail,At Risk,0.58
+1306,23.0,Female,Middle,High School,0.77,11.4,54.7,0.73,0.98,Yes,None,Smartphone,73.8,Moderate,61.5,Reading,BSA,"Accounting, Finance",Pass,Moderate,0.58
+1307,25.0,Female,Low,Graduate,0.87,16.1,40.1,0.84,0.61,Yes,Limited,Laptop,66.6,Easy,65.9,Reading,BSBA,"Accounting, Finance",Pass,Safe,0.48
+1308,19.9,Female,Low,College,0.89,16.7,90.6,0.62,0.76,No,Stable,Laptop,90.2,Hard,72.7,Kinesthetic,BSBA,"Leadership, Marketing",Fail,Safe,0.84
+1309,16.9,Female,Low,College,0.59,9.9,67.7,0.67,0.75,Yes,None,Laptop,76.6,Hard,52.5,Kinesthetic,BSA,"Leadership, Marketing",Pass,At Risk,0.56
+1310,20.4,Female,Low,High School,0.5,13.2,57.3,0.65,0.59,No,Stable,Laptop,77.6,Hard,60.4,Visual,BSIT,"Programming, AI",Pass,At Risk,0.56
+1311,24.8,Female,Low,Elementary,0.52,9.3,65.8,0.55,0.59,No,Limited,Smartphone,95.0,Moderate,66.9,Kinesthetic,BSED,"Programming, AI",Fail,At Risk,0.41
+1312,19.8,Male,Low,Elementary,0.78,15.6,61.9,0.59,0.47,No,Stable,Laptop,71.7,Moderate,85.7,Auditory,BSA,"Accounting, Finance",Fail,Safe,0.3
+1313,16.0,Male,Low,High School,0.52,6.6,58.4,0.52,0.57,No,Stable,Desktop,69.5,Moderate,99.7,Kinesthetic,BSA,"Leadership, Marketing",Fail,Moderate,0.51
+1314,19.7,Male,Middle,College,0.9,11.1,71.4,0.72,0.81,Yes,Stable,Smartphone,56.5,Hard,67.8,Visual,BSED,"Teaching, Research",Fail,Moderate,0.47
+1315,22.6,Female,Middle,High School,0.61,1.0,82.9,0.73,1.0,No,Limited,Laptop,71.3,Moderate,64.4,Kinesthetic,BSED,"Game Dev, Robotics",Pass,Safe,0.65
+1316,20.4,Female,Middle,College,1.0,2.4,79.9,0.82,0.49,No,Stable,Smartphone,83.7,Moderate,80.2,Reading,BSED,"Programming, AI",Fail,At Risk,0.53
+1317,16.0,Male,Middle,High School,0.68,17.4,92.2,0.66,0.54,Yes,Stable,Desktop,62.8,Hard,80.2,Auditory,BSBA,"Teaching, Research",Pass,Moderate,0.3
+1318,21.7,Male,Middle,College,0.75,11.6,99.8,0.74,0.83,Yes,Stable,Laptop,58.5,Hard,99.3,Reading,BSIT,"Programming, AI",Fail,At Risk,0.53
+1319,20.5,Female,Low,College,0.6,20.0,63.7,0.52,0.62,Yes,Stable,Laptop,89.1,Easy,59.1,Auditory,BSBA,"Leadership, Marketing",Pass,Moderate,0.53
+1320,18.3,Male,Low,High School,0.74,20.0,40.1,0.65,0.81,No,Limited,Desktop,72.4,Moderate,62.0,Visual,BSIT,"Leadership, Marketing",Pass,At Risk,0.41
+1321,16.0,Female,High,Elementary,0.8,10.9,66.9,0.66,0.78,Yes,Stable,Laptop,83.4,Moderate,73.3,Auditory,BSED,"Teaching, Research",Pass,Moderate,0.44
+1322,24.3,Male,Low,High School,0.94,14.0,99.8,0.5,0.53,No,None,Smartphone,68.9,Hard,68.8,Auditory,BSA,"Teaching, Research",Pass,Moderate,0.41
+1323,16.2,Female,Low,High School,0.72,3.1,80.1,0.88,0.68,No,Stable,Smartphone,83.4,Easy,77.8,Reading,BSA,"Programming, AI",Pass,At Risk,0.46
+1324,23.2,Male,Middle,High School,0.7,13.5,95.0,0.86,0.68,Yes,Limited,Laptop,76.1,Hard,43.2,Visual,BSED,"Teaching, Research",Fail,Safe,0.37
+1325,19.8,Female,Middle,College,0.78,7.9,93.9,0.66,0.66,Yes,Stable,Tablet,84.6,Moderate,73.1,Visual,BSBA,"Teaching, Research",Fail,Safe,0.48
+1326,22.2,Male,High,College,0.69,1.0,77.1,0.94,0.51,No,Stable,Laptop,82.8,Hard,76.2,Reading,BSA,"Programming, AI",Fail,At Risk,0.81
+1327,19.0,Male,Middle,High School,0.85,6.6,78.2,0.51,0.46,No,Limited,Smartphone,70.5,Moderate,43.2,Visual,BSIT,"Teaching, Research",Pass,Moderate,0.2
+1328,25.0,Male,High,College,0.92,19.0,99.8,0.53,0.51,Yes,Limited,Desktop,66.2,Easy,99.7,Kinesthetic,BSA,"Accounting, Finance",Fail,Moderate,0.55
+1329,22.1,Male,Low,College,0.75,13.2,55.3,0.86,1.0,Yes,Limited,Smartphone,57.0,Moderate,40.0,Reading,BSA,"Accounting, Finance",Fail,At Risk,0.59
+1330,23.4,Female,Middle,College,0.85,11.7,80.2,0.73,0.62,Yes,Stable,Tablet,83.2,Easy,74.8,Visual,BSED,"Teaching, Research",Pass,At Risk,0.64
+1331,18.1,Male,Low,College,0.93,7.1,63.2,0.45,0.68,Yes,Limited,Tablet,82.8,Easy,53.2,Visual,BSA,"Programming, AI",Fail,Moderate,0.41
+1332,17.5,Male,Low,College,0.81,19.9,72.9,0.57,0.82,No,Stable,Laptop,71.7,Moderate,67.1,Kinesthetic,BSBA,"Leadership, Marketing",Pass,Safe,0.7
+1333,16.0,Female,Low,College,0.68,12.6,72.6,0.91,0.83,No,Stable,Laptop,71.1,Moderate,89.2,Kinesthetic,BSA,"Programming, AI",Fail,Moderate,0.5
+1334,16.0,Male,High,College,0.75,8.8,87.2,0.6,0.52,Yes,Limited,Laptop,93.8,Moderate,64.5,Visual,BSA,"Accounting, Finance",Fail,At Risk,0.44
+1335,25.0,Female,Middle,Elementary,0.55,6.1,88.7,0.65,0.44,No,Stable,Smartphone,73.4,Easy,85.1,Auditory,BSA,"Accounting, Finance",Fail,Safe,0.1
+1336,24.5,Female,Middle,High School,0.64,1.0,99.8,0.63,0.3,No,Stable,Laptop,74.1,Easy,63.6,Reading,BSIT,"Game Dev, Robotics",Fail,Moderate,0.36
+1337,24.9,Male,Middle,High School,0.85,11.5,53.2,0.9,0.42,No,Limited,Laptop,78.0,Hard,49.6,Visual,BSA,"Accounting, Finance",Fail,At Risk,0.61
+1338,16.0,Female,Middle,College,0.85,10.0,69.8,0.79,0.4,No,None,Desktop,60.1,Easy,78.1,Reading,BSED,"Programming, AI",Pass,Safe,0.73
+1339,25.0,Female,Middle,College,0.69,10.7,49.4,1.0,0.81,Yes,Limited,Laptop,74.5,Hard,57.8,Kinesthetic,BSBA,"Accounting, Finance",Pass,Safe,0.07
+1340,19.1,Female,High,College,0.84,15.8,97.3,0.69,0.51,Yes,Stable,Smartphone,93.1,Moderate,84.8,Auditory,BSIT,"Accounting, Finance",Fail,Moderate,0.52
+1341,22.2,Male,Middle,College,0.66,15.2,74.3,0.58,0.93,Yes,Stable,Laptop,58.8,Hard,91.9,Reading,BSBA,"Teaching, Research",Pass,Safe,0.24
+1342,22.8,Female,Low,High School,0.88,5.2,46.6,0.7,0.68,No,Limited,Laptop,90.3,Moderate,81.6,Kinesthetic,BSA,"Teaching, Research",Pass,Moderate,0.68
+1343,16.0,Female,Low,Graduate,1.0,8.1,60.3,0.56,0.63,No,Stable,Tablet,93.4,Easy,94.0,Kinesthetic,BSBA,"Accounting, Finance",Fail,At Risk,0.57
+1344,17.2,Female,Middle,Elementary,0.82,1.0,89.7,0.41,0.63,Yes,None,Desktop,74.5,Hard,46.8,Visual,BSBA,"Leadership, Marketing",Fail,Safe,0.42
+1345,21.1,Male,Low,College,0.8,8.4,65.7,0.69,0.59,No,Stable,Laptop,58.4,Moderate,67.1,Kinesthetic,BSBA,"Programming, AI",Fail,Safe,0.25
+1346,21.7,Male,High,College,0.63,4.2,40.1,0.88,0.46,Yes,None,Laptop,61.0,Moderate,50.6,Reading,BSIT,"Leadership, Marketing",Fail,Safe,0.42
+1347,20.0,Male,Middle,High School,0.79,10.0,74.3,0.77,0.89,Yes,Stable,Desktop,64.0,Hard,80.5,Visual,BSBA,"Game Dev, Robotics",Fail,Moderate,0.34
+1348,25.0,Male,Middle,College,0.84,6.0,93.7,0.6,0.56,No,Limited,Smartphone,84.8,Moderate,74.3,Kinesthetic,BSA,"Game Dev, Robotics",Fail,At Risk,0.3
+1349,19.6,Female,Middle,College,0.92,16.9,83.0,0.68,0.53,No,Stable,Smartphone,70.5,Moderate,66.3,Visual,BSA,"Programming, AI",Fail,Moderate,0.52
+1350,16.0,Female,Middle,High School,0.89,19.2,72.3,0.67,0.43,Yes,Limited,Laptop,66.2,Moderate,69.2,Reading,BSED,"Teaching, Research",Fail,Moderate,0.54
+1351,17.9,Male,Low,High School,0.71,20.0,78.4,0.78,0.35,Yes,Limited,Laptop,82.0,Easy,88.3,Visual,BSA,"Accounting, Finance",Fail,Moderate,0.32
+1352,18.5,Female,Low,College,0.7,11.3,99.8,0.9,0.66,No,Stable,Laptop,73.3,Easy,90.5,Visual,BSBA,"Programming, AI",Fail,Moderate,0.51
+1353,21.9,Female,Middle,College,0.63,1.0,69.6,0.99,0.44,No,Limited,Laptop,95.0,Easy,95.8,Kinesthetic,BSIT,"Programming, AI",Fail,Moderate,0.31
+1354,17.1,Female,Middle,College,0.87,7.2,77.7,0.56,0.74,No,None,Laptop,95.0,Moderate,61.3,Kinesthetic,BSBA,"Programming, AI",Fail,Moderate,0.84
+1355,21.6,Male,Middle,College,0.93,11.1,88.5,0.7,0.49,No,Limited,Smartphone,60.7,Moderate,73.1,Visual,BSA,"Accounting, Finance",Fail,Moderate,0.57
+1356,16.0,Male,Middle,Graduate,0.5,4.3,78.1,0.84,0.5,No,Limited,Tablet,81.0,Hard,60.5,Kinesthetic,BSIT,"Accounting, Finance",Fail,Moderate,0.59
+1357,19.8,Male,Low,High School,0.66,8.0,71.8,0.68,0.58,No,Stable,Laptop,78.6,Hard,48.5,Kinesthetic,BSA,"Leadership, Marketing",Fail,Moderate,0.67
+1358,22.9,Female,Low,High School,0.72,4.1,75.1,0.69,0.53,No,Stable,Laptop,73.4,Moderate,44.5,Visual,BSED,"Accounting, Finance",Pass,At Risk,0.71
+1359,18.4,Female,Low,High School,0.62,1.4,99.8,0.44,0.62,No,Limited,Tablet,68.0,Hard,78.3,Auditory,BSBA,"Leadership, Marketing",Fail,Moderate,0.59
+1360,17.2,Female,Middle,High School,0.77,1.5,74.1,0.69,0.77,No,Limited,Laptop,68.9,Moderate,80.4,Kinesthetic,BSIT,"Accounting, Finance",Pass,Moderate,0.41
+1361,16.5,Male,Middle,College,0.67,13.4,99.8,0.78,0.61,No,None,Tablet,71.3,Hard,78.3,Reading,BSA,"Teaching, Research",Fail,Safe,0.45
+1362,19.1,Female,Middle,High School,0.84,14.0,98.0,0.82,0.71,No,Stable,Smartphone,70.4,Moderate,86.9,Auditory,BSIT,"Accounting, Finance",Pass,Moderate,0.35
+1363,21.1,Male,Middle,High School,0.69,4.7,84.3,0.71,0.72,No,Stable,Laptop,67.4,Moderate,69.6,Visual,BSBA,"Game Dev, Robotics",Fail,Moderate,0.34
+1364,19.9,Female,High,High School,0.66,1.0,93.8,0.8,0.69,No,Stable,Desktop,68.3,Moderate,66.2,Kinesthetic,BSIT,"Game Dev, Robotics",Fail,Safe,0.43
+1365,18.9,Male,Middle,College,0.8,20.0,91.8,0.62,0.63,Yes,Limited,Smartphone,75.0,Easy,74.8,Auditory,BSBA,"Accounting, Finance",Fail,Moderate,0.67
+1366,16.0,Male,Middle,College,0.78,5.2,81.5,0.63,0.95,Yes,Stable,Laptop,50.1,Hard,55.6,Auditory,BSBA,"Accounting, Finance",Pass,At Risk,0.35
+1367,21.3,Female,Middle,College,0.92,1.2,76.9,0.88,0.82,No,Stable,Laptop,67.6,Moderate,59.9,Kinesthetic,BSIT,"Game Dev, Robotics",Pass,Moderate,0.63
+1368,21.1,Male,Low,High School,1.0,1.0,41.6,0.45,0.72,No,None,Laptop,84.1,Hard,99.7,Visual,BSA,"Game Dev, Robotics",Fail,Moderate,0.55
+1369,23.1,Male,High,High School,0.84,9.6,66.8,0.88,0.8,Yes,Limited,Tablet,84.1,Moderate,71.4,Reading,BSA,"Leadership, Marketing",Pass,Safe,0.58
+1370,20.5,Male,High,Elementary,0.85,10.0,92.5,0.49,0.57,No,Stable,Laptop,89.0,Moderate,57.7,Reading,BSIT,"Leadership, Marketing",Fail,Moderate,0.65
+1371,24.7,Female,High,College,0.99,17.8,91.6,0.6,0.5,Yes,Stable,Smartphone,63.9,Moderate,89.5,Kinesthetic,BSIT,"Teaching, Research",Pass,At Risk,0.63
+1372,22.2,Male,Low,High School,0.79,12.7,62.8,0.7,0.72,Yes,Stable,Laptop,74.2,Hard,81.2,Kinesthetic,BSA,"Accounting, Finance",Pass,Safe,0.56
+1373,17.2,Female,Middle,College,0.5,7.9,60.4,0.63,0.52,Yes,Stable,Laptop,93.6,Easy,71.0,Auditory,BSBA,"Game Dev, Robotics",Pass,Moderate,0.62
+1374,20.5,Male,Middle,College,0.74,15.4,64.5,0.71,0.77,No,Stable,Laptop,75.0,Moderate,71.1,Reading,BSBA,"Teaching, Research",Fail,Moderate,0.26
+1375,20.2,Male,Middle,High School,0.81,12.7,40.1,0.8,0.42,Yes,Limited,Smartphone,70.7,Hard,89.4,Reading,BSED,"Game Dev, Robotics",Fail,At Risk,0.42
+1376,20.4,Male,Middle,High School,0.5,9.2,75.3,0.78,0.56,Yes,Limited,Desktop,75.5,Hard,70.7,Kinesthetic,BSA,"Programming, AI",Fail,Moderate,0.63
+1377,23.7,Female,Low,High School,0.78,4.4,97.6,0.81,0.77,Yes,Limited,Laptop,62.1,Moderate,69.8,Auditory,BSED,"Game Dev, Robotics",Fail,Safe,0.67
+1378,22.7,Male,Middle,High School,0.86,1.0,79.5,0.53,0.74,No,Limited,Smartphone,59.6,Easy,52.5,Visual,BSIT,"Game Dev, Robotics",Fail,Safe,0.48
+1379,25.0,Male,High,Elementary,0.72,15.8,54.2,0.59,0.31,Yes,None,Laptop,80.4,Hard,71.1,Kinesthetic,BSA,"Teaching, Research",Fail,Moderate,0.29
+1380,17.8,Male,Low,College,0.79,5.6,40.1,0.65,0.72,Yes,Stable,Laptop,70.8,Moderate,70.7,Visual,BSED,"Game Dev, Robotics",Fail,Safe,0.66
+1381,19.9,Female,Low,College,0.93,15.1,64.0,0.51,0.32,No,Stable,Laptop,95.0,Easy,79.9,Visual,BSED,"Accounting, Finance",Fail,Moderate,0.56
+1382,20.5,Female,Middle,College,0.71,7.0,81.4,0.62,0.58,Yes,Limited,Laptop,80.5,Moderate,62.5,Reading,BSED,"Programming, AI",Pass,Moderate,0.42
+1383,20.7,Male,Middle,College,0.69,11.6,69.6,0.75,0.79,No,Stable,Laptop,62.8,Moderate,99.7,Auditory,BSED,"Accounting, Finance",Pass,Moderate,0.62
+1384,16.9,Female,Middle,College,0.67,20.0,78.2,0.65,0.54,No,Limited,Laptop,50.2,Moderate,72.1,Reading,BSBA,"Leadership, Marketing",Pass,At Risk,0.49
+1385,19.8,Male,Middle,College,0.78,1.0,92.3,0.66,0.35,Yes,Stable,Tablet,85.0,Moderate,82.8,Kinesthetic,BSA,"Game Dev, Robotics",Pass,Safe,0.37
+1386,22.2,Male,Low,Elementary,0.8,20.0,79.0,0.8,0.64,Yes,Stable,Desktop,71.6,Hard,46.5,Kinesthetic,BSIT,"Teaching, Research",Fail,Safe,0.5
+1387,20.0,Male,Low,High School,0.69,7.6,55.5,0.48,0.93,Yes,Limited,Laptop,71.5,Easy,90.8,Reading,BSED,"Teaching, Research",Pass,Moderate,0.5
+1388,22.1,Female,Middle,Elementary,0.5,13.9,40.7,0.47,0.47,No,Stable,Laptop,71.5,Moderate,82.8,Kinesthetic,BSIT,"Leadership, Marketing",Pass,Safe,0.37
+1389,20.9,Male,Low,College,0.94,19.3,61.9,0.73,0.52,Yes,Limited,Desktop,52.4,Easy,79.2,Visual,BSED,"Accounting, Finance",Fail,Safe,0.27
+1390,21.8,Female,Middle,College,0.62,14.0,82.8,0.84,0.44,No,Limited,Laptop,76.7,Moderate,67.7,Auditory,BSED,"Teaching, Research",Fail,Safe,0.56
+1391,23.2,Female,High,College,0.7,5.5,96.4,0.64,0.59,Yes,Limited,Smartphone,73.3,Hard,78.4,Reading,BSBA,"Game Dev, Robotics",Pass,Safe,0.53
+1392,20.9,Male,Middle,High School,0.54,10.4,41.2,0.8,0.73,Yes,Limited,Laptop,57.3,Easy,74.4,Kinesthetic,BSIT,"Accounting, Finance",Pass,Safe,0.64
+1393,18.0,Male,Low,College,0.65,16.7,77.1,0.5,0.38,Yes,Stable,Smartphone,75.9,Moderate,75.0,Reading,BSIT,"Programming, AI",Pass,Safe,0.54
+1394,18.4,Male,Low,College,0.96,13.8,40.1,0.89,0.39,Yes,Stable,Laptop,64.5,Easy,99.7,Kinesthetic,BSED,"Programming, AI",Fail,At Risk,0.41
+1395,20.8,Male,Middle,High School,0.82,11.1,47.8,0.61,0.64,Yes,Stable,Laptop,90.8,Moderate,81.4,Visual,BSBA,"Teaching, Research",Pass,Safe,0.29
+1396,16.8,Male,Middle,High School,0.9,3.9,59.8,0.62,0.69,Yes,Stable,Laptop,80.3,Easy,99.7,Auditory,BSA,"Game Dev, Robotics",Pass,Moderate,0.39
+1397,16.0,Female,High,Elementary,0.7,12.9,99.8,0.79,0.54,No,Limited,Laptop,65.3,Moderate,99.7,Reading,BSIT,"Leadership, Marketing",Fail,Moderate,0.31
+1398,17.7,Female,Middle,High School,0.7,10.6,46.1,0.88,0.46,Yes,Limited,Smartphone,56.6,Moderate,66.1,Kinesthetic,BSBA,"Game Dev, Robotics",Fail,Moderate,0.72
+1399,22.3,Male,Low,High School,0.71,3.5,94.7,0.67,0.94,Yes,Limited,Desktop,62.7,Hard,89.2,Auditory,BSIT,"Accounting, Finance",Fail,Moderate,0.5
+1400,25.0,Female,Middle,College,0.82,1.3,49.5,0.57,0.67,No,Limited,Laptop,87.4,Moderate,90.0,Reading,BSED,"Teaching, Research",Fail,Moderate,0.45
+1401,19.1,Male,Low,High School,0.76,15.3,84.4,0.67,0.67,No,Limited,Smartphone,68.4,Hard,74.0,Visual,BSIT,"Game Dev, Robotics",Pass,Moderate,0.49
+1402,21.6,Female,Middle,College,0.65,14.5,82.7,0.69,0.57,No,Limited,Laptop,76.7,Moderate,68.3,Reading,BSED,"Accounting, Finance",Pass,Moderate,0.48
+1403,18.4,Female,Middle,High School,0.62,20.0,61.1,0.64,0.53,Yes,Stable,Smartphone,81.1,Moderate,40.0,Kinesthetic,BSED,"Game Dev, Robotics",Fail,At Risk,0.47
+1404,23.4,Male,Low,Elementary,0.69,15.0,99.8,0.63,0.9,No,Limited,Laptop,56.9,Moderate,76.7,Auditory,BSED,"Teaching, Research",Fail,Safe,0.63
+1405,18.2,Male,Middle,College,0.68,16.8,94.0,0.78,0.74,No,Stable,Laptop,58.6,Moderate,55.1,Reading,BSA,"Leadership, Marketing",Fail,At Risk,0.4
+1406,19.1,Female,Middle,Elementary,0.63,15.0,60.7,0.73,0.73,No,Limited,Tablet,93.1,Moderate,75.5,Kinesthetic,BSED,"Leadership, Marketing",Pass,Safe,0.63
+1407,24.0,Female,Middle,High School,0.55,13.1,59.5,0.74,0.84,No,Limited,Smartphone,79.5,Moderate,64.7,Auditory,BSED,"Accounting, Finance",Pass,Moderate,0.39
+1408,16.0,Male,Middle,High School,0.71,7.7,97.8,0.97,0.49,Yes,Stable,Desktop,62.3,Moderate,75.1,Reading,BSBA,"Programming, AI",Fail,Moderate,0.59
+1409,18.7,Female,Middle,High School,1.0,2.4,80.0,0.63,0.66,No,Stable,Laptop,83.6,Moderate,73.7,Visual,BSA,"Game Dev, Robotics",Fail,At Risk,0.54
+1410,21.4,Male,Middle,College,0.78,15.0,51.6,0.44,0.42,Yes,Stable,Smartphone,90.4,Moderate,71.7,Reading,BSBA,"Game Dev, Robotics",Fail,Moderate,0.64
+1411,18.2,Female,Low,Elementary,0.8,5.0,83.5,0.55,0.79,Yes,Limited,Laptop,77.6,Moderate,79.3,Auditory,BSED,"Game Dev, Robotics",Fail,Moderate,0.61
+1412,20.7,Male,Middle,High School,0.82,12.4,80.9,0.48,0.57,No,Stable,Laptop,67.1,Easy,88.3,Visual,BSIT,"Accounting, Finance",Fail,At Risk,0.32
+1413,24.2,Female,Low,College,0.93,8.6,60.3,0.72,0.3,Yes,Stable,Laptop,55.8,Moderate,80.6,Visual,BSIT,"Accounting, Finance",Fail,Safe,0.57
+1414,16.2,Male,High,College,0.75,11.3,63.9,1.0,0.48,Yes,Stable,Tablet,81.7,Moderate,71.0,Kinesthetic,BSIT,"Programming, AI",Pass,At Risk,0.36
+1415,23.8,Male,Low,High School,0.71,13.1,76.7,0.76,0.76,Yes,Limited,Laptop,50.1,Moderate,96.5,Kinesthetic,BSIT,"Game Dev, Robotics",Fail,At Risk,0.51
+1416,21.0,Female,Low,College,0.9,15.1,99.8,0.95,0.34,Yes,Stable,Smartphone,77.0,Easy,78.5,Visual,BSIT,"Leadership, Marketing",Fail,At Risk,0.56
+1417,21.0,Male,Middle,High School,0.92,15.0,61.4,0.55,0.74,No,Stable,Laptop,79.9,Moderate,82.6,Kinesthetic,BSIT,"Accounting, Finance",Pass,Moderate,0.52
+1418,18.9,Male,Low,High School,0.75,14.7,43.4,0.9,0.65,No,Stable,Laptop,50.1,Easy,97.0,Reading,BSA,"Leadership, Marketing",Pass,Moderate,0.6
+1419,16.0,Female,Middle,High School,0.88,15.4,54.8,1.0,1.0,No,None,Laptop,66.4,Moderate,63.7,Visual,BSA,"Teaching, Research",Pass,At Risk,0.37
+1420,22.2,Female,Middle,High School,0.64,11.2,87.0,0.59,0.48,No,Stable,Tablet,57.4,Moderate,60.6,Auditory,BSA,"Leadership, Marketing",Fail,Moderate,0.51
+1421,25.0,Male,Middle,College,0.86,17.1,82.5,0.67,0.38,No,Limited,Laptop,57.5,Moderate,72.7,Auditory,BSBA,"Programming, AI",Pass,Safe,0.58
+1422,16.0,Female,Low,College,0.58,2.0,71.7,0.77,0.52,No,None,Smartphone,66.9,Moderate,57.1,Visual,BSED,"Teaching, Research",Pass,Safe,0.4
+1423,16.0,Female,Middle,College,0.87,6.5,81.6,0.71,0.56,No,Limited,Smartphone,50.4,Moderate,71.2,Kinesthetic,BSBA,"Accounting, Finance",Pass,Moderate,0.56
+1424,21.5,Male,Middle,High School,0.69,6.9,40.1,0.74,0.75,No,Limited,Laptop,55.5,Moderate,99.7,Auditory,BSED,"Teaching, Research",Pass,Moderate,0.74
+1425,19.2,Female,Low,College,0.76,6.7,55.0,0.65,1.0,No,Stable,Laptop,91.7,Moderate,77.8,Kinesthetic,BSED,"Accounting, Finance",Pass,At Risk,0.63
+1426,21.5,Female,Low,Graduate,0.58,9.7,52.0,0.61,0.54,Yes,None,Desktop,69.8,Moderate,86.5,Auditory,BSIT,"Teaching, Research",Pass,Safe,0.53
+1427,17.4,Female,Low,Elementary,0.65,16.9,48.2,0.9,0.44,Yes,Stable,Laptop,64.8,Moderate,57.1,Reading,BSA,"Programming, AI",Pass,At Risk,0.54
+1428,21.2,Female,Middle,Graduate,0.74,13.7,58.1,0.81,0.72,Yes,Stable,Laptop,73.3,Moderate,82.4,Auditory,BSBA,"Game Dev, Robotics",Pass,Safe,0.35
+1429,25.0,Female,Low,College,0.7,8.1,40.1,0.8,0.79,Yes,Limited,Laptop,70.1,Easy,65.6,Kinesthetic,BSIT,"Leadership, Marketing",Fail,Moderate,0.54
+1430,23.0,Female,Middle,College,0.67,15.4,55.9,0.77,0.3,No,Stable,Smartphone,50.1,Moderate,60.6,Reading,BSA,"Programming, AI",Pass,Safe,0.55
+1431,25.0,Male,Low,College,0.73,6.5,68.4,0.78,0.8,Yes,Stable,Smartphone,73.4,Moderate,75.2,Visual,BSED,"Teaching, Research",Fail,At Risk,0.54
+1432,16.0,Male,High,College,0.75,1.0,58.4,0.99,0.53,Yes,Limited,Smartphone,67.0,Moderate,87.1,Visual,BSED,"Accounting, Finance",Pass,Moderate,0.6
+1433,16.5,Male,Middle,Graduate,0.9,19.6,71.6,0.78,0.89,Yes,Limited,Laptop,80.3,Moderate,98.3,Visual,BSBA,"Programming, AI",Fail,Moderate,0.54
+1434,21.3,Male,High,High School,0.78,17.5,76.9,0.74,0.62,No,Limited,Laptop,74.5,Moderate,55.1,Auditory,BSBA,"Leadership, Marketing",Pass,Safe,0.48
+1435,19.8,Male,Low,Elementary,0.81,11.7,80.0,0.91,0.38,No,Limited,Smartphone,90.5,Moderate,65.4,Auditory,BSED,"Teaching, Research",Fail,Moderate,0.6
+1436,23.9,Female,Middle,High School,0.74,12.8,83.8,0.53,0.55,Yes,Stable,Laptop,90.2,Moderate,87.7,Visual,BSED,"Programming, AI",Pass,Moderate,0.59
+1437,16.4,Male,Low,Elementary,0.78,4.5,75.7,0.87,0.64,Yes,Stable,Smartphone,70.1,Easy,65.8,Auditory,BSA,"Programming, AI",Fail,Moderate,0.51
+1438,21.2,Female,High,College,0.68,1.0,72.3,0.72,0.95,Yes,Limited,Smartphone,89.6,Moderate,43.3,Kinesthetic,BSA,"Teaching, Research",Pass,Safe,0.81
+1439,17.9,Female,Middle,Graduate,0.87,9.9,94.2,0.58,0.84,Yes,Stable,Tablet,58.3,Easy,71.5,Kinesthetic,BSIT,"Accounting, Finance",Fail,At Risk,0.15
+1440,16.0,Male,Middle,High School,0.57,13.9,63.2,0.58,0.66,Yes,Stable,Laptop,83.0,Moderate,69.2,Reading,BSED,"Game Dev, Robotics",Fail,Safe,0.53
+1441,23.8,Male,High,College,0.5,14.3,61.5,0.63,0.81,Yes,Limited,Tablet,91.7,Hard,91.7,Reading,BSA,"Game Dev, Robotics",Fail,At Risk,0.57
+1442,18.4,Female,Middle,High School,0.78,12.0,83.0,0.79,0.74,Yes,None,Smartphone,58.0,Moderate,85.3,Kinesthetic,BSA,"Programming, AI",Pass,Safe,0.66
+1443,24.4,Female,Middle,High School,0.86,12.5,88.7,0.42,0.58,Yes,Stable,Tablet,93.0,Moderate,89.0,Kinesthetic,BSBA,"Programming, AI",Fail,Safe,0.31
+1444,21.2,Female,Low,High School,0.8,17.9,76.4,0.65,0.9,Yes,None,Laptop,57.5,Moderate,66.9,Auditory,BSBA,"Programming, AI",Fail,Safe,0.57
+1445,21.6,Female,Middle,Elementary,0.71,9.8,55.8,0.84,0.6,No,Limited,Tablet,77.2,Hard,67.6,Visual,BSED,"Game Dev, Robotics",Fail,At Risk,0.39
+1446,17.3,Male,High,College,0.73,15.9,57.9,0.81,0.54,Yes,Stable,Laptop,89.8,Easy,88.6,Auditory,BSA,"Programming, AI",Fail,At Risk,0.43
+1447,21.0,Female,High,College,0.7,11.8,84.1,0.56,1.0,Yes,Stable,Laptop,71.1,Hard,90.9,Auditory,BSA,"Teaching, Research",Fail,Safe,0.84
+1448,21.9,Female,Low,High School,0.72,9.8,62.4,0.55,0.63,No,Limited,Laptop,74.3,Easy,99.7,Kinesthetic,BSIT,"Accounting, Finance",Fail,Moderate,0.69
+1449,17.9,Male,Low,College,0.8,8.7,92.4,0.68,0.67,No,Limited,Tablet,87.0,Moderate,76.6,Reading,BSIT,"Game Dev, Robotics",Pass,Moderate,0.53
+1450,24.3,Female,Middle,College,0.76,16.1,99.3,0.76,0.34,Yes,Limited,Laptop,69.7,Moderate,96.8,Reading,BSA,"Teaching, Research",Pass,Moderate,0.52
+1451,20.8,Female,Middle,College,0.65,12.9,84.8,0.54,0.49,No,None,Smartphone,78.0,Moderate,85.3,Kinesthetic,BSBA,"Leadership, Marketing",Fail,Safe,0.18
+1452,22.9,Male,Low,College,0.73,2.9,90.3,0.74,0.84,No,Stable,Desktop,76.4,Easy,72.4,Visual,BSA,"Game Dev, Robotics",Fail,At Risk,0.47
+1453,16.0,Female,High,Graduate,0.59,3.3,57.6,0.53,0.43,No,Stable,Desktop,61.5,Moderate,67.4,Auditory,BSED,"Leadership, Marketing",Pass,Safe,0.68
+1454,17.5,Male,Low,High School,0.85,8.9,44.3,0.57,0.65,Yes,Stable,Smartphone,85.1,Moderate,90.5,Kinesthetic,BSED,"Game Dev, Robotics",Pass,Moderate,0.36
+1455,18.1,Male,Low,Elementary,1.0,17.7,99.8,0.62,0.53,Yes,Stable,Tablet,59.5,Moderate,62.7,Visual,BSIT,"Leadership, Marketing",Pass,At Risk,0.27
+1456,20.2,Male,High,College,0.75,6.7,48.2,0.63,0.72,Yes,Limited,Laptop,50.1,Moderate,99.7,Reading,BSED,"Programming, AI",Fail,Safe,0.6
+1457,21.8,Female,Middle,High School,1.0,15.8,76.7,0.85,0.53,No,Limited,Tablet,87.4,Hard,53.9,Visual,BSIT,"Programming, AI",Pass,Moderate,0.49
+1458,22.4,Female,Middle,High School,0.52,3.7,56.0,1.0,0.81,Yes,Stable,Tablet,86.4,Moderate,68.9,Kinesthetic,BSBA,"Game Dev, Robotics",Pass,Moderate,0.64
+1459,17.1,Female,High,College,0.78,3.2,69.8,0.65,0.52,No,Stable,Laptop,50.1,Moderate,73.1,Reading,BSBA,"Leadership, Marketing",Pass,Moderate,0.41
+1460,20.7,Male,Low,College,0.64,10.8,64.5,0.65,0.76,No,None,Tablet,86.6,Moderate,93.8,Auditory,BSED,"Programming, AI",Fail,Safe,0.66
+1461,24.1,Female,Low,Graduate,0.77,16.6,59.3,0.49,0.87,No,Stable,Tablet,77.6,Hard,58.5,Visual,BSA,"Programming, AI",Pass,Safe,0.34
+1462,25.0,Male,Low,High School,0.87,16.7,49.4,0.83,0.62,No,Stable,Desktop,54.9,Moderate,80.8,Kinesthetic,BSA,"Leadership, Marketing",Pass,Safe,0.45
+1463,22.8,Male,Low,College,0.81,6.6,45.4,0.55,0.53,No,None,Tablet,89.2,Moderate,78.4,Auditory,BSBA,"Game Dev, Robotics",Fail,Moderate,0.84
+1464,24.1,Female,Low,Elementary,0.68,20.0,68.2,0.71,0.71,No,Stable,Laptop,69.1,Easy,57.4,Visual,BSA,"Accounting, Finance",Pass,Moderate,0.56
+1465,16.0,Female,Low,College,0.67,6.4,79.8,0.68,0.42,No,Stable,Laptop,59.7,Hard,64.7,Auditory,BSBA,"Teaching, Research",Pass,At Risk,0.39
+1466,17.6,Female,Middle,Elementary,0.67,5.7,74.3,1.0,0.64,Yes,Stable,Laptop,69.3,Moderate,74.1,Reading,BSED,"Leadership, Marketing",Fail,At Risk,0.59
+1467,24.4,Female,High,College,0.96,9.1,64.3,0.91,0.68,Yes,Limited,Laptop,50.1,Moderate,99.4,Kinesthetic,BSED,"Leadership, Marketing",Pass,Moderate,0.52
+1468,25.0,Female,High,College,0.69,11.7,75.9,0.69,1.0,No,Limited,Laptop,68.3,Moderate,52.3,Kinesthetic,BSIT,"Game Dev, Robotics",Pass,At Risk,0.53
+1469,23.0,Female,Middle,College,0.67,10.3,72.5,0.64,0.96,Yes,Limited,Laptop,61.6,Moderate,83.5,Reading,BSA,"Programming, AI",Fail,Moderate,0.37
+1470,18.9,Female,Middle,College,0.78,17.2,53.7,0.65,0.61,No,Limited,Laptop,84.3,Moderate,99.7,Kinesthetic,BSA,"Game Dev, Robotics",Fail,Safe,0.59
+1471,23.5,Male,Low,High School,0.76,3.2,76.7,0.79,0.62,Yes,Limited,Tablet,68.5,Moderate,52.9,Kinesthetic,BSBA,"Leadership, Marketing",Pass,Safe,0.12
+1472,23.5,Female,Middle,College,0.91,15.4,96.7,0.56,0.63,No,Limited,Tablet,90.2,Moderate,42.6,Visual,BSBA,"Leadership, Marketing",Pass,Moderate,0.41
+1473,20.1,Female,Low,College,0.83,14.1,51.5,0.83,0.51,Yes,Stable,Smartphone,95.0,Easy,86.3,Kinesthetic,BSIT,"Game Dev, Robotics",Pass,Safe,0.27
+1474,25.0,Female,High,Elementary,0.64,12.6,68.1,0.68,0.51,No,Limited,Laptop,70.5,Moderate,97.7,Visual,BSED,"Programming, AI",Fail,Safe,0.59
+1475,24.8,Male,Low,College,0.63,13.6,74.6,0.77,0.64,Yes,Limited,Smartphone,63.9,Hard,86.1,Auditory,BSA,"Accounting, Finance",Pass,At Risk,0.34
+1476,21.6,Male,Middle,College,0.93,17.4,63.8,0.53,0.6,No,Limited,Laptop,71.4,Easy,73.4,Reading,BSED,"Teaching, Research",Pass,Moderate,0.41
+1477,25.0,Male,Middle,High School,0.67,10.6,82.0,0.57,0.65,No,Stable,Desktop,71.4,Hard,69.7,Reading,BSED,"Game Dev, Robotics",Fail,At Risk,0.23
+1478,19.4,Female,Low,College,0.76,14.7,96.6,0.92,0.3,Yes,Stable,Laptop,61.1,Hard,63.6,Visual,BSA,"Leadership, Marketing",Pass,Safe,0.58
+1479,21.4,Male,Middle,Graduate,0.85,14.2,56.3,0.84,0.67,Yes,Limited,Tablet,93.0,Moderate,40.0,Reading,BSA,"Accounting, Finance",Fail,Moderate,0.62
+1480,17.0,Male,Middle,High School,0.59,15.6,60.2,0.81,0.78,No,Stable,Laptop,92.4,Moderate,90.0,Kinesthetic,BSED,"Teaching, Research",Fail,Safe,0.5
+1481,23.4,Female,High,High School,0.67,14.7,86.8,0.75,0.64,Yes,Stable,Laptop,64.9,Moderate,44.3,Visual,BSBA,"Leadership, Marketing",Fail,Moderate,0.48
+1482,20.3,Male,Low,High School,0.67,11.5,61.6,0.9,0.81,No,Limited,Smartphone,58.7,Moderate,82.7,Kinesthetic,BSA,"Leadership, Marketing",Fail,Moderate,0.43
+1483,20.6,Male,Middle,Elementary,0.86,10.0,75.0,0.56,0.85,Yes,Stable,Laptop,72.2,Easy,69.4,Reading,BSED,"Leadership, Marketing",Fail,Moderate,0.73
+1484,19.9,Female,Low,High School,0.75,15.4,57.1,0.95,0.45,Yes,Stable,Laptop,50.1,Moderate,86.5,Auditory,BSED,"Teaching, Research",Pass,Safe,0.61
+1485,20.8,Female,High,College,0.87,11.0,74.5,0.83,0.75,No,Limited,Laptop,72.3,Moderate,98.9,Reading,BSA,"Teaching, Research",Fail,Safe,0.66
+1486,19.9,Male,Low,College,0.98,10.0,87.9,0.96,0.64,No,Limited,Smartphone,95.0,Moderate,99.7,Kinesthetic,BSIT,"Accounting, Finance",Pass,Safe,0.8
+1487,16.7,Male,Middle,High School,0.86,3.6,58.5,1.0,0.62,No,Stable,Laptop,76.8,Moderate,77.0,Reading,BSED,"Leadership, Marketing",Pass,Moderate,0.72
+1488,25.0,Male,Middle,High School,0.51,1.6,64.2,0.62,0.48,Yes,Stable,Smartphone,64.5,Moderate,68.4,Auditory,BSA,"Teaching, Research",Pass,Moderate,0.66
+1489,25.0,Male,Middle,High School,0.86,9.6,82.8,0.79,0.51,Yes,Limited,Laptop,65.9,Hard,85.9,Kinesthetic,BSIT,"Game Dev, Robotics",Pass,Safe,0.71
+1490,20.0,Female,Low,High School,0.93,1.0,68.5,0.55,0.74,Yes,Limited,Smartphone,73.6,Moderate,92.1,Auditory,BSBA,"Game Dev, Robotics",Pass,Moderate,0.52
+1491,24.7,Female,Low,College,0.97,14.9,78.0,0.74,0.41,Yes,Stable,Smartphone,62.0,Easy,56.4,Auditory,BSBA,"Leadership, Marketing",Fail,Safe,0.64
+1492,23.6,Male,Middle,College,0.91,11.9,79.9,0.71,0.69,Yes,Stable,Laptop,51.2,Moderate,91.5,Visual,BSA,"Teaching, Research",Pass,Safe,0.64
+1493,18.9,Male,Low,High School,0.66,8.2,53.3,0.74,0.41,No,Limited,Laptop,54.7,Moderate,49.5,Reading,BSIT,"Teaching, Research",Fail,Moderate,0.64
+1494,17.7,Male,High,College,0.5,8.8,64.7,0.52,0.64,Yes,Stable,Smartphone,89.4,Moderate,79.3,Reading,BSIT,"Programming, AI",Pass,Safe,0.84
+1495,22.0,Female,Middle,High School,0.67,18.0,91.7,0.66,0.56,No,Limited,Laptop,93.7,Moderate,99.7,Kinesthetic,BSBA,"Programming, AI",Fail,Moderate,0.84
+1496,21.0,Male,Low,High School,0.89,10.9,98.4,0.8,0.3,No,Stable,Smartphone,69.8,Moderate,64.1,Reading,BSA,"Programming, AI",Fail,Moderate,0.67
+1497,25.0,Male,Middle,High School,0.69,20.0,99.8,0.88,0.76,Yes,Stable,Smartphone,57.1,Moderate,68.8,Visual,BSED,"Leadership, Marketing",Fail,Moderate,0.7
+1498,22.9,Male,Middle,College,0.75,12.7,61.1,0.72,0.72,Yes,Limited,Smartphone,80.4,Hard,67.1,Visual,BSED,"Teaching, Research",Fail,At Risk,0.65
+1499,17.7,Female,High,College,0.81,11.5,87.0,0.7,0.87,No,Limited,Laptop,84.9,Moderate,81.6,Visual,BSBA,"Teaching, Research",Pass,At Risk,0.55
+1500,20.9,Female,Low,Graduate,0.57,12.2,89.0,0.63,0.74,Yes,Stable,Laptop,73.2,Hard,90.0,Kinesthetic,BSIT,"Programming, AI",Fail,Safe,0.53
+1501,19.1,Female,Middle,High School,0.83,19.3,77.0,0.74,0.71,No,Limited,Desktop,50.1,Hard,88.4,Kinesthetic,BSA,"Accounting, Finance",Pass,Moderate,0.62
+1502,19.4,Female,Low,College,0.61,9.7,63.6,0.65,0.87,Yes,Stable,Laptop,82.1,Moderate,64.9,Kinesthetic,BSIT,"Programming, AI",Pass,Safe,0.72
+1503,23.6,Male,Middle,Elementary,0.88,5.5,84.7,0.9,0.56,No,Stable,Laptop,59.7,Hard,40.0,Reading,BSBA,"Leadership, Marketing",Pass,Safe,0.45
+1504,18.2,Female,Low,College,0.79,2.7,50.6,0.96,0.86,Yes,Limited,Laptop,65.2,Moderate,63.6,Kinesthetic,BSA,"Accounting, Finance",Pass,Safe,0.64
+1505,22.5,Female,Low,Elementary,0.83,20.0,67.4,0.65,0.75,No,Stable,Laptop,86.2,Easy,90.2,Kinesthetic,BSED,"Game Dev, Robotics",Pass,Moderate,0.68
+1506,24.8,Male,Middle,Elementary,0.76,5.0,59.2,0.62,0.39,Yes,Limited,Laptop,75.9,Hard,99.7,Reading,BSBA,"Game Dev, Robotics",Fail,Moderate,0.34
+1507,19.7,Female,High,High School,0.78,12.7,60.9,0.58,0.73,No,Stable,Laptop,59.3,Moderate,69.6,Kinesthetic,BSED,"Game Dev, Robotics",Fail,Safe,0.48
+1508,20.4,Female,Low,High School,0.79,5.8,99.8,0.42,0.88,No,Limited,Laptop,75.6,Hard,98.1,Kinesthetic,BSIT,"Programming, AI",Fail,Moderate,0.41
+1509,21.0,Female,Low,College,0.74,4.9,71.5,0.73,0.65,Yes,Limited,Tablet,73.1,Moderate,84.1,Reading,BSED,"Accounting, Finance",Pass,Safe,0.58
+1510,16.3,Female,Low,College,0.83,12.8,71.7,0.55,0.41,No,Limited,Smartphone,50.1,Moderate,72.1,Visual,BSIT,"Game Dev, Robotics",Fail,Moderate,0.59
+1511,19.1,Female,Low,Elementary,0.66,6.3,67.9,0.76,0.53,No,Stable,Laptop,54.3,Moderate,69.6,Reading,BSA,"Leadership, Marketing",Pass,Moderate,0.62
+1512,24.6,Female,Middle,College,0.54,2.4,55.4,0.87,0.72,Yes,Stable,Smartphone,65.5,Moderate,96.4,Visual,BSA,"Accounting, Finance",Pass,Safe,0.63
+1513,23.3,Female,Middle,College,0.78,18.6,40.1,0.79,0.86,No,Limited,Laptop,80.6,Moderate,65.8,Reading,BSBA,"Game Dev, Robotics",Fail,Safe,0.74
+1514,17.8,Female,Low,High School,0.81,15.4,57.1,0.79,0.55,Yes,Stable,Laptop,50.1,Hard,88.0,Visual,BSIT,"Teaching, Research",Fail,Moderate,0.55
+1515,23.5,Male,Low,College,1.0,6.8,86.7,0.68,0.33,Yes,Stable,Laptop,76.7,Moderate,72.6,Reading,BSED,"Game Dev, Robotics",Fail,At Risk,0.32
+1516,17.9,Female,Low,College,0.82,8.8,54.3,1.0,0.3,No,Limited,Laptop,62.1,Moderate,62.6,Auditory,BSBA,"Teaching, Research",Fail,At Risk,0.16
+1517,23.1,Female,Low,Graduate,0.82,8.4,84.2,0.65,0.71,No,Limited,Smartphone,76.7,Moderate,50.3,Reading,BSBA,"Accounting, Finance",Fail,At Risk,0.53
+1518,23.0,Male,High,College,0.72,1.0,65.3,1.0,0.56,No,Stable,Smartphone,64.9,Hard,56.1,Reading,BSED,"Leadership, Marketing",Fail,Moderate,0.43
+1519,23.2,Male,Middle,College,0.91,16.1,99.8,0.6,0.39,No,Stable,Laptop,77.9,Moderate,79.1,Reading,BSA,"Accounting, Finance",Fail,Safe,0.57
+1520,16.0,Male,Low,College,0.69,15.5,54.4,0.53,0.75,No,Limited,Laptop,50.1,Moderate,73.9,Reading,BSED,"Programming, AI",Fail,Moderate,0.28
+1521,19.7,Female,Middle,High School,0.59,10.7,67.6,0.59,0.89,Yes,Stable,Laptop,80.8,Easy,47.4,Visual,BSA,"Game Dev, Robotics",Fail,At Risk,0.4
+1522,19.5,Male,Low,High School,0.6,10.2,99.8,0.7,0.8,No,Stable,Laptop,83.7,Easy,75.2,Visual,BSA,"Game Dev, Robotics",Fail,Moderate,0.59
+1523,17.1,Male,High,High School,0.72,13.3,91.0,0.66,0.62,No,Stable,Laptop,77.4,Moderate,67.5,Visual,BSIT,"Leadership, Marketing",Pass,At Risk,0.3
+1524,19.5,Female,High,High School,0.69,17.5,72.2,0.72,0.88,No,Limited,Tablet,91.6,Moderate,44.1,Reading,BSA,"Game Dev, Robotics",Fail,Moderate,0.54
+1525,18.5,Female,Low,High School,0.88,9.3,45.5,0.72,1.0,Yes,Limited,Laptop,69.7,Moderate,66.7,Kinesthetic,BSBA,"Programming, AI",Pass,At Risk,0.41
+1526,25.0,Male,Middle,College,0.54,4.5,48.9,0.7,0.94,No,Limited,Laptop,81.4,Moderate,81.8,Visual,BSBA,"Game Dev, Robotics",Fail,At Risk,0.42
+1527,18.5,Female,Middle,Elementary,0.87,17.8,70.6,0.84,1.0,No,Stable,Laptop,78.4,Easy,51.7,Kinesthetic,BSIT,"Teaching, Research",Fail,Moderate,0.81
+1528,19.9,Male,High,Graduate,0.81,11.7,55.4,0.55,0.47,No,Stable,Laptop,61.8,Moderate,86.1,Reading,BSED,"Programming, AI",Pass,At Risk,0.68
+1529,22.9,Female,Middle,High School,0.73,14.8,50.6,0.65,0.48,Yes,Stable,Smartphone,69.9,Easy,47.2,Reading,BSIT,"Accounting, Finance",Fail,At Risk,0.84
+1530,23.7,Male,Middle,Elementary,0.53,15.3,68.9,0.76,0.74,No,Stable,Smartphone,86.3,Moderate,85.6,Visual,BSBA,"Accounting, Finance",Pass,Safe,0.77
+1531,16.7,Female,Middle,High School,0.56,8.1,93.7,0.67,0.72,Yes,Limited,Desktop,82.5,Moderate,64.1,Visual,BSIT,"Teaching, Research",Fail,Moderate,0.53
+1532,18.2,Male,Middle,High School,0.78,8.6,81.3,1.0,1.0,Yes,Stable,Laptop,95.0,Easy,43.8,Visual,BSED,"Leadership, Marketing",Fail,Moderate,0.51
+1533,25.0,Female,High,College,0.85,9.4,77.4,0.58,0.35,No,Stable,Laptop,89.6,Hard,52.7,Reading,BSED,"Accounting, Finance",Pass,At Risk,0.54
+1534,25.0,Female,Middle,College,0.76,7.9,70.9,0.94,0.82,No,Limited,Tablet,82.9,Moderate,82.2,Reading,BSIT,"Game Dev, Robotics",Fail,Safe,0.49
+1535,25.0,Female,High,College,0.82,15.1,87.0,0.92,0.94,No,Stable,Smartphone,65.7,Moderate,82.3,Visual,BSA,"Game Dev, Robotics",Pass,Moderate,0.73
+1536,25.0,Female,Middle,High School,0.76,11.1,73.7,0.64,0.66,Yes,Limited,Laptop,72.7,Moderate,63.1,Kinesthetic,BSA,"Accounting, Finance",Fail,At Risk,0.41
+1537,18.5,Female,Middle,High School,0.62,5.5,52.2,1.0,0.87,Yes,Stable,Desktop,71.6,Easy,99.7,Reading,BSBA,"Programming, AI",Fail,At Risk,0.28
+1538,17.9,Male,Low,College,0.63,16.8,43.1,0.41,0.63,Yes,Stable,Laptop,50.1,Moderate,68.4,Auditory,BSIT,"Game Dev, Robotics",Pass,Moderate,0.84
+1539,21.2,Male,Middle,Elementary,0.91,5.7,73.1,0.62,0.46,No,Stable,Laptop,72.7,Easy,40.0,Kinesthetic,BSA,"Teaching, Research",Fail,Safe,0.74
+1540,18.5,Male,Low,College,0.56,20.0,95.5,0.81,0.3,Yes,Stable,Laptop,85.8,Moderate,40.0,Reading,BSA,"Programming, AI",Pass,Safe,0.66
+1541,21.3,Female,Middle,College,0.73,3.2,69.9,0.88,0.43,No,Stable,Tablet,78.7,Moderate,70.3,Reading,BSED,"Teaching, Research",Pass,At Risk,0.6
+1542,19.4,Female,High,High School,1.0,4.0,69.7,0.66,0.71,Yes,Stable,Tablet,78.0,Moderate,76.1,Reading,BSBA,"Teaching, Research",Pass,Moderate,0.54
+1543,23.1,Male,Middle,College,1.0,8.0,43.3,0.73,0.55,Yes,Stable,Laptop,57.2,Hard,99.7,Kinesthetic,BSIT,"Programming, AI",Pass,Safe,0.45
+1544,16.0,Male,High,Graduate,0.78,7.5,74.2,0.72,0.3,No,Limited,Laptop,70.0,Moderate,66.6,Reading,BSBA,"Accounting, Finance",Pass,At Risk,0.59
+1545,23.7,Female,Middle,College,0.65,8.1,77.0,0.73,0.31,No,Limited,Smartphone,63.5,Moderate,58.8,Kinesthetic,BSIT,"Game Dev, Robotics",Fail,Moderate,0.33
+1546,24.7,Male,Low,College,0.63,7.3,92.7,0.75,0.63,No,None,Laptop,69.3,Moderate,74.3,Visual,BSBA,"Leadership, Marketing",Pass,Moderate,0.37
+1547,25.0,Male,High,College,0.68,9.5,50.6,1.0,0.72,Yes,Limited,Desktop,79.8,Hard,99.7,Kinesthetic,BSBA,"Accounting, Finance",Fail,Safe,0.4
+1548,16.0,Male,High,High School,0.54,17.1,78.2,0.72,0.68,Yes,Limited,Laptop,76.3,Moderate,91.5,Visual,BSA,"Game Dev, Robotics",Pass,At Risk,0.14
+1549,19.4,Female,Low,Graduate,0.83,15.2,73.4,0.73,0.53,Yes,Stable,Laptop,87.3,Moderate,40.0,Kinesthetic,BSIT,"Teaching, Research",Fail,Moderate,0.39
+1550,25.0,Male,Middle,High School,0.61,4.3,68.0,0.57,0.63,No,Limited,Desktop,83.1,Hard,91.7,Kinesthetic,BSIT,"Game Dev, Robotics",Fail,Moderate,0.58
+1551,20.7,Female,Low,College,0.5,7.4,84.4,0.44,0.9,No,Limited,Smartphone,72.7,Hard,48.4,Visual,BSIT,"Accounting, Finance",Fail,Safe,0.46
+1552,16.0,Female,High,College,0.92,18.3,87.6,0.77,0.36,No,Stable,Laptop,75.2,Easy,78.5,Auditory,BSIT,"Leadership, Marketing",Pass,Moderate,0.46
+1553,21.6,Male,Middle,College,0.77,5.1,52.0,0.92,0.43,Yes,Stable,Laptop,75.2,Hard,70.6,Reading,BSIT,"Teaching, Research",Pass,Safe,0.64
+1554,20.1,Male,Middle,High School,0.86,4.4,59.0,0.73,0.59,No,Limited,Laptop,76.7,Hard,73.1,Kinesthetic,BSBA,"Teaching, Research",Fail,At Risk,0.49
+1555,17.8,Male,High,College,0.55,9.2,40.3,0.49,0.72,Yes,Stable,Smartphone,64.5,Hard,90.2,Kinesthetic,BSIT,"Programming, AI",Fail,Safe,0.49
+1556,19.4,Female,Middle,Graduate,0.63,15.5,80.2,0.98,0.7,No,Limited,Desktop,71.3,Moderate,60.7,Auditory,BSIT,"Game Dev, Robotics",Fail,Safe,0.75
+1557,17.3,Female,Low,Elementary,0.71,10.9,43.7,0.54,0.9,Yes,Limited,Tablet,95.0,Hard,59.0,Kinesthetic,BSA,"Game Dev, Robotics",Fail,Moderate,0.46
+1558,18.8,Female,High,High School,0.56,1.0,65.9,0.61,0.61,Yes,Stable,Tablet,95.0,Moderate,86.7,Visual,BSIT,"Leadership, Marketing",Fail,Safe,0.64
+1559,18.8,Female,Low,High School,0.59,4.7,46.4,0.75,0.47,No,Stable,Smartphone,85.1,Moderate,73.4,Auditory,BSED,"Game Dev, Robotics",Fail,Moderate,0.42
+1560,19.6,Female,High,High School,0.71,5.3,63.1,0.97,0.49,No,Stable,Laptop,77.1,Hard,57.4,Auditory,BSBA,"Leadership, Marketing",Fail,At Risk,0.66
+1561,17.5,Male,High,High School,0.83,16.8,85.7,0.61,0.45,Yes,Stable,Laptop,56.0,Moderate,65.3,Reading,BSIT,"Accounting, Finance",Pass,Moderate,0.7
+1562,19.8,Female,Middle,High School,0.59,14.6,58.5,0.61,0.67,No,Stable,Laptop,72.9,Hard,48.2,Kinesthetic,BSA,"Teaching, Research",Fail,Safe,0.77
+1563,23.5,Male,Low,High School,0.56,6.7,86.4,0.75,0.8,No,Limited,Laptop,72.3,Moderate,58.1,Kinesthetic,BSA,"Accounting, Finance",Fail,Moderate,0.48
+1564,22.5,Male,High,High School,0.55,15.6,40.6,0.84,0.72,Yes,Limited,Laptop,74.5,Moderate,79.7,Kinesthetic,BSA,"Game Dev, Robotics",Pass,At Risk,0.72
+1565,22.0,Female,Low,Graduate,1.0,20.0,86.3,0.67,0.48,Yes,Limited,Laptop,69.7,Moderate,91.6,Reading,BSA,"Leadership, Marketing",Fail,Safe,0.61
+1566,21.2,Female,Low,High School,0.7,14.5,40.1,0.53,1.0,Yes,Limited,Laptop,55.5,Easy,40.0,Visual,BSBA,"Programming, AI",Pass,Safe,0.41
+1567,22.5,Female,Low,College,1.0,16.8,58.5,0.69,0.74,No,Stable,Laptop,69.0,Moderate,78.6,Visual,BSED,"Accounting, Finance",Pass,Moderate,0.55
+1568,18.4,Female,Middle,High School,0.88,11.7,64.1,0.67,0.99,No,Stable,Tablet,85.2,Hard,55.2,Kinesthetic,BSIT,"Programming, AI",Fail,Safe,0.38
+1569,23.2,Male,High,College,0.64,10.8,66.3,0.6,0.42,No,Limited,Desktop,85.9,Hard,43.1,Auditory,BSIT,"Programming, AI",Pass,Safe,0.84
+1570,23.3,Female,Low,High School,0.69,10.8,97.6,0.76,0.46,Yes,Stable,Laptop,50.1,Moderate,66.5,Reading,BSA,"Game Dev, Robotics",Fail,Moderate,0.54
+1571,25.0,Male,Middle,College,0.68,5.3,74.5,0.58,0.55,Yes,Stable,Laptop,58.3,Hard,93.1,Reading,BSIT,"Teaching, Research",Fail,At Risk,0.5
+1572,19.9,Female,Middle,College,0.78,15.2,99.8,0.62,0.65,Yes,Limited,Smartphone,80.2,Moderate,58.4,Kinesthetic,BSIT,"Teaching, Research",Fail,At Risk,0.51
+1573,22.8,Male,Low,High School,0.67,8.8,50.7,1.0,0.32,Yes,Stable,Laptop,73.1,Moderate,90.5,Auditory,BSBA,"Game Dev, Robotics",Fail,At Risk,0.74
+1574,24.5,Female,Middle,High School,0.76,6.7,73.7,0.85,0.98,No,Stable,Laptop,74.5,Moderate,50.5,Reading,BSIT,"Accounting, Finance",Pass,Moderate,0.66
+1575,16.0,Male,Middle,High School,0.77,13.2,73.0,1.0,0.7,No,Stable,Laptop,92.1,Moderate,45.5,Visual,BSED,"Leadership, Marketing",Pass,Moderate,0.67
+1576,20.5,Male,Middle,College,0.7,10.7,78.8,0.41,0.82,Yes,None,Smartphone,72.0,Moderate,73.3,Visual,BSED,"Leadership, Marketing",Fail,Safe,0.45
+1577,22.2,Male,Low,High School,1.0,18.0,80.5,0.75,0.89,No,Stable,Smartphone,67.9,Hard,97.8,Kinesthetic,BSIT,"Game Dev, Robotics",Pass,At Risk,0.52
+1578,18.6,Female,Middle,College,0.76,6.7,61.1,1.0,0.61,Yes,Limited,Smartphone,60.4,Moderate,74.4,Reading,BSED,"Leadership, Marketing",Fail,At Risk,0.35
+1579,24.8,Male,Middle,College,0.93,9.7,99.8,0.77,0.57,Yes,Stable,Laptop,78.2,Easy,88.2,Visual,BSED,"Programming, AI",Fail,Safe,0.41
+1580,19.0,Female,Low,High School,0.65,8.6,99.8,0.91,0.71,No,Stable,Desktop,75.9,Moderate,79.1,Auditory,BSED,"Programming, AI",Fail,Moderate,0.25
+1581,20.0,Male,Low,College,0.7,14.5,91.6,0.45,0.83,Yes,Stable,Laptop,69.7,Hard,82.3,Kinesthetic,BSBA,"Game Dev, Robotics",Pass,Moderate,0.32
+1582,19.1,Female,Middle,High School,0.7,12.3,48.9,0.83,0.74,Yes,Limited,Laptop,79.0,Moderate,54.4,Reading,BSBA,"Game Dev, Robotics",Pass,Safe,0.48
+1583,19.0,Male,Low,High School,0.77,16.2,77.0,0.83,0.46,Yes,Stable,Laptop,72.9,Moderate,91.9,Auditory,BSA,"Programming, AI",Pass,Safe,0.53
+1584,20.1,Male,High,College,0.76,9.4,72.0,0.8,0.9,No,Limited,Laptop,76.1,Moderate,94.8,Auditory,BSBA,"Programming, AI",Pass,Safe,0.47
+1585,16.0,Female,Low,College,0.87,1.0,99.8,0.72,0.66,Yes,Stable,Desktop,82.8,Moderate,92.6,Kinesthetic,BSED,"Programming, AI",Fail,Safe,0.51
+1586,18.6,Male,Low,Graduate,0.93,16.2,53.5,0.55,0.41,Yes,Stable,Smartphone,54.4,Moderate,43.1,Kinesthetic,BSED,"Programming, AI",Pass,Moderate,0.58
+1587,25.0,Female,Middle,Elementary,0.94,18.3,58.3,0.63,0.53,Yes,Limited,Desktop,50.1,Moderate,41.8,Auditory,BSIT,"Teaching, Research",Pass,Moderate,0.45
+1588,22.8,Male,Low,High School,0.8,16.5,83.1,0.55,0.69,No,Stable,Laptop,73.7,Moderate,99.7,Reading,BSBA,"Programming, AI",Fail,Moderate,0.51
+1589,19.1,Female,Middle,College,0.77,14.8,74.9,0.55,0.43,Yes,Stable,Laptop,64.9,Moderate,88.7,Auditory,BSED,"Leadership, Marketing",Fail,At Risk,0.58
+1590,20.7,Female,Middle,Elementary,0.51,20.0,80.0,0.53,0.66,No,Stable,Smartphone,70.3,Moderate,64.8,Reading,BSED,"Leadership, Marketing",Fail,At Risk,0.67
+1591,23.9,Male,Middle,Graduate,0.84,12.8,64.6,0.67,0.47,No,Limited,Smartphone,71.6,Moderate,62.3,Kinesthetic,BSIT,"Teaching, Research",Fail,At Risk,0.35
+1592,18.0,Male,Low,High School,0.64,12.7,62.9,0.65,0.59,No,Stable,Desktop,58.4,Easy,40.0,Kinesthetic,BSED,"Programming, AI",Pass,Safe,0.66
+1593,20.6,Female,High,Graduate,0.77,13.9,78.6,0.6,0.84,No,Limited,Laptop,79.1,Moderate,79.5,Kinesthetic,BSIT,"Teaching, Research",Fail,Safe,0.31
+1594,18.3,Female,Low,College,0.77,4.2,65.6,0.65,0.83,No,Stable,Smartphone,92.9,Moderate,54.2,Visual,BSIT,"Leadership, Marketing",Fail,Moderate,0.43
+1595,19.3,Female,Middle,College,0.87,15.8,40.2,0.41,0.73,No,Stable,Desktop,61.8,Hard,73.4,Auditory,BSED,"Programming, AI",Pass,Moderate,0.65
+1596,20.7,Female,Low,College,0.69,10.2,66.6,0.59,0.3,No,None,Laptop,79.0,Moderate,43.0,Auditory,BSBA,"Game Dev, Robotics",Pass,At Risk,0.69
+1597,17.9,Male,Middle,High School,0.66,8.7,57.0,0.77,0.54,No,Stable,Laptop,71.3,Hard,77.6,Reading,BSED,"Leadership, Marketing",Fail,Moderate,0.84
+1598,21.0,Female,Middle,High School,0.65,20.0,40.1,0.61,0.5,No,Stable,Laptop,82.6,Hard,46.6,Reading,BSIT,"Programming, AI",Pass,At Risk,0.71
+1599,20.6,Male,Low,College,1.0,14.8,59.7,0.92,0.75,No,Stable,Smartphone,78.1,Easy,58.4,Kinesthetic,BSBA,"Leadership, Marketing",Pass,Safe,0.39
+1600,21.9,Female,High,High School,0.88,11.5,79.2,0.64,0.59,No,Limited,Laptop,54.7,Moderate,50.1,Reading,BSBA,"Teaching, Research",Pass,Moderate,0.57
+1601,17.1,Female,Middle,Graduate,0.5,13.3,68.5,0.5,0.46,Yes,Stable,Laptop,72.4,Hard,80.3,Visual,BSIT,"Programming, AI",Pass,At Risk,0.33
+1602,17.0,Male,High,High School,0.79,9.0,75.3,0.84,0.62,No,Stable,Laptop,50.1,Moderate,46.2,Visual,BSA,"Game Dev, Robotics",Pass,Safe,0.27
+1603,24.3,Male,Middle,High School,0.86,17.4,48.3,0.58,0.97,No,Limited,Laptop,85.3,Moderate,77.8,Reading,BSED,"Teaching, Research",Fail,Moderate,0.39
+1604,20.2,Female,Middle,College,0.81,11.5,72.1,0.52,0.66,No,Stable,Tablet,90.3,Moderate,63.5,Reading,BSIT,"Teaching, Research",Pass,Safe,0.24
+1605,17.6,Female,Middle,College,0.79,15.0,51.4,0.89,0.76,No,Stable,Laptop,78.5,Moderate,59.8,Kinesthetic,BSA,"Game Dev, Robotics",Fail,At Risk,0.53
+1606,22.3,Male,Middle,High School,0.96,4.9,62.4,0.82,0.47,No,Limited,Laptop,74.1,Moderate,61.9,Auditory,BSBA,"Leadership, Marketing",Fail,Moderate,0.76
+1607,17.2,Female,Middle,College,0.8,20.0,87.3,0.64,0.56,Yes,Stable,Desktop,64.8,Easy,40.0,Auditory,BSA,"Leadership, Marketing",Fail,Safe,0.33
+1608,25.0,Male,Low,College,0.63,7.5,77.5,0.73,0.71,No,Stable,Laptop,70.8,Moderate,67.1,Visual,BSED,"Programming, AI",Pass,Safe,0.62
+1609,18.5,Female,High,High School,0.51,14.0,84.0,0.57,0.48,No,Stable,Desktop,75.4,Hard,88.7,Reading,BSIT,"Game Dev, Robotics",Pass,Safe,0.84
+1610,22.0,Female,High,College,0.67,1.0,41.7,0.96,0.57,Yes,Limited,Laptop,80.4,Easy,99.7,Reading,BSIT,"Accounting, Finance",Fail,Moderate,0.46
+1611,21.8,Female,Low,High School,0.6,6.7,61.7,0.59,0.71,Yes,Stable,Laptop,63.1,Easy,58.8,Reading,BSA,"Leadership, Marketing",Fail,Safe,0.43
+1612,24.5,Male,Middle,College,0.62,11.2,61.2,0.69,0.51,No,Stable,Smartphone,77.0,Moderate,74.1,Auditory,BSIT,"Accounting, Finance",Fail,Safe,0.6
+1613,18.8,Female,High,Elementary,0.81,20.0,98.0,0.48,0.97,Yes,Stable,Smartphone,86.1,Moderate,86.2,Auditory,BSED,"Teaching, Research",Pass,Moderate,0.32
+1614,24.5,Female,Middle,High School,0.83,14.0,87.1,0.84,0.46,Yes,Stable,Smartphone,67.4,Moderate,63.3,Visual,BSED,"Game Dev, Robotics",Pass,Moderate,0.66
+1615,25.0,Female,High,College,0.76,19.4,86.8,0.77,0.47,Yes,Limited,Tablet,63.4,Moderate,75.0,Visual,BSA,"Teaching, Research",Fail,Safe,0.64
+1616,16.6,Male,Middle,College,0.75,13.3,59.8,0.97,0.88,Yes,Stable,Desktop,76.2,Moderate,79.5,Kinesthetic,BSA,"Teaching, Research",Fail,At Risk,0.46
+1617,23.4,Female,High,College,0.64,4.5,65.8,0.74,0.56,Yes,Stable,Desktop,95.0,Moderate,68.7,Visual,BSA,"Accounting, Finance",Fail,Moderate,0.61
+1618,24.0,Male,High,High School,0.67,10.4,62.9,0.82,0.47,No,Limited,Laptop,73.9,Moderate,75.3,Auditory,BSIT,"Teaching, Research",Fail,Safe,0.23
+1619,18.6,Female,Middle,Elementary,0.72,16.0,70.6,0.86,0.77,No,Stable,Smartphone,69.0,Moderate,82.9,Kinesthetic,BSED,"Leadership, Marketing",Pass,At Risk,0.61
+1620,21.7,Male,Middle,High School,0.71,11.7,51.1,0.52,0.86,No,Stable,Tablet,90.2,Moderate,92.5,Kinesthetic,BSED,"Accounting, Finance",Fail,Moderate,0.5
+1621,20.3,Male,High,Graduate,0.89,1.0,40.1,0.7,0.94,No,Stable,Tablet,63.9,Moderate,56.4,Visual,BSA,"Accounting, Finance",Pass,At Risk,0.75
+1622,21.8,Female,Middle,College,0.82,1.9,94.8,0.58,0.56,Yes,Limited,Desktop,66.1,Moderate,74.4,Auditory,BSA,"Accounting, Finance",Fail,Safe,0.49
+1623,22.7,Male,High,Elementary,0.52,7.1,62.1,0.84,0.68,No,Stable,Smartphone,92.6,Moderate,66.2,Visual,BSA,"Teaching, Research",Fail,At Risk,0.4
+1624,21.6,Male,Middle,High School,0.84,8.4,85.5,0.66,0.71,Yes,Limited,Tablet,62.2,Hard,44.8,Reading,BSBA,"Teaching, Research",Fail,At Risk,0.31
+1625,21.5,Female,Low,High School,0.63,8.8,48.7,0.83,0.61,Yes,Stable,Laptop,94.7,Moderate,64.2,Visual,BSBA,"Game Dev, Robotics",Fail,Safe,0.56
+1626,19.9,Male,Middle,College,0.82,20.0,87.2,0.75,0.3,Yes,Stable,Laptop,69.6,Hard,79.3,Auditory,BSED,"Teaching, Research",Pass,Moderate,0.46
+1627,22.9,Female,Middle,College,0.82,1.0,62.7,0.64,0.43,No,None,Laptop,89.5,Hard,73.6,Auditory,BSIT,"Teaching, Research",Fail,At Risk,0.45
+1628,24.3,Male,Low,College,0.62,12.9,70.4,0.71,0.4,No,Stable,Laptop,88.7,Moderate,92.9,Visual,BSIT,"Accounting, Finance",Fail,Moderate,0.62
+1629,22.9,Male,High,High School,0.87,13.9,49.9,0.8,0.43,No,None,Smartphone,53.3,Hard,80.3,Kinesthetic,BSED,"Teaching, Research",Pass,At Risk,0.48
+1630,20.5,Female,Low,High School,0.75,12.3,54.4,0.64,0.63,Yes,Stable,Laptop,64.3,Moderate,79.7,Kinesthetic,BSA,"Programming, AI",Fail,Safe,0.38
+1631,18.3,Female,Low,Elementary,0.68,14.8,40.1,0.82,0.3,Yes,Limited,Laptop,76.2,Moderate,63.5,Auditory,BSA,"Leadership, Marketing",Fail,Safe,0.52
+1632,21.4,Female,Middle,Graduate,0.73,8.1,65.0,0.86,0.84,No,Limited,Smartphone,95.0,Moderate,78.9,Visual,BSBA,"Teaching, Research",Fail,At Risk,0.6
+1633,24.5,Male,Middle,College,0.99,9.6,68.5,0.5,1.0,Yes,Limited,Smartphone,92.4,Moderate,72.3,Visual,BSBA,"Leadership, Marketing",Pass,Moderate,0.48
+1634,22.3,Female,Low,College,0.75,2.9,48.8,0.91,0.87,No,Limited,Laptop,74.6,Moderate,85.3,Visual,BSA,"Leadership, Marketing",Fail,Safe,0.76
+1635,24.3,Male,High,High School,0.78,6.7,64.8,0.59,0.55,No,Stable,Laptop,67.2,Moderate,93.5,Kinesthetic,BSIT,"Accounting, Finance",Pass,Safe,0.51
+1636,24.6,Female,Middle,High School,0.53,9.1,99.8,0.67,0.37,No,Limited,Smartphone,89.8,Easy,55.9,Visual,BSBA,"Accounting, Finance",Fail,Moderate,0.45
+1637,24.1,Male,Low,College,0.78,7.9,77.2,0.75,0.49,Yes,None,Smartphone,76.2,Moderate,65.6,Auditory,BSA,"Game Dev, Robotics",Pass,Moderate,0.49
+1638,17.1,Female,Middle,High School,0.9,8.8,76.0,0.62,0.31,Yes,Limited,Laptop,78.1,Moderate,45.3,Kinesthetic,BSIT,"Programming, AI",Pass,Safe,0.41
+1639,16.1,Female,High,High School,0.82,12.9,83.1,0.7,0.75,No,Limited,Laptop,86.7,Hard,83.9,Kinesthetic,BSA,"Teaching, Research",Fail,Moderate,0.61
+1640,22.5,Male,Middle,Elementary,0.5,7.4,83.7,0.81,0.51,No,Stable,Tablet,66.2,Moderate,46.0,Reading,BSA,"Programming, AI",Fail,At Risk,0.31
+1641,21.6,Male,Middle,High School,0.82,4.8,40.1,0.83,0.38,No,Stable,Laptop,60.7,Moderate,99.7,Auditory,BSA,"Programming, AI",Pass,Safe,0.25
+1642,21.0,Male,High,College,0.79,10.3,51.9,0.72,0.45,No,Stable,Laptop,71.8,Moderate,40.0,Visual,BSBA,"Accounting, Finance",Fail,Moderate,0.62
+1643,19.9,Female,High,College,0.88,9.3,60.0,0.86,0.54,Yes,Limited,Laptop,82.8,Easy,49.0,Kinesthetic,BSED,"Programming, AI",Fail,Safe,0.55
+1644,21.8,Female,Low,High School,0.96,6.3,99.8,0.77,0.55,No,Stable,Tablet,79.3,Moderate,71.2,Visual,BSED,"Programming, AI",Fail,Safe,0.39
+1645,19.4,Male,High,High School,0.75,14.9,45.4,0.56,1.0,No,Stable,Laptop,79.0,Moderate,65.0,Reading,BSED,"Programming, AI",Pass,Safe,0.82
+1646,17.6,Male,High,High School,0.64,12.1,46.1,0.56,0.81,No,Stable,Tablet,70.3,Moderate,68.0,Visual,BSBA,"Leadership, Marketing",Pass,At Risk,0.26
+1647,21.9,Male,High,College,0.7,15.0,90.3,0.74,0.72,No,Stable,Laptop,84.4,Moderate,70.9,Reading,BSA,"Teaching, Research",Fail,Moderate,0.24
+1648,20.2,Male,Middle,High School,0.78,5.8,95.4,0.73,0.39,No,Limited,Tablet,91.6,Hard,99.7,Visual,BSED,"Programming, AI",Pass,Moderate,0.58
+1649,23.4,Male,Middle,High School,0.73,5.2,69.9,0.79,0.46,No,Stable,Tablet,82.7,Moderate,69.5,Kinesthetic,BSIT,"Leadership, Marketing",Pass,At Risk,0.44
+1650,16.9,Male,Low,High School,0.77,5.4,85.0,0.62,0.63,Yes,Stable,Laptop,78.0,Hard,49.2,Reading,BSBA,"Game Dev, Robotics",Pass,At Risk,0.54
+1651,25.0,Male,High,High School,0.5,14.5,74.6,0.57,0.5,No,Limited,Laptop,63.2,Moderate,55.3,Visual,BSIT,"Teaching, Research",Fail,Moderate,0.42
+1652,24.2,Male,Low,College,1.0,15.0,59.7,0.44,0.46,No,Stable,Smartphone,67.6,Moderate,50.3,Visual,BSBA,"Accounting, Finance",Pass,Safe,0.54
+1653,23.3,Female,Middle,College,1.0,9.5,40.1,0.82,0.72,Yes,None,Smartphone,95.0,Moderate,88.1,Reading,BSIT,"Leadership, Marketing",Pass,At Risk,0.71
+1654,21.8,Female,Middle,College,0.69,20.0,42.6,1.0,0.45,No,Stable,Laptop,75.2,Moderate,69.0,Kinesthetic,BSIT,"Game Dev, Robotics",Fail,Moderate,0.55
+1655,16.0,Male,Middle,College,0.79,7.8,40.1,0.77,0.3,No,Limited,Laptop,79.4,Hard,87.8,Kinesthetic,BSIT,"Teaching, Research",Fail,Moderate,0.51
+1656,19.1,Female,Middle,High School,1.0,12.7,51.2,0.57,0.84,Yes,Stable,Tablet,93.6,Easy,95.2,Kinesthetic,BSIT,"Leadership, Marketing",Pass,Moderate,0.66
+1657,21.1,Female,High,College,0.7,14.9,94.2,0.61,0.95,Yes,Limited,Tablet,62.0,Hard,99.7,Kinesthetic,BSED,"Game Dev, Robotics",Pass,Moderate,0.57
+1658,22.7,Male,Middle,High School,0.62,7.2,87.9,0.77,0.58,No,Limited,Smartphone,91.0,Hard,57.4,Visual,BSBA,"Game Dev, Robotics",Fail,Moderate,0.53
+1659,21.1,Male,High,College,0.69,15.7,75.5,0.61,0.68,No,Stable,Smartphone,63.2,Hard,73.7,Reading,BSED,"Game Dev, Robotics",Pass,Safe,0.5
+1660,19.0,Female,Middle,Elementary,0.79,11.7,64.5,0.71,0.67,No,Stable,Smartphone,82.9,Easy,99.7,Kinesthetic,BSBA,"Programming, AI",Fail,At Risk,0.68
+1661,23.9,Male,High,High School,0.7,3.4,99.8,0.51,0.64,No,Limited,Laptop,62.5,Easy,59.8,Auditory,BSIT,"Leadership, Marketing",Pass,Moderate,0.4
+1662,18.0,Male,Low,High School,0.53,6.2,88.6,0.67,0.61,No,Stable,Laptop,90.0,Moderate,75.3,Visual,BSED,"Leadership, Marketing",Pass,At Risk,0.7
+1663,16.0,Male,Middle,High School,0.74,8.0,65.0,0.58,0.64,No,Stable,Smartphone,66.6,Moderate,40.0,Auditory,BSIT,"Accounting, Finance",Fail,Moderate,0.81
+1664,17.8,Female,Middle,College,0.67,10.1,88.5,0.83,0.6,No,Limited,Smartphone,95.0,Moderate,75.5,Visual,BSBA,"Leadership, Marketing",Fail,Moderate,0.48
+1665,20.8,Female,High,College,0.59,15.2,92.8,0.62,0.3,No,None,Laptop,76.9,Moderate,96.2,Reading,BSA,"Leadership, Marketing",Fail,At Risk,0.51
+1666,22.7,Male,High,High School,0.71,18.2,81.9,0.77,0.67,No,Limited,Laptop,72.5,Moderate,95.7,Kinesthetic,BSED,"Programming, AI",Pass,Safe,0.44
+1667,17.6,Male,Low,High School,0.79,17.8,40.1,0.62,0.62,Yes,Stable,Laptop,76.4,Moderate,93.7,Auditory,BSIT,"Teaching, Research",Fail,At Risk,0.6
+1668,22.4,Male,Low,High School,0.81,20.0,83.0,0.72,0.54,Yes,Limited,Laptop,82.2,Moderate,67.8,Reading,BSA,"Game Dev, Robotics",Pass,At Risk,0.47
+1669,18.0,Male,Middle,Graduate,0.86,13.5,69.4,0.54,0.36,No,Limited,Laptop,61.0,Hard,53.3,Reading,BSBA,"Teaching, Research",Pass,At Risk,0.55
+1670,16.8,Male,High,College,0.79,9.2,99.8,0.84,0.31,No,Stable,Smartphone,80.4,Hard,50.6,Reading,BSED,"Programming, AI",Fail,At Risk,0.79
+1671,22.2,Male,Low,College,0.96,7.0,56.0,0.47,0.83,No,Stable,Laptop,76.1,Easy,74.9,Reading,BSED,"Programming, AI",Fail,Moderate,0.46
+1672,16.0,Male,Low,Elementary,0.9,1.0,40.1,0.9,0.44,No,Limited,Laptop,91.8,Moderate,74.6,Auditory,BSED,"Leadership, Marketing",Fail,At Risk,0.53
+1673,18.1,Female,Low,College,0.75,18.6,64.4,0.76,0.73,No,Stable,Tablet,58.8,Easy,82.6,Kinesthetic,BSIT,"Leadership, Marketing",Pass,Safe,0.53
+1674,19.4,Male,Low,High School,0.98,13.3,69.1,0.59,0.57,No,Limited,Laptop,67.6,Moderate,99.7,Reading,BSA,"Teaching, Research",Fail,At Risk,0.68
+1675,17.0,Female,Middle,High School,0.53,2.8,58.2,0.78,0.92,No,Stable,Tablet,78.8,Moderate,59.4,Auditory,BSED,"Game Dev, Robotics",Pass,Safe,0.74
+1676,22.5,Female,High,Elementary,0.83,7.8,46.9,0.78,0.76,No,Stable,Tablet,81.1,Moderate,56.5,Kinesthetic,BSED,"Game Dev, Robotics",Pass,At Risk,0.75
+1677,16.0,Female,Middle,College,0.82,11.9,95.2,0.96,0.95,Yes,None,Laptop,67.8,Hard,70.8,Reading,BSA,"Accounting, Finance",Pass,Moderate,0.73
+1678,16.0,Female,Middle,High School,0.77,3.5,68.6,0.54,0.67,No,Stable,Laptop,62.4,Hard,75.6,Visual,BSBA,"Leadership, Marketing",Fail,Moderate,0.47
+1679,25.0,Female,High,College,0.85,11.0,83.1,0.61,0.86,Yes,Limited,Smartphone,69.0,Moderate,68.3,Auditory,BSIT,"Programming, AI",Fail,Moderate,0.59
+1680,23.3,Male,Middle,High School,0.61,13.0,72.2,0.64,0.85,Yes,Limited,Laptop,62.0,Moderate,67.1,Reading,BSA,"Teaching, Research",Pass,Moderate,0.46
+1681,16.8,Male,High,High School,0.8,1.0,47.8,0.69,1.0,No,Stable,Smartphone,63.9,Easy,95.5,Reading,BSBA,"Leadership, Marketing",Fail,Moderate,0.49
+1682,21.7,Male,Middle,High School,0.62,10.1,82.3,0.63,0.61,No,Stable,Laptop,52.3,Hard,60.0,Kinesthetic,BSA,"Accounting, Finance",Fail,Moderate,0.42
+1683,17.7,Female,Low,High School,0.8,10.0,97.7,0.81,0.53,Yes,Stable,Desktop,81.4,Moderate,74.4,Reading,BSIT,"Game Dev, Robotics",Fail,Moderate,0.55
+1684,17.6,Female,Middle,High School,0.87,13.5,84.6,0.5,0.85,No,Limited,Smartphone,88.1,Moderate,79.0,Reading,BSED,"Game Dev, Robotics",Fail,At Risk,0.39
+1685,24.1,Female,High,Graduate,0.68,16.0,78.2,0.79,0.52,No,Stable,Laptop,68.6,Hard,55.7,Reading,BSBA,"Leadership, Marketing",Pass,Safe,0.45
+1686,20.8,Male,High,High School,0.73,12.6,62.0,0.91,0.6,Yes,Stable,Smartphone,72.7,Moderate,94.1,Visual,BSBA,"Leadership, Marketing",Fail,Moderate,0.33
+1687,25.0,Female,Middle,High School,0.72,20.0,80.0,0.64,0.71,No,Stable,Smartphone,79.3,Easy,60.6,Kinesthetic,BSBA,"Game Dev, Robotics",Pass,At Risk,0.38
+1688,23.8,Male,Middle,High School,0.88,13.9,99.3,0.41,0.72,No,Stable,Laptop,52.4,Moderate,98.1,Reading,BSA,"Teaching, Research",Fail,Moderate,0.39
+1689,19.5,Female,Low,Elementary,0.75,1.0,89.1,0.56,0.55,No,Stable,Desktop,63.0,Moderate,79.7,Auditory,BSA,"Teaching, Research",Fail,Moderate,0.34
+1690,21.8,Female,Low,High School,0.76,15.7,40.1,0.55,0.7,No,Limited,Smartphone,95.0,Moderate,41.0,Auditory,BSA,"Game Dev, Robotics",Fail,Safe,0.62
+1691,21.8,Female,Low,High School,0.69,2.6,69.3,0.71,0.75,No,Stable,Laptop,62.5,Moderate,83.6,Reading,BSIT,"Teaching, Research",Pass,At Risk,0.7
+1692,18.9,Female,Middle,High School,1.0,16.9,66.3,0.83,0.62,Yes,None,Smartphone,50.1,Moderate,53.9,Visual,BSA,"Programming, AI",Fail,Moderate,0.39
+1693,17.4,Female,Middle,High School,0.71,2.0,40.1,0.54,0.84,No,Stable,Laptop,69.9,Hard,83.6,Visual,BSBA,"Teaching, Research",Pass,Moderate,0.66
+1694,22.9,Male,Middle,College,0.63,1.2,99.8,1.0,0.44,No,Stable,Smartphone,56.7,Hard,79.7,Visual,BSED,"Leadership, Marketing",Pass,Moderate,0.49
+1695,19.2,Female,Low,College,0.61,11.4,74.2,0.79,0.5,No,Limited,Tablet,82.9,Moderate,81.5,Auditory,BSA,"Teaching, Research",Pass,Moderate,0.44
+1696,23.7,Female,Low,Graduate,0.9,20.0,57.2,0.65,0.58,No,None,Laptop,68.3,Hard,53.2,Auditory,BSIT,"Game Dev, Robotics",Pass,Moderate,0.44
+1697,17.8,Male,Low,College,0.64,13.1,68.7,0.42,0.37,No,Limited,Laptop,92.9,Moderate,79.4,Kinesthetic,BSBA,"Teaching, Research",Pass,At Risk,0.72
+1698,21.1,Female,High,College,0.58,16.7,76.4,0.51,0.83,No,Stable,Tablet,51.8,Hard,85.2,Auditory,BSBA,"Teaching, Research",Pass,At Risk,0.3
+1699,23.5,Female,Low,Elementary,0.83,7.0,42.6,0.7,0.66,No,Stable,Desktop,83.6,Moderate,61.7,Kinesthetic,BSED,"Leadership, Marketing",Fail,At Risk,0.24
+1700,16.0,Male,Low,High School,0.63,9.4,70.8,0.86,0.33,No,Limited,Laptop,80.4,Moderate,67.1,Visual,BSED,"Teaching, Research",Pass,Safe,0.5
+1701,20.6,Female,Middle,High School,0.73,9.9,82.2,0.51,0.73,No,Stable,Smartphone,78.7,Moderate,83.3,Auditory,BSA,"Leadership, Marketing",Fail,At Risk,0.21
+1702,20.2,Male,Middle,Elementary,0.8,4.8,84.2,0.9,0.76,No,Stable,Smartphone,90.8,Hard,48.0,Kinesthetic,BSA,"Leadership, Marketing",Pass,Safe,0.58
+1703,21.8,Male,Middle,Graduate,0.76,11.7,64.4,0.61,0.88,Yes,Stable,Smartphone,72.5,Hard,99.7,Visual,BSBA,"Accounting, Finance",Fail,Moderate,0.84
+1704,25.0,Female,Middle,Graduate,0.67,14.6,68.4,0.58,0.76,No,Stable,Laptop,74.1,Moderate,60.0,Reading,BSIT,"Accounting, Finance",Fail,Safe,0.72
+1705,18.7,Female,Low,College,0.61,16.0,85.9,0.89,0.71,No,Limited,Laptop,71.4,Hard,89.0,Reading,BSIT,"Programming, AI",Fail,At Risk,0.66
+1706,24.0,Male,Middle,College,0.56,12.1,57.8,0.83,1.0,Yes,Stable,Laptop,75.9,Hard,80.3,Reading,BSIT,"Leadership, Marketing",Pass,At Risk,0.48
+1707,23.1,Male,Middle,High School,0.67,12.7,99.8,0.51,0.39,Yes,Limited,Smartphone,71.9,Hard,73.2,Reading,BSA,"Teaching, Research",Pass,Safe,0.46
+1708,17.2,Male,High,College,1.0,9.2,77.6,1.0,0.59,Yes,Stable,Smartphone,82.6,Easy,99.7,Visual,BSA,"Accounting, Finance",Pass,At Risk,0.57
+1709,17.0,Male,Middle,High School,0.67,16.8,82.2,0.84,0.48,Yes,Limited,Smartphone,61.6,Moderate,64.1,Visual,BSBA,"Game Dev, Robotics",Fail,At Risk,0.44
+1710,16.0,Male,Middle,College,0.59,11.0,47.5,0.48,0.45,No,Stable,Smartphone,91.9,Moderate,99.5,Kinesthetic,BSED,"Programming, AI",Pass,Moderate,0.53
+1711,22.8,Female,Middle,College,0.75,14.4,64.5,0.7,0.44,Yes,Stable,Laptop,68.2,Moderate,99.7,Auditory,BSED,"Accounting, Finance",Fail,At Risk,0.8
+1712,23.7,Female,Low,College,0.56,2.7,76.7,0.75,0.98,Yes,Limited,Laptop,53.4,Easy,58.0,Visual,BSIT,"Programming, AI",Pass,Safe,0.43
+1713,21.9,Female,Middle,Graduate,0.75,11.5,80.8,0.77,0.81,No,None,Smartphone,50.1,Hard,67.3,Visual,BSIT,"Game Dev, Robotics",Fail,At Risk,0.6
+1714,21.5,Male,Middle,Graduate,0.8,2.3,99.8,0.76,0.85,No,Stable,Tablet,68.9,Moderate,85.8,Auditory,BSA,"Leadership, Marketing",Pass,Moderate,0.38
+1715,18.0,Male,High,High School,0.62,19.3,71.9,0.65,0.57,No,Limited,Smartphone,52.4,Moderate,69.5,Visual,BSBA,"Game Dev, Robotics",Pass,At Risk,0.68
+1716,16.0,Male,Middle,College,0.74,13.3,79.8,0.77,1.0,No,Stable,Smartphone,78.9,Moderate,76.3,Auditory,BSED,"Programming, AI",Pass,Safe,0.16
+1717,17.0,Male,High,College,0.71,17.6,74.7,0.41,0.6,Yes,Limited,Laptop,82.0,Easy,54.7,Reading,BSA,"Game Dev, Robotics",Fail,Moderate,0.38
+1718,20.2,Male,Middle,High School,0.62,11.4,74.7,0.91,0.85,Yes,Limited,Laptop,70.8,Easy,86.7,Visual,BSED,"Teaching, Research",Pass,Moderate,0.5
+1719,25.0,Male,Low,College,0.62,6.0,82.5,0.44,0.52,Yes,Stable,Laptop,88.2,Moderate,50.3,Reading,BSIT,"Game Dev, Robotics",Pass,Safe,0.54
+1720,19.5,Male,Middle,High School,0.86,1.0,59.0,0.67,0.62,Yes,Stable,Tablet,73.2,Moderate,82.9,Visual,BSIT,"Accounting, Finance",Fail,Safe,0.35
+1721,25.0,Female,Low,High School,0.98,10.6,83.6,1.0,0.4,No,Stable,Smartphone,62.3,Moderate,67.7,Reading,BSA,"Leadership, Marketing",Pass,Safe,0.8
+1722,22.1,Female,Middle,High School,0.88,1.0,78.4,1.0,0.66,Yes,Stable,Laptop,66.5,Moderate,93.2,Reading,BSBA,"Game Dev, Robotics",Fail,At Risk,0.54
+1723,19.2,Female,Low,High School,0.66,6.2,67.5,0.79,0.94,No,Stable,Desktop,76.4,Easy,70.3,Reading,BSBA,"Programming, AI",Fail,Safe,0.65
+1724,25.0,Male,Middle,High School,0.65,13.3,53.9,0.96,0.74,No,Stable,Laptop,79.2,Hard,76.5,Reading,BSA,"Leadership, Marketing",Fail,Moderate,0.52
+1725,19.8,Female,Middle,High School,0.8,7.7,55.0,0.69,0.74,Yes,Stable,Smartphone,60.6,Easy,75.2,Visual,BSIT,"Accounting, Finance",Fail,Safe,0.84
+1726,22.3,Female,Low,College,0.86,11.7,97.9,0.69,0.55,No,Stable,Laptop,65.7,Hard,59.3,Visual,BSBA,"Game Dev, Robotics",Pass,Moderate,0.16
+1727,21.8,Female,Middle,College,0.67,5.0,99.8,0.81,0.67,No,Stable,Laptop,77.2,Moderate,84.2,Visual,BSED,"Game Dev, Robotics",Fail,Moderate,0.78
+1728,18.3,Male,High,College,0.77,6.7,45.8,0.65,0.3,No,Stable,Laptop,78.7,Moderate,68.5,Kinesthetic,BSA,"Programming, AI",Pass,Moderate,0.59
+1729,18.1,Male,Low,College,0.92,11.0,64.3,0.93,0.33,Yes,Stable,Laptop,73.9,Hard,99.7,Visual,BSIT,"Leadership, Marketing",Pass,At Risk,0.7
+1730,20.7,Male,Middle,High School,0.66,12.3,70.1,0.65,0.72,No,Limited,Smartphone,83.4,Hard,69.7,Reading,BSA,"Teaching, Research",Pass,At Risk,0.75
+1731,21.2,Male,Middle,High School,0.87,8.5,54.1,0.8,0.58,No,Limited,Laptop,85.7,Hard,40.0,Reading,BSA,"Programming, AI",Pass,Moderate,0.61
+1732,23.3,Male,Middle,Graduate,0.81,5.2,81.5,0.66,1.0,No,Stable,Laptop,66.6,Hard,59.5,Visual,BSED,"Programming, AI",Fail,Safe,0.68
+1733,23.6,Female,Middle,High School,0.86,14.6,48.2,0.58,0.42,No,Limited,Laptop,78.7,Moderate,49.3,Kinesthetic,BSA,"Teaching, Research",Fail,At Risk,0.56
+1734,22.6,Female,Middle,Graduate,0.52,16.9,59.3,0.66,0.91,Yes,Stable,Tablet,78.8,Easy,71.3,Visual,BSBA,"Programming, AI",Pass,Moderate,0.25
+1735,18.7,Male,Low,College,0.63,4.7,70.0,0.73,0.4,Yes,Stable,Laptop,95.0,Moderate,99.7,Visual,BSBA,"Game Dev, Robotics",Pass,Safe,0.54
+1736,18.3,Male,Middle,High School,0.85,11.4,56.1,0.75,0.61,No,Stable,Laptop,74.5,Moderate,94.5,Kinesthetic,BSED,"Accounting, Finance",Pass,Moderate,0.44
+1737,24.4,Male,Low,College,0.86,5.8,40.1,0.73,0.83,No,Limited,Smartphone,68.5,Moderate,66.9,Reading,BSBA,"Accounting, Finance",Fail,Safe,0.51
+1738,16.8,Female,Middle,High School,0.95,13.6,53.6,0.59,0.7,Yes,Stable,Laptop,58.7,Moderate,79.5,Kinesthetic,BSIT,"Programming, AI",Pass,At Risk,0.41
+1739,19.9,Female,Middle,High School,0.7,16.5,63.0,0.68,0.41,No,Limited,Laptop,75.1,Moderate,80.1,Kinesthetic,BSA,"Teaching, Research",Fail,At Risk,0.45
+1740,21.6,Female,High,College,0.81,3.0,59.4,0.67,0.61,No,Stable,Smartphone,71.1,Moderate,65.1,Reading,BSBA,"Accounting, Finance",Pass,Safe,0.42
+1741,20.3,Female,High,High School,0.64,5.6,71.7,0.82,0.45,Yes,Limited,Laptop,95.0,Moderate,99.5,Auditory,BSBA,"Accounting, Finance",Fail,Safe,0.6
+1742,22.1,Male,Middle,Elementary,0.55,1.0,63.2,0.74,0.49,Yes,Stable,Smartphone,57.3,Moderate,94.2,Auditory,BSBA,"Leadership, Marketing",Pass,At Risk,0.57
+1743,23.5,Male,Low,High School,0.94,6.0,40.1,0.8,0.82,Yes,Stable,Tablet,78.5,Hard,76.7,Kinesthetic,BSBA,"Teaching, Research",Fail,Safe,0.52
+1744,22.0,Male,Middle,Elementary,0.76,9.7,74.4,0.6,0.49,No,Stable,Smartphone,89.5,Moderate,91.1,Kinesthetic,BSBA,"Accounting, Finance",Pass,Safe,0.56
+1745,18.5,Female,Low,High School,0.59,6.5,95.2,0.69,0.5,Yes,Limited,Smartphone,64.8,Moderate,72.4,Reading,BSBA,"Programming, AI",Fail,Safe,0.42
+1746,25.0,Female,Low,Elementary,0.82,9.2,40.1,0.54,0.67,No,Stable,Laptop,80.7,Easy,57.6,Kinesthetic,BSED,"Programming, AI",Fail,Safe,0.67
+1747,24.5,Female,Low,College,0.63,19.3,84.2,0.85,0.6,Yes,Stable,Laptop,71.8,Moderate,99.5,Reading,BSA,"Accounting, Finance",Pass,At Risk,0.76
+1748,19.6,Female,Middle,College,0.57,6.7,73.7,0.76,0.66,Yes,Stable,Tablet,62.3,Moderate,72.5,Kinesthetic,BSA,"Leadership, Marketing",Pass,Moderate,0.17
+1749,23.9,Male,Middle,College,0.65,17.1,78.7,0.86,0.89,No,Stable,Laptop,66.6,Easy,85.4,Visual,BSA,"Leadership, Marketing",Fail,At Risk,0.39
+1750,19.5,Female,Middle,College,0.72,13.3,79.5,0.69,0.63,Yes,Limited,Laptop,87.9,Easy,60.9,Visual,BSIT,"Programming, AI",Fail,At Risk,0.73
+1751,24.1,Male,Middle,College,0.71,19.4,72.8,0.69,0.57,Yes,Limited,Laptop,58.2,Easy,94.2,Kinesthetic,BSA,"Programming, AI",Pass,Moderate,0.64
+1752,17.3,Male,Middle,College,0.54,10.4,51.1,0.88,0.79,Yes,Limited,Smartphone,54.5,Moderate,88.4,Auditory,BSIT,"Teaching, Research",Fail,At Risk,0.74
+1753,22.9,Female,High,College,0.53,15.8,71.2,0.79,0.81,No,Limited,Laptop,59.8,Easy,92.2,Visual,BSED,"Game Dev, Robotics",Fail,Moderate,0.52
+1754,22.7,Female,Middle,High School,0.66,16.6,40.1,0.57,0.34,No,Stable,Laptop,75.0,Moderate,99.7,Auditory,BSBA,"Game Dev, Robotics",Fail,Safe,0.5
+1755,16.3,Female,High,College,0.7,11.9,53.1,0.41,0.58,Yes,Limited,Smartphone,82.8,Easy,54.4,Reading,BSIT,"Programming, AI",Fail,At Risk,0.29
+1756,20.1,Male,High,Graduate,0.76,20.0,41.4,1.0,0.39,No,Stable,Laptop,74.5,Moderate,50.3,Reading,BSBA,"Programming, AI",Fail,Moderate,0.84
+1757,20.3,Female,Low,Graduate,0.66,15.9,99.8,0.65,0.65,No,Limited,Tablet,62.7,Moderate,68.5,Reading,BSBA,"Accounting, Finance",Fail,Safe,0.3
+1758,18.5,Male,Low,College,0.79,6.8,45.1,0.75,1.0,Yes,Limited,Laptop,60.3,Hard,74.7,Kinesthetic,BSA,"Accounting, Finance",Fail,At Risk,0.61
+1759,21.7,Female,Middle,High School,0.65,7.0,80.7,0.73,0.89,Yes,Limited,Desktop,63.1,Moderate,98.0,Visual,BSIT,"Programming, AI",Pass,At Risk,0.41
+1760,20.6,Female,Middle,High School,0.84,15.1,40.1,0.73,0.76,No,Stable,Desktop,76.8,Hard,81.6,Kinesthetic,BSIT,"Leadership, Marketing",Pass,Moderate,0.21
+1761,18.9,Male,Middle,College,0.84,20.0,68.8,0.97,0.5,Yes,Stable,Desktop,75.3,Moderate,40.0,Kinesthetic,BSA,"Programming, AI",Fail,At Risk,0.33
+1762,19.6,Female,Middle,Elementary,0.92,11.6,99.8,0.71,0.67,No,Stable,Laptop,61.4,Moderate,52.9,Visual,BSIT,"Accounting, Finance",Pass,Moderate,0.37
+1763,19.8,Male,Low,College,0.88,6.9,89.2,0.67,0.81,No,Limited,Laptop,95.0,Moderate,57.5,Kinesthetic,BSED,"Programming, AI",Fail,At Risk,0.49
+1764,23.7,Male,Middle,High School,0.63,11.8,46.3,0.6,0.78,No,None,Laptop,69.9,Moderate,99.7,Kinesthetic,BSIT,"Teaching, Research",Pass,Moderate,0.59
+1765,23.3,Female,Middle,College,0.59,10.9,47.5,0.54,0.78,Yes,Stable,Smartphone,69.5,Easy,70.6,Kinesthetic,BSIT,"Teaching, Research",Pass,Safe,0.5
+1766,20.7,Male,Middle,Elementary,0.88,19.2,73.0,0.49,0.57,No,Limited,Laptop,63.6,Easy,84.4,Visual,BSA,"Accounting, Finance",Pass,At Risk,0.52
+1767,20.9,Male,Low,High School,0.75,12.7,64.4,0.83,0.8,No,Stable,Laptop,72.5,Hard,57.0,Reading,BSED,"Leadership, Marketing",Fail,At Risk,0.49
+1768,17.9,Male,Middle,College,0.59,3.0,72.5,0.6,0.76,No,Limited,Laptop,90.2,Moderate,61.8,Visual,BSIT,"Leadership, Marketing",Pass,Moderate,0.51
+1769,18.2,Male,Low,High School,0.76,14.3,57.1,0.86,0.36,Yes,Stable,Laptop,76.0,Moderate,56.4,Auditory,BSBA,"Game Dev, Robotics",Fail,Moderate,0.78
+1770,22.4,Male,High,College,0.76,17.1,53.3,0.57,0.8,No,Limited,Smartphone,91.7,Easy,99.7,Reading,BSBA,"Accounting, Finance",Fail,Safe,0.48
+1771,23.8,Male,High,College,0.9,9.1,80.1,0.51,0.83,No,Limited,Desktop,74.0,Easy,56.4,Kinesthetic,BSBA,"Game Dev, Robotics",Pass,Moderate,0.49
+1772,22.5,Male,Low,College,0.78,13.6,73.5,0.98,1.0,No,Stable,Laptop,68.4,Hard,88.1,Reading,BSIT,"Programming, AI",Fail,Moderate,0.42
+1773,23.2,Female,Middle,High School,0.86,10.8,85.0,0.41,0.89,No,Stable,Laptop,71.3,Moderate,60.0,Visual,BSA,"Game Dev, Robotics",Pass,Moderate,0.43
+1774,20.4,Male,Low,Graduate,1.0,17.4,62.3,0.82,0.44,No,Limited,Laptop,68.6,Moderate,75.0,Auditory,BSBA,"Game Dev, Robotics",Pass,At Risk,0.61
+1775,25.0,Female,Low,College,0.67,16.2,71.2,0.52,0.82,No,Limited,Laptop,51.9,Hard,54.6,Visual,BSA,"Programming, AI",Fail,At Risk,0.66
+1776,19.7,Male,Low,College,0.79,7.6,51.1,0.74,0.46,No,Stable,Smartphone,74.9,Easy,77.7,Reading,BSED,"Programming, AI",Pass,Safe,0.45
+1777,21.2,Male,Middle,College,0.78,14.3,91.1,0.41,0.91,No,Stable,Laptop,78.7,Hard,52.6,Reading,BSA,"Game Dev, Robotics",Pass,Moderate,0.46
+1778,21.1,Female,Middle,High School,0.71,6.4,60.5,0.49,0.7,Yes,Limited,Smartphone,70.4,Moderate,45.5,Kinesthetic,BSIT,"Game Dev, Robotics",Fail,Moderate,0.35
+1779,18.8,Female,Low,Graduate,0.74,15.8,68.6,0.51,0.3,No,Limited,Laptop,86.1,Easy,99.7,Reading,BSA,"Accounting, Finance",Fail,Safe,0.4
+1780,17.4,Male,Low,College,0.79,20.0,77.0,0.52,0.63,No,Stable,Laptop,63.2,Moderate,40.9,Auditory,BSED,"Programming, AI",Pass,At Risk,0.49
+1781,19.4,Female,Middle,College,0.53,10.3,65.1,0.65,0.62,No,Stable,Smartphone,84.8,Moderate,75.1,Auditory,BSBA,"Leadership, Marketing",Fail,Safe,0.48
+1782,20.2,Male,Middle,College,0.65,5.6,67.1,0.95,0.63,Yes,Stable,Tablet,77.4,Hard,65.8,Reading,BSIT,"Teaching, Research",Fail,At Risk,0.54
+1783,19.6,Male,Low,College,0.66,8.1,62.3,0.9,0.9,No,Stable,Tablet,74.0,Hard,56.3,Auditory,BSIT,"Leadership, Marketing",Fail,Moderate,0.42
+1784,17.6,Female,Middle,Graduate,0.74,9.0,67.6,0.8,0.54,No,Stable,Laptop,61.3,Moderate,62.9,Reading,BSA,"Leadership, Marketing",Fail,Safe,0.43
+1785,25.0,Male,High,High School,0.55,18.4,68.9,0.72,1.0,No,Limited,Desktop,67.1,Moderate,64.1,Auditory,BSBA,"Leadership, Marketing",Pass,At Risk,0.19
+1786,23.6,Male,Middle,College,0.53,1.0,79.4,0.76,0.3,Yes,Limited,Laptop,95.0,Moderate,70.3,Visual,BSED,"Leadership, Marketing",Fail,Safe,0.68
+1787,19.4,Female,Middle,Graduate,0.72,7.5,63.9,0.52,0.76,Yes,Limited,Laptop,72.7,Moderate,40.0,Auditory,BSIT,"Game Dev, Robotics",Pass,Safe,0.45
+1788,19.6,Female,Middle,High School,0.77,18.3,60.5,0.63,1.0,Yes,Stable,Tablet,54.6,Hard,65.1,Reading,BSBA,"Game Dev, Robotics",Pass,Moderate,0.45
+1789,20.6,Female,Middle,College,0.79,11.0,56.9,0.59,0.94,No,Limited,Laptop,67.9,Moderate,62.4,Reading,BSED,"Game Dev, Robotics",Fail,Safe,0.35
+1790,20.0,Male,High,College,1.0,10.3,46.7,0.52,0.5,No,Limited,Laptop,79.2,Moderate,72.6,Reading,BSA,"Programming, AI",Pass,Safe,0.3
+1791,22.1,Female,Middle,Graduate,0.71,15.4,53.8,0.7,0.57,No,Stable,Laptop,63.1,Hard,70.1,Reading,BSED,"Leadership, Marketing",Fail,Moderate,0.6
+1792,21.9,Male,Middle,College,0.69,15.1,91.2,0.48,0.65,No,Stable,Smartphone,80.0,Moderate,68.9,Reading,BSIT,"Accounting, Finance",Fail,Moderate,0.71
+1793,21.6,Female,Low,College,0.54,3.8,55.7,0.71,0.66,No,Stable,Laptop,61.3,Moderate,99.7,Visual,BSA,"Leadership, Marketing",Fail,Safe,0.44
+1794,19.9,Female,Middle,College,0.91,7.1,73.1,0.56,0.69,No,Stable,Laptop,71.0,Easy,71.8,Visual,BSA,"Game Dev, Robotics",Fail,At Risk,0.53
+1795,19.7,Female,High,Elementary,0.7,6.6,68.9,0.62,0.6,Yes,None,Tablet,53.8,Moderate,81.8,Auditory,BSIT,"Game Dev, Robotics",Pass,At Risk,0.61
+1796,18.1,Female,Low,College,0.96,9.9,80.8,0.48,0.68,Yes,Stable,Smartphone,50.1,Hard,88.7,Visual,BSA,"Teaching, Research",Fail,Safe,0.68
+1797,16.8,Male,Middle,Elementary,0.84,14.2,58.3,0.69,0.71,Yes,Limited,Laptop,72.7,Hard,89.7,Kinesthetic,BSA,"Accounting, Finance",Fail,Moderate,0.57
+1798,22.4,Male,High,College,0.87,13.3,56.0,0.86,0.85,Yes,Limited,Smartphone,79.0,Hard,51.3,Kinesthetic,BSED,"Teaching, Research",Fail,Moderate,0.58
+1799,21.5,Male,Middle,High School,0.76,13.4,90.3,0.69,0.53,No,Stable,Laptop,66.7,Moderate,73.9,Kinesthetic,BSBA,"Accounting, Finance",Fail,Safe,0.67
+1800,20.6,Female,High,Elementary,0.57,20.0,80.3,0.67,0.73,No,Stable,Smartphone,50.7,Moderate,83.2,Kinesthetic,BSA,"Programming, AI",Pass,At Risk,0.41
+1801,16.0,Female,Middle,High School,0.77,6.4,63.7,0.89,0.86,No,Stable,Smartphone,78.9,Easy,75.6,Reading,BSIT,"Teaching, Research",Fail,Moderate,0.4
+1802,16.5,Female,Low,High School,1.0,5.6,69.3,0.61,0.87,No,None,Laptop,59.2,Moderate,69.0,Kinesthetic,BSA,"Programming, AI",Fail,At Risk,0.45
+1803,20.3,Male,High,High School,1.0,7.3,83.2,1.0,0.88,Yes,Limited,Smartphone,88.7,Moderate,57.6,Kinesthetic,BSA,"Leadership, Marketing",Fail,At Risk,0.21
+1804,22.2,Female,Middle,College,0.95,12.5,99.3,0.7,0.66,Yes,Limited,Smartphone,89.7,Easy,71.3,Kinesthetic,BSA,"Leadership, Marketing",Fail,Safe,0.6
+1805,19.1,Female,Low,College,0.64,20.0,54.2,0.74,0.5,Yes,Limited,Desktop,50.1,Moderate,81.5,Visual,BSA,"Programming, AI",Fail,Moderate,0.38
+1806,18.2,Female,Middle,College,0.93,9.4,55.0,0.43,0.95,Yes,None,Laptop,51.8,Moderate,89.8,Auditory,BSBA,"Game Dev, Robotics",Fail,Moderate,0.48
+1807,18.9,Male,Middle,High School,0.5,4.5,90.3,0.5,0.86,No,Stable,Laptop,81.9,Hard,97.7,Visual,BSBA,"Leadership, Marketing",Fail,Moderate,0.42
+1808,17.3,Male,Low,High School,0.8,7.9,43.3,0.82,0.64,No,Stable,Tablet,67.9,Hard,44.7,Reading,BSIT,"Accounting, Finance",Pass,Moderate,0.6
+1809,19.8,Male,Low,College,0.67,13.8,42.5,0.88,0.87,Yes,None,Laptop,85.8,Moderate,90.4,Reading,BSA,"Leadership, Marketing",Pass,Moderate,0.32
+1810,19.6,Male,Middle,High School,0.63,18.1,99.8,0.76,0.9,Yes,Stable,Tablet,67.3,Moderate,58.3,Kinesthetic,BSIT,"Programming, AI",Fail,Moderate,0.32
+1811,17.4,Female,Middle,College,0.67,13.1,68.2,0.81,0.74,No,Limited,Smartphone,78.2,Moderate,54.6,Visual,BSA,"Game Dev, Robotics",Pass,Safe,0.74
+1812,16.2,Male,Middle,College,0.64,14.7,68.9,0.48,0.67,Yes,Stable,Desktop,75.0,Easy,92.8,Auditory,BSA,"Accounting, Finance",Fail,Moderate,0.36
+1813,18.0,Male,Middle,College,0.7,8.7,73.4,0.62,0.47,No,Stable,Tablet,50.9,Hard,47.2,Auditory,BSED,"Programming, AI",Fail,Moderate,0.66
+1814,19.1,Female,Middle,High School,0.89,14.1,87.0,0.91,0.45,Yes,Stable,Desktop,87.6,Moderate,76.8,Kinesthetic,BSED,"Game Dev, Robotics",Fail,Safe,0.39
+1815,19.6,Female,Low,College,0.68,11.0,70.8,0.81,0.34,Yes,Stable,Smartphone,50.1,Moderate,56.3,Auditory,BSBA,"Teaching, Research",Fail,Moderate,0.47
+1816,20.0,Male,Low,Elementary,0.93,10.1,62.4,0.68,0.6,Yes,Stable,Smartphone,70.2,Hard,92.4,Kinesthetic,BSBA,"Teaching, Research",Fail,Safe,0.51
+1817,20.3,Male,High,College,0.77,13.1,76.9,0.83,0.84,No,Stable,Tablet,61.0,Moderate,65.0,Reading,BSBA,"Leadership, Marketing",Fail,Moderate,0.37
+1818,22.8,Male,Low,College,0.82,11.7,52.5,0.74,0.3,Yes,Stable,Laptop,94.8,Moderate,75.0,Reading,BSA,"Game Dev, Robotics",Fail,Moderate,0.43
+1819,20.5,Female,High,High School,0.97,7.1,49.0,0.55,0.68,No,Stable,Smartphone,95.0,Hard,70.2,Auditory,BSIT,"Leadership, Marketing",Fail,Safe,0.36
+1820,16.9,Female,Low,High School,0.78,3.1,97.9,0.69,0.76,Yes,Stable,Smartphone,51.2,Moderate,74.8,Auditory,BSBA,"Programming, AI",Fail,Safe,0.33
+1821,22.4,Male,Low,Graduate,0.99,10.8,47.7,0.8,0.91,No,Stable,Laptop,70.7,Hard,84.4,Reading,BSIT,"Accounting, Finance",Fail,At Risk,0.39
+1822,22.2,Male,Middle,College,0.81,15.4,70.2,0.73,0.65,Yes,Stable,Laptop,50.8,Moderate,61.7,Visual,BSIT,"Game Dev, Robotics",Pass,Moderate,0.44
+1823,20.2,Male,Low,High School,0.77,17.0,57.2,0.46,0.77,No,Limited,Laptop,88.3,Hard,69.5,Visual,BSBA,"Teaching, Research",Pass,Moderate,0.17
+1824,25.0,Female,High,Elementary,0.95,14.0,67.6,0.7,0.46,Yes,Limited,Laptop,67.6,Moderate,41.2,Visual,BSED,"Accounting, Finance",Pass,Safe,0.55
+1825,19.5,Female,Middle,College,0.69,17.1,62.1,0.64,0.62,No,Stable,Laptop,65.4,Moderate,74.8,Visual,BSBA,"Game Dev, Robotics",Fail,Safe,0.71
+1826,18.6,Male,Middle,College,0.94,13.2,40.1,0.41,0.65,No,Stable,Laptop,77.9,Moderate,40.0,Auditory,BSBA,"Programming, AI",Fail,At Risk,0.71
+1827,19.2,Female,High,Elementary,0.9,9.9,84.2,0.61,0.65,Yes,Stable,Laptop,63.1,Hard,96.6,Auditory,BSBA,"Accounting, Finance",Fail,Moderate,0.31
+1828,19.6,Male,Middle,High School,0.83,12.3,73.4,0.79,0.62,No,Stable,Laptop,63.0,Moderate,81.1,Reading,BSED,"Leadership, Marketing",Pass,Safe,0.48
+1829,24.7,Female,Middle,High School,0.67,1.0,91.1,0.63,0.85,No,Limited,Laptop,73.1,Moderate,60.4,Visual,BSA,"Teaching, Research",Fail,Safe,0.52
+1830,25.0,Female,Low,High School,0.65,18.6,81.2,0.83,0.64,No,Stable,Laptop,67.0,Moderate,40.0,Kinesthetic,BSED,"Programming, AI",Fail,Moderate,0.5
+1831,16.0,Female,Low,Graduate,0.5,5.3,57.7,0.81,0.61,Yes,Limited,Smartphone,67.7,Moderate,82.4,Reading,BSA,"Programming, AI",Pass,Moderate,0.65
+1832,21.3,Female,High,Elementary,0.67,12.7,80.1,1.0,0.64,Yes,Stable,Desktop,59.1,Easy,99.7,Auditory,BSIT,"Teaching, Research",Pass,At Risk,0.16
+1833,19.3,Male,Middle,College,0.94,20.0,91.4,0.93,0.68,No,Stable,Laptop,50.7,Easy,81.1,Reading,BSA,"Accounting, Finance",Pass,Moderate,0.45
+1834,20.6,Female,Low,College,0.68,18.3,52.6,0.76,0.64,No,Limited,Tablet,85.7,Moderate,40.0,Visual,BSIT,"Teaching, Research",Fail,Moderate,0.19
+1835,16.4,Female,High,College,0.67,11.2,74.0,0.41,0.67,No,Stable,Laptop,82.9,Moderate,99.7,Reading,BSIT,"Leadership, Marketing",Fail,Moderate,0.63
+1836,20.4,Male,Middle,College,1.0,10.0,86.2,0.9,0.74,No,Stable,Laptop,68.6,Moderate,86.0,Reading,BSA,"Teaching, Research",Fail,Moderate,0.5
+1837,23.0,Male,Low,Elementary,0.62,12.3,72.5,0.67,0.47,No,Stable,Laptop,71.7,Moderate,84.7,Reading,BSBA,"Game Dev, Robotics",Fail,Moderate,0.65
+1838,22.2,Female,Low,High School,0.87,9.8,84.7,0.66,0.81,No,Limited,Desktop,69.9,Moderate,53.6,Visual,BSA,"Programming, AI",Pass,Moderate,0.41
+1839,16.0,Male,Low,Graduate,0.66,7.7,83.8,0.73,0.71,Yes,Limited,Laptop,75.3,Moderate,71.9,Reading,BSBA,"Accounting, Finance",Fail,At Risk,0.45
+1840,19.2,Female,Middle,High School,0.9,13.5,99.3,0.71,0.8,Yes,Stable,Laptop,81.2,Hard,55.2,Reading,BSED,"Teaching, Research",Pass,Safe,0.78
+1841,20.6,Male,Low,High School,0.75,7.0,98.9,0.41,0.56,Yes,Stable,Smartphone,81.1,Moderate,78.6,Kinesthetic,BSA,"Game Dev, Robotics",Fail,Moderate,0.64
+1842,20.5,Female,Middle,High School,0.88,1.0,71.8,0.75,0.87,No,Stable,Laptop,92.1,Easy,53.8,Auditory,BSA,"Leadership, Marketing",Pass,Moderate,0.57
+1843,17.0,Female,Low,High School,0.94,8.0,56.8,0.63,0.71,No,Stable,Laptop,95.0,Hard,80.8,Reading,BSBA,"Accounting, Finance",Fail,Safe,0.72
+1844,20.4,Female,Low,College,0.66,8.7,86.8,0.84,0.56,No,Stable,Laptop,50.1,Moderate,64.7,Auditory,BSIT,"Leadership, Marketing",Fail,Safe,0.24
+1845,19.5,Male,Low,High School,0.65,18.2,64.9,0.55,0.39,No,Limited,Laptop,70.4,Moderate,83.2,Auditory,BSA,"Leadership, Marketing",Pass,Safe,0.7
+1846,21.7,Female,Low,College,0.81,8.5,59.1,0.86,0.92,Yes,Limited,Smartphone,95.0,Moderate,96.0,Kinesthetic,BSBA,"Teaching, Research",Pass,Moderate,0.38
+1847,20.5,Female,High,College,0.54,7.8,48.2,0.71,0.61,Yes,Stable,Laptop,82.8,Hard,65.6,Reading,BSED,"Game Dev, Robotics",Pass,Safe,0.56
+1848,20.6,Female,Low,High School,0.71,6.7,59.2,0.9,0.8,No,Stable,Laptop,72.5,Moderate,89.8,Reading,BSBA,"Teaching, Research",Fail,At Risk,0.63
+1849,21.2,Female,Middle,Graduate,0.84,2.5,58.3,0.58,0.48,Yes,Stable,Smartphone,64.9,Easy,92.2,Reading,BSA,"Leadership, Marketing",Pass,Safe,0.22
+1850,19.7,Male,Middle,College,0.82,12.9,61.4,0.73,0.69,No,Limited,Laptop,58.6,Moderate,99.7,Visual,BSA,"Game Dev, Robotics",Fail,Safe,0.58
+1851,19.3,Male,Middle,College,0.92,2.2,87.6,0.79,0.73,Yes,Stable,Laptop,79.3,Easy,91.1,Visual,BSA,"Accounting, Finance",Pass,Moderate,0.78
+1852,24.6,Male,Middle,High School,0.62,11.9,50.2,0.52,0.72,No,Stable,Tablet,62.8,Easy,45.5,Auditory,BSBA,"Teaching, Research",Fail,Safe,0.37
+1853,16.0,Male,Middle,College,0.95,11.4,78.6,0.65,0.4,No,Stable,Laptop,66.0,Hard,82.4,Visual,BSIT,"Teaching, Research",Pass,Moderate,0.56
+1854,20.6,Male,Middle,High School,0.66,7.7,98.9,0.74,0.36,Yes,Stable,Smartphone,84.6,Moderate,95.5,Visual,BSBA,"Leadership, Marketing",Pass,Safe,0.58
+1855,20.0,Male,Low,College,0.86,9.0,68.8,0.9,0.64,No,Limited,Tablet,54.1,Easy,78.0,Visual,BSED,"Leadership, Marketing",Fail,At Risk,0.54
+1856,18.9,Male,Low,High School,1.0,1.2,42.5,0.68,0.68,Yes,Limited,Tablet,80.4,Hard,81.1,Auditory,BSBA,"Leadership, Marketing",Fail,Safe,0.34
+1857,22.2,Female,High,High School,0.89,6.8,50.0,0.82,0.8,Yes,Stable,Laptop,50.1,Moderate,63.5,Visual,BSBA,"Programming, AI",Pass,Safe,0.55
+1858,21.6,Male,High,College,0.68,7.0,99.8,0.78,0.68,No,Limited,Laptop,80.2,Easy,75.6,Reading,BSBA,"Programming, AI",Pass,At Risk,0.56
+1859,23.1,Male,Middle,High School,0.57,5.2,40.1,0.69,0.88,No,Stable,Laptop,57.2,Moderate,82.7,Visual,BSA,"Game Dev, Robotics",Fail,Moderate,0.54
+1860,18.8,Male,Middle,High School,0.62,2.5,41.9,0.48,0.4,Yes,Limited,Laptop,87.9,Moderate,61.5,Auditory,BSA,"Leadership, Marketing",Fail,Moderate,0.32
+1861,19.3,Male,Low,High School,0.87,5.4,72.1,0.61,0.79,No,Limited,Tablet,64.4,Hard,85.4,Auditory,BSED,"Leadership, Marketing",Pass,Moderate,0.42
+1862,20.4,Female,Low,Elementary,0.71,11.2,99.8,0.56,0.65,No,Stable,Laptop,77.4,Moderate,94.7,Kinesthetic,BSBA,"Leadership, Marketing",Fail,Moderate,0.55
+1863,18.1,Female,High,High School,0.73,1.0,69.7,0.73,0.35,No,Stable,Desktop,68.0,Hard,51.7,Reading,BSIT,"Programming, AI",Fail,Moderate,0.42
+1864,20.2,Male,Middle,High School,0.85,12.6,99.8,0.73,0.3,No,Stable,Laptop,64.8,Moderate,95.4,Kinesthetic,BSIT,"Teaching, Research",Fail,Safe,0.48
+1865,16.9,Female,Middle,College,0.99,13.8,99.8,0.59,0.39,No,Limited,Desktop,92.3,Moderate,68.3,Auditory,BSA,"Accounting, Finance",Pass,Moderate,0.53
+1866,21.5,Female,Middle,High School,0.76,16.6,44.5,0.72,1.0,No,Limited,Laptop,95.0,Moderate,40.0,Reading,BSA,"Leadership, Marketing",Fail,Moderate,0.68
+1867,18.0,Female,Middle,Elementary,0.86,12.6,45.9,0.61,0.31,No,Stable,Laptop,82.5,Moderate,91.0,Visual,BSIT,"Leadership, Marketing",Fail,Safe,0.19
+1868,19.4,Female,Middle,College,0.57,13.4,99.2,0.41,0.72,Yes,Limited,Laptop,80.2,Moderate,71.6,Kinesthetic,BSED,"Leadership, Marketing",Pass,Safe,0.18
+1869,23.2,Female,Low,Elementary,0.75,3.4,72.5,0.97,0.6,Yes,Stable,Laptop,70.3,Hard,79.7,Reading,BSBA,"Accounting, Finance",Fail,Moderate,0.36
+1870,22.9,Male,Low,Elementary,0.62,12.4,63.3,0.47,0.73,No,Limited,Laptop,63.3,Moderate,67.1,Visual,BSED,"Game Dev, Robotics",Fail,Moderate,0.15
+1871,22.9,Male,Middle,High School,0.59,8.7,53.1,0.62,0.93,No,Stable,Desktop,89.3,Easy,43.1,Visual,BSBA,"Programming, AI",Fail,Moderate,0.75
+1872,23.7,Female,Middle,High School,0.81,20.0,83.8,0.85,0.63,Yes,Stable,Smartphone,95.0,Moderate,68.5,Reading,BSA,"Game Dev, Robotics",Pass,At Risk,0.71
+1873,22.5,Male,Low,High School,0.71,2.0,94.0,0.89,0.55,No,Limited,Tablet,67.2,Moderate,57.7,Kinesthetic,BSIT,"Programming, AI",Fail,Moderate,0.78
+1874,19.8,Male,Middle,High School,0.5,9.2,99.8,0.87,0.3,Yes,Stable,Laptop,50.1,Hard,66.8,Reading,BSBA,"Teaching, Research",Pass,Moderate,0.61
+1875,23.8,Male,Middle,College,1.0,8.1,92.1,0.44,0.64,No,Stable,Desktop,52.2,Moderate,42.0,Visual,BSED,"Leadership, Marketing",Fail,Moderate,0.84
+1876,16.0,Female,High,College,0.67,11.2,77.2,0.71,0.34,No,Limited,Laptop,78.7,Moderate,76.3,Kinesthetic,BSIT,"Game Dev, Robotics",Fail,At Risk,0.43
+1877,16.0,Female,Low,High School,0.7,6.3,94.1,0.63,0.79,Yes,Stable,Smartphone,78.9,Hard,60.7,Kinesthetic,BSBA,"Leadership, Marketing",Pass,Moderate,0.5
+1878,25.0,Male,Middle,College,0.64,7.6,60.6,0.58,0.85,No,Stable,Tablet,81.3,Hard,52.3,Kinesthetic,BSIT,"Accounting, Finance",Fail,Safe,0.73
+1879,22.5,Male,High,High School,0.67,2.9,59.1,0.41,0.68,No,None,Laptop,65.4,Moderate,62.5,Auditory,BSED,"Teaching, Research",Pass,Safe,0.5
+1880,24.8,Female,Middle,High School,0.61,3.1,64.9,0.82,0.91,Yes,Stable,Smartphone,77.9,Moderate,89.1,Visual,BSIT,"Teaching, Research",Pass,Safe,0.43
+1881,20.2,Female,Middle,High School,0.78,13.8,42.8,0.94,0.35,No,Stable,Desktop,89.0,Moderate,72.2,Auditory,BSIT,"Game Dev, Robotics",Pass,Moderate,0.48
+1882,18.1,Female,Middle,College,0.84,8.3,72.7,0.41,0.59,Yes,Stable,Desktop,74.3,Moderate,80.1,Visual,BSED,"Game Dev, Robotics",Pass,At Risk,0.76
+1883,17.8,Male,Middle,College,0.69,7.2,60.1,0.61,0.96,Yes,Stable,Smartphone,69.1,Easy,67.7,Auditory,BSIT,"Programming, AI",Fail,At Risk,0.64
+1884,20.2,Male,Middle,Graduate,0.83,14.5,75.5,0.88,0.59,No,Stable,Desktop,91.5,Easy,99.7,Visual,BSBA,"Game Dev, Robotics",Pass,Safe,0.46
+1885,20.0,Female,Middle,College,0.76,1.0,83.1,0.55,0.61,No,Stable,Smartphone,64.3,Moderate,69.0,Reading,BSA,"Game Dev, Robotics",Fail,Safe,0.42
+1886,16.0,Male,High,High School,1.0,10.5,63.5,0.62,0.73,No,Stable,Smartphone,79.3,Moderate,64.7,Reading,BSBA,"Programming, AI",Pass,Safe,0.69
+1887,17.7,Female,Low,College,0.66,1.0,76.8,0.75,0.89,No,Limited,Laptop,84.0,Easy,55.5,Reading,BSBA,"Accounting, Finance",Fail,Moderate,0.61
+1888,23.1,Male,Low,High School,0.76,5.5,46.6,0.67,0.61,Yes,Limited,Laptop,65.4,Moderate,61.8,Kinesthetic,BSIT,"Game Dev, Robotics",Pass,Moderate,0.44
+1889,21.9,Female,Middle,High School,0.5,19.7,82.2,0.69,0.55,Yes,Limited,Laptop,68.7,Easy,89.6,Reading,BSIT,"Game Dev, Robotics",Pass,Moderate,0.81
+1890,18.5,Male,Middle,College,0.97,20.0,44.7,0.84,1.0,No,Stable,Smartphone,68.3,Easy,68.4,Reading,BSIT,"Leadership, Marketing",Fail,Safe,0.2
+1891,22.8,Female,Middle,Elementary,1.0,7.5,58.6,0.56,0.42,Yes,Stable,Desktop,71.4,Hard,40.0,Auditory,BSED,"Accounting, Finance",Fail,Safe,0.57
+1892,20.3,Female,High,Graduate,0.66,14.7,47.1,0.9,0.67,No,Limited,Laptop,90.2,Moderate,67.3,Visual,BSED,"Leadership, Marketing",Pass,Safe,0.73
+1893,24.8,Female,Middle,College,0.91,9.7,99.8,0.45,0.3,Yes,Stable,Laptop,63.6,Moderate,58.5,Visual,BSBA,"Accounting, Finance",Fail,At Risk,0.34
+1894,21.1,Female,Middle,High School,0.69,10.4,49.3,0.63,0.67,No,Stable,Laptop,68.3,Moderate,65.9,Visual,BSIT,"Game Dev, Robotics",Fail,Safe,0.31
+1895,17.1,Male,Middle,High School,0.77,12.1,53.2,0.94,0.72,Yes,Stable,Laptop,69.8,Moderate,40.0,Visual,BSED,"Game Dev, Robotics",Fail,Safe,0.1
+1896,20.4,Female,Low,Elementary,0.68,20.0,58.7,0.74,0.4,Yes,Limited,Desktop,75.1,Moderate,69.1,Visual,BSA,"Programming, AI",Fail,Moderate,0.59
+1897,24.0,Female,Middle,Elementary,0.73,8.6,74.7,0.67,0.7,No,Limited,Tablet,50.1,Hard,82.2,Visual,BSA,"Teaching, Research",Pass,Safe,0.18
+1898,22.2,Male,Low,College,0.63,12.2,72.9,0.8,0.42,No,Limited,Smartphone,69.9,Moderate,40.0,Visual,BSED,"Leadership, Marketing",Pass,Safe,0.35
+1899,24.9,Male,High,Elementary,0.83,8.9,44.7,0.74,0.77,No,Stable,Smartphone,69.7,Easy,79.1,Visual,BSA,"Teaching, Research",Fail,Safe,0.35
+1900,19.5,Female,Middle,College,0.65,12.9,99.8,0.76,0.72,No,Limited,Laptop,56.3,Moderate,71.1,Kinesthetic,BSBA,"Teaching, Research",Fail,At Risk,0.67
+1901,22.9,Female,High,Elementary,0.7,6.5,45.4,0.7,0.92,Yes,Stable,Smartphone,50.7,Moderate,95.4,Visual,BSA,"Game Dev, Robotics",Pass,Safe,0.57
+1902,19.2,Male,Low,High School,0.78,19.0,54.4,0.9,0.72,Yes,Stable,Laptop,54.4,Moderate,84.5,Auditory,BSA,"Accounting, Finance",Pass,At Risk,0.43
+1903,20.7,Male,Middle,Elementary,0.5,5.3,63.0,0.6,0.6,No,Stable,Laptop,56.2,Moderate,92.0,Auditory,BSBA,"Game Dev, Robotics",Fail,At Risk,0.7
+1904,25.0,Male,Middle,College,0.73,9.1,44.2,0.72,0.93,No,Stable,Laptop,60.9,Easy,63.3,Reading,BSED,"Game Dev, Robotics",Fail,Moderate,0.47
+1905,20.3,Female,Low,High School,0.57,14.0,99.8,0.43,0.58,No,Stable,Laptop,60.9,Moderate,61.1,Reading,BSIT,"Game Dev, Robotics",Fail,Moderate,0.46
+1906,20.0,Female,Middle,College,0.85,16.8,40.1,0.94,0.69,No,Limited,Smartphone,72.8,Moderate,62.6,Reading,BSBA,"Teaching, Research",Fail,At Risk,0.65
+1907,23.8,Female,Middle,Elementary,0.77,2.0,45.3,0.56,0.98,No,Limited,Smartphone,69.4,Easy,89.0,Reading,BSBA,"Leadership, Marketing",Fail,Safe,0.57
+1908,22.1,Male,Middle,College,0.61,12.2,81.4,0.59,0.68,Yes,Limited,Laptop,59.8,Hard,99.7,Visual,BSED,"Teaching, Research",Fail,Safe,0.37
+1909,16.0,Male,Low,Elementary,0.83,3.8,85.3,0.58,0.39,Yes,Stable,Laptop,50.1,Moderate,97.7,Kinesthetic,BSIT,"Teaching, Research",Pass,Safe,0.49
+1910,19.9,Male,Middle,High School,0.66,11.1,62.8,0.79,0.69,Yes,Limited,Laptop,83.3,Moderate,73.4,Kinesthetic,BSA,"Accounting, Finance",Pass,At Risk,0.7
+1911,24.2,Male,Middle,Elementary,0.68,2.7,87.6,0.72,0.72,No,Stable,Laptop,81.2,Hard,80.0,Kinesthetic,BSA,"Accounting, Finance",Fail,At Risk,0.64
+1912,24.4,Male,Middle,High School,0.72,14.0,77.7,0.58,1.0,No,Limited,Laptop,78.1,Moderate,40.0,Visual,BSED,"Programming, AI",Fail,At Risk,0.3
+1913,16.5,Male,Low,Graduate,1.0,2.5,96.1,0.41,0.59,Yes,Limited,Desktop,57.8,Easy,70.1,Kinesthetic,BSBA,"Programming, AI",Pass,At Risk,0.31
+1914,20.7,Male,Middle,High School,0.7,19.1,90.6,0.52,0.57,No,Stable,Tablet,66.7,Easy,80.2,Auditory,BSBA,"Teaching, Research",Fail,Moderate,0.56
+1915,18.7,Female,High,Elementary,0.88,13.0,51.1,0.68,0.3,No,Stable,Laptop,57.9,Moderate,72.9,Kinesthetic,BSIT,"Leadership, Marketing",Pass,Moderate,0.4
+1916,18.5,Male,Middle,College,0.72,11.8,69.3,0.87,1.0,Yes,Limited,Laptop,63.0,Moderate,82.1,Reading,BSA,"Leadership, Marketing",Pass,At Risk,0.32
+1917,17.6,Female,High,College,0.63,14.6,68.9,0.61,0.77,Yes,Stable,Laptop,69.5,Moderate,73.5,Kinesthetic,BSBA,"Teaching, Research",Fail,Moderate,0.09
+1918,25.0,Female,Middle,College,0.84,13.9,88.0,0.67,0.65,Yes,None,Laptop,68.7,Moderate,71.3,Kinesthetic,BSBA,"Accounting, Finance",Pass,Moderate,0.5
+1919,22.0,Female,High,College,0.7,9.8,65.8,0.74,0.42,Yes,Limited,Desktop,59.2,Easy,78.3,Visual,BSBA,"Leadership, Marketing",Pass,Moderate,0.67
+1920,20.1,Female,Middle,High School,0.79,5.8,88.1,0.67,0.5,Yes,Limited,Desktop,77.9,Moderate,63.3,Kinesthetic,BSED,"Programming, AI",Fail,Safe,0.41
+1921,21.0,Male,Middle,High School,0.64,6.0,46.8,0.52,0.41,No,Limited,Laptop,84.3,Moderate,56.2,Reading,BSA,"Accounting, Finance",Fail,At Risk,0.63
+1922,23.2,Female,High,High School,0.63,11.5,80.8,0.89,0.82,Yes,Stable,Desktop,80.7,Moderate,45.8,Visual,BSA,"Programming, AI",Fail,Moderate,0.68
+1923,23.9,Female,High,College,0.66,14.3,99.8,0.74,0.5,Yes,Stable,Tablet,63.0,Moderate,92.7,Auditory,BSED,"Teaching, Research",Pass,Safe,0.5
+1924,25.0,Male,Middle,College,0.75,13.6,76.9,0.52,0.71,Yes,Limited,Smartphone,52.9,Hard,86.8,Reading,BSA,"Leadership, Marketing",Fail,Safe,0.52
+1925,21.7,Male,Middle,College,0.75,12.7,57.4,0.49,0.75,No,Limited,Laptop,88.8,Moderate,83.7,Visual,BSED,"Programming, AI",Fail,Moderate,0.68
+1926,20.5,Female,Middle,High School,0.99,13.5,81.1,0.6,0.45,Yes,Stable,Smartphone,87.0,Moderate,80.3,Kinesthetic,BSIT,"Leadership, Marketing",Fail,Moderate,0.55
+1927,21.9,Female,Low,High School,0.75,12.5,55.6,0.63,0.83,No,None,Desktop,73.9,Moderate,95.8,Visual,BSBA,"Programming, AI",Fail,At Risk,0.73
+1928,19.7,Female,High,High School,0.8,14.3,46.5,0.57,0.63,No,Limited,Laptop,55.5,Moderate,75.0,Visual,BSIT,"Leadership, Marketing",Pass,At Risk,0.45
+1929,18.1,Female,Middle,Elementary,0.51,1.0,68.3,0.5,0.74,No,Limited,Laptop,55.5,Moderate,88.0,Visual,BSED,"Leadership, Marketing",Fail,Safe,0.76
+1930,25.0,Male,Middle,High School,0.9,13.7,40.1,0.71,0.76,Yes,Limited,Smartphone,71.5,Moderate,62.4,Reading,BSBA,"Game Dev, Robotics",Fail,Moderate,0.47
+1931,19.9,Male,Low,College,0.97,12.6,63.4,0.87,0.96,Yes,Limited,Laptop,55.7,Moderate,96.6,Reading,BSIT,"Accounting, Finance",Fail,At Risk,0.5
+1932,16.3,Female,Middle,High School,0.52,16.9,53.7,0.69,0.65,No,Limited,Laptop,77.1,Moderate,95.2,Auditory,BSED,"Accounting, Finance",Fail,Moderate,0.31
+1933,24.4,Female,Middle,College,0.7,12.3,70.2,0.95,0.8,No,Limited,Tablet,77.2,Moderate,84.2,Auditory,BSIT,"Leadership, Marketing",Fail,Moderate,0.46
+1934,16.0,Female,Middle,Elementary,0.58,14.8,71.1,0.59,0.36,No,Stable,Desktop,73.4,Moderate,84.8,Kinesthetic,BSBA,"Leadership, Marketing",Pass,At Risk,0.51
+1935,16.2,Female,Middle,High School,0.69,8.1,40.3,0.83,0.55,Yes,Stable,Smartphone,80.0,Hard,88.1,Reading,BSIT,"Programming, AI",Pass,Moderate,0.22
+1936,25.0,Female,Middle,High School,0.82,20.0,73.1,0.84,0.84,Yes,Stable,Smartphone,54.4,Hard,94.2,Kinesthetic,BSBA,"Teaching, Research",Fail,Safe,0.55
+1937,19.8,Female,Middle,College,0.57,11.9,43.1,0.76,0.8,No,Limited,Smartphone,74.5,Moderate,82.6,Visual,BSIT,"Teaching, Research",Pass,Safe,0.84
+1938,21.5,Male,Low,High School,0.5,15.7,66.2,0.44,1.0,Yes,Stable,Laptop,71.9,Easy,66.5,Kinesthetic,BSBA,"Teaching, Research",Pass,Safe,0.7
+1939,20.8,Male,High,College,0.76,1.0,64.0,0.41,0.56,Yes,Limited,Laptop,85.7,Hard,74.1,Reading,BSBA,"Game Dev, Robotics",Fail,At Risk,0.35
+1940,19.5,Female,High,High School,0.96,9.6,79.6,0.67,0.61,Yes,Stable,Smartphone,60.1,Moderate,99.7,Auditory,BSED,"Accounting, Finance",Fail,Moderate,0.49
+1941,19.1,Female,Low,Graduate,0.78,10.5,61.1,0.78,0.54,Yes,Limited,Smartphone,58.9,Moderate,57.4,Reading,BSA,"Accounting, Finance",Pass,At Risk,0.72
+1942,19.6,Male,High,College,0.8,4.1,67.8,0.74,0.58,No,Stable,Tablet,77.1,Moderate,79.4,Reading,BSIT,"Teaching, Research",Pass,Moderate,0.66
+1943,17.3,Male,High,High School,0.7,12.8,66.2,0.72,0.68,No,Limited,Tablet,71.9,Easy,71.1,Reading,BSBA,"Accounting, Finance",Pass,At Risk,0.5
+1944,19.1,Female,Middle,Graduate,0.65,10.8,47.1,0.88,0.79,No,Limited,Desktop,66.9,Moderate,99.7,Visual,BSIT,"Programming, AI",Fail,At Risk,0.65
+1945,23.1,Female,Low,Graduate,0.81,9.2,80.9,0.64,0.52,Yes,Stable,Smartphone,58.1,Easy,99.7,Visual,BSA,"Accounting, Finance",Pass,Safe,0.63
+1946,20.6,Male,High,High School,0.87,2.2,81.9,0.76,0.84,Yes,Stable,Desktop,50.1,Hard,80.0,Visual,BSBA,"Game Dev, Robotics",Pass,At Risk,0.43
+1947,18.3,Male,Low,Elementary,0.8,16.1,83.1,0.78,0.78,No,Stable,Smartphone,52.4,Easy,90.5,Auditory,BSBA,"Programming, AI",Pass,Moderate,0.47
+1948,16.8,Male,High,High School,0.54,6.1,61.9,0.77,0.65,No,Stable,Smartphone,91.2,Moderate,99.7,Kinesthetic,BSA,"Game Dev, Robotics",Pass,Moderate,0.67
+1949,19.2,Male,Middle,High School,0.86,11.8,62.5,0.74,0.47,Yes,Limited,Laptop,74.4,Moderate,92.9,Visual,BSED,"Teaching, Research",Pass,At Risk,0.59
+1950,18.0,Male,Middle,College,0.64,17.3,89.1,1.0,0.96,No,Limited,Laptop,76.4,Moderate,76.6,Kinesthetic,BSA,"Leadership, Marketing",Fail,Moderate,0.33
+1951,21.6,Male,Middle,College,0.93,8.2,60.6,0.58,0.52,Yes,Stable,Smartphone,68.7,Moderate,60.0,Kinesthetic,BSA,"Programming, AI",Fail,At Risk,0.75
+1952,22.0,Male,High,High School,0.8,6.3,99.8,0.56,0.44,No,Stable,Smartphone,56.1,Moderate,85.9,Visual,BSBA,"Teaching, Research",Pass,Safe,0.32
+1953,17.1,Male,Middle,Elementary,0.65,9.8,49.5,0.52,0.81,Yes,Stable,Laptop,75.4,Hard,53.0,Kinesthetic,BSA,"Game Dev, Robotics",Pass,Safe,0.56
+1954,22.1,Female,Low,High School,0.91,14.2,40.1,0.48,0.45,No,None,Laptop,73.1,Moderate,66.2,Visual,BSIT,"Accounting, Finance",Pass,Safe,0.66
+1955,20.9,Male,Middle,High School,0.69,3.6,74.1,0.44,0.42,Yes,Limited,Desktop,71.8,Moderate,53.2,Auditory,BSBA,"Game Dev, Robotics",Fail,At Risk,0.59
+1956,23.3,Female,Low,High School,0.82,20.0,78.6,0.55,0.64,Yes,Limited,Smartphone,95.0,Moderate,64.8,Visual,BSED,"Programming, AI",Pass,Safe,0.55
+1957,23.0,Female,Middle,Elementary,0.67,15.5,81.8,0.97,0.82,No,Stable,Smartphone,70.4,Easy,47.8,Kinesthetic,BSA,"Programming, AI",Pass,Moderate,0.8
+1958,21.8,Female,Low,High School,0.82,18.3,63.9,0.79,0.75,No,Stable,Laptop,68.9,Easy,70.4,Reading,BSIT,"Accounting, Finance",Fail,Safe,0.58
+1959,20.1,Male,High,College,0.8,6.9,98.2,1.0,0.38,Yes,Limited,Laptop,55.7,Easy,64.1,Reading,BSA,"Game Dev, Robotics",Fail,Moderate,0.6
+1960,23.6,Female,Middle,Graduate,0.85,14.4,68.0,0.72,0.86,Yes,Limited,Laptop,73.8,Moderate,99.7,Visual,BSED,"Accounting, Finance",Fail,Moderate,0.62
+1961,20.5,Male,Middle,Elementary,0.87,11.4,83.0,0.6,0.66,No,Stable,Laptop,74.9,Moderate,55.3,Auditory,BSIT,"Game Dev, Robotics",Fail,Moderate,0.58
+1962,25.0,Male,Middle,College,0.9,11.0,70.9,0.51,0.6,Yes,Stable,Laptop,77.0,Moderate,43.5,Auditory,BSA,"Programming, AI",Pass,At Risk,0.6
+1963,18.9,Male,Low,Elementary,0.86,15.3,88.1,0.54,0.63,Yes,Limited,Tablet,50.1,Moderate,80.4,Kinesthetic,BSIT,"Programming, AI",Fail,Moderate,0.68
+1964,24.5,Female,Middle,High School,0.65,14.5,64.5,0.66,0.62,No,Stable,Laptop,68.7,Hard,67.8,Visual,BSIT,"Leadership, Marketing",Fail,Moderate,0.42
+1965,18.5,Female,Middle,College,0.66,16.6,93.1,0.75,0.75,No,Stable,Desktop,50.1,Easy,41.5,Reading,BSA,"Leadership, Marketing",Fail,At Risk,0.48
+1966,21.3,Male,High,High School,0.72,12.3,40.1,0.63,0.87,Yes,Stable,Laptop,75.8,Moderate,44.1,Visual,BSA,"Accounting, Finance",Pass,Moderate,0.2
+1967,16.0,Male,Middle,High School,0.67,10.9,60.6,0.77,0.4,Yes,Stable,Laptop,95.0,Moderate,99.7,Reading,BSED,"Game Dev, Robotics",Fail,Safe,0.65
+1968,21.6,Male,High,High School,0.86,10.3,70.3,0.74,0.73,No,Stable,Laptop,93.8,Moderate,73.5,Visual,BSA,"Teaching, Research",Pass,Safe,0.48
+1969,22.8,Female,Low,College,0.52,8.9,62.6,0.72,0.9,No,Stable,Laptop,76.4,Easy,99.7,Auditory,BSIT,"Programming, AI",Pass,At Risk,0.53
+1970,21.3,Female,Middle,High School,0.65,5.6,59.5,0.93,0.78,No,Limited,Laptop,67.1,Easy,67.3,Reading,BSED,"Leadership, Marketing",Pass,At Risk,0.31
+1971,22.7,Female,High,Graduate,0.71,6.4,59.4,0.53,0.83,Yes,Stable,Laptop,88.9,Hard,61.8,Reading,BSBA,"Leadership, Marketing",Pass,Safe,0.31
+1972,19.0,Female,Middle,Elementary,0.97,1.0,61.3,0.63,0.46,Yes,Stable,Smartphone,71.2,Moderate,56.4,Reading,BSBA,"Teaching, Research",Pass,At Risk,0.65
+1973,25.0,Male,High,Graduate,0.5,3.0,74.9,0.62,0.58,Yes,Limited,Laptop,88.3,Easy,65.4,Reading,BSA,"Programming, AI",Pass,Safe,0.52
+1974,21.6,Female,Middle,College,0.5,10.2,40.1,0.92,0.99,Yes,Limited,Laptop,64.3,Moderate,78.8,Auditory,BSBA,"Teaching, Research",Fail,Safe,0.48
+1975,17.1,Male,Low,College,0.81,1.0,93.1,0.93,0.63,Yes,None,Laptop,52.6,Moderate,89.0,Visual,BSIT,"Programming, AI",Pass,Safe,0.49
+1976,20.6,Male,Low,High School,0.65,7.4,49.6,0.75,0.63,No,Limited,Desktop,53.2,Easy,57.6,Kinesthetic,BSIT,"Accounting, Finance",Fail,At Risk,0.38
+1977,21.4,Female,Middle,College,0.8,20.0,88.6,0.7,0.56,No,Stable,Smartphone,68.6,Moderate,40.0,Kinesthetic,BSBA,"Accounting, Finance",Pass,At Risk,0.47
+1978,18.6,Male,Middle,High School,0.86,13.0,63.7,0.82,0.74,No,Limited,Laptop,80.1,Easy,96.5,Kinesthetic,BSED,"Teaching, Research",Pass,At Risk,0.66
+1979,23.6,Male,Middle,High School,0.83,6.7,75.1,0.59,0.3,No,Limited,Smartphone,78.7,Moderate,62.6,Auditory,BSIT,"Teaching, Research",Pass,At Risk,0.48
+1980,20.4,Male,High,College,0.78,19.0,70.9,0.69,0.75,Yes,Stable,Tablet,57.0,Moderate,63.4,Visual,BSIT,"Programming, AI",Pass,Moderate,0.34
+1981,19.7,Female,High,College,1.0,13.2,46.6,0.81,0.74,No,Stable,Laptop,72.2,Moderate,76.2,Reading,BSED,"Teaching, Research",Pass,Safe,0.41
+1982,18.3,Male,Middle,High School,0.94,12.2,99.8,1.0,0.79,No,Stable,Smartphone,59.1,Moderate,71.5,Auditory,BSBA,"Leadership, Marketing",Pass,Safe,0.27
+1983,21.7,Male,Middle,College,0.81,13.6,40.1,0.7,0.63,No,Limited,Tablet,92.5,Moderate,73.8,Visual,BSIT,"Leadership, Marketing",Pass,Moderate,0.52
+1984,16.0,Male,Low,High School,0.69,9.6,62.1,0.65,0.48,No,Stable,Laptop,81.2,Moderate,96.2,Visual,BSED,"Game Dev, Robotics",Pass,At Risk,0.8
+1985,16.8,Female,Low,High School,0.73,10.6,76.5,0.94,0.77,Yes,Stable,Laptop,61.0,Hard,99.7,Kinesthetic,BSA,"Accounting, Finance",Fail,Safe,0.59
+1986,21.7,Female,High,High School,0.65,4.7,49.0,0.82,0.47,Yes,Limited,Desktop,95.0,Hard,89.1,Visual,BSIT,"Game Dev, Robotics",Pass,Moderate,0.56
+1987,22.8,Male,Low,College,0.73,15.2,54.2,0.63,0.69,Yes,Limited,Desktop,58.7,Moderate,49.5,Auditory,BSA,"Accounting, Finance",Pass,Safe,0.45
+1988,22.7,Male,Low,High School,0.77,10.5,73.2,0.69,0.83,No,Limited,Smartphone,55.1,Easy,60.5,Reading,BSBA,"Game Dev, Robotics",Fail,At Risk,0.78
+1989,21.3,Male,Middle,College,0.88,3.9,63.4,0.64,0.92,Yes,Stable,Laptop,70.9,Moderate,67.6,Visual,BSIT,"Programming, AI",Fail,Safe,0.63
+1990,20.9,Female,Middle,Elementary,0.69,14.7,94.2,0.66,0.82,No,Stable,Laptop,84.9,Moderate,90.4,Reading,BSED,"Teaching, Research",Fail,Safe,0.39
+1991,22.5,Male,Middle,Elementary,0.71,11.1,96.9,0.73,0.3,No,Stable,Smartphone,85.4,Moderate,71.1,Auditory,BSIT,"Teaching, Research",Pass,Safe,0.26
+1992,23.2,Male,Middle,Graduate,0.63,16.2,47.7,0.86,0.63,No,Stable,Desktop,63.4,Hard,79.0,Reading,BSA,"Programming, AI",Pass,At Risk,0.23
+1993,19.4,Female,Low,College,0.76,20.0,54.0,0.57,0.67,Yes,Stable,Smartphone,67.3,Moderate,61.7,Visual,BSBA,"Teaching, Research",Pass,Safe,0.1
+1994,17.6,Male,Low,College,1.0,8.4,43.4,0.83,0.67,No,Stable,Laptop,63.5,Hard,71.5,Reading,BSBA,"Teaching, Research",Pass,Safe,0.39
+1995,19.5,Female,Low,College,0.8,14.7,68.4,0.41,0.62,No,Stable,Smartphone,80.3,Hard,82.0,Auditory,BSA,"Teaching, Research",Fail,Safe,0.59
+1996,22.7,Male,Low,Graduate,0.7,9.2,75.7,0.71,0.34,No,Stable,Laptop,95.0,Easy,63.8,Reading,BSED,"Game Dev, Robotics",Pass,Safe,0.2
+1997,23.2,Female,Middle,High School,0.82,14.3,45.4,1.0,0.82,No,None,Laptop,50.1,Moderate,60.0,Auditory,BSIT,"Leadership, Marketing",Fail,Safe,0.34
+1998,22.5,Female,Low,High School,0.77,16.6,55.1,0.84,0.85,No,Stable,Smartphone,68.6,Moderate,67.0,Reading,BSBA,"Teaching, Research",Fail,Moderate,0.4
+1999,19.2,Male,Middle,College,0.63,6.7,68.1,0.72,0.67,No,None,Smartphone,63.6,Moderate,66.7,Reading,BSIT,"Accounting, Finance",Pass,At Risk,0.56
+2000,16.0,Male,Middle,Elementary,0.66,11.9,98.4,0.41,0.52,Yes,Stable,Laptop,78.0,Easy,91.2,Visual,BSBA,"Teaching, Research",Fail,Safe,0.56

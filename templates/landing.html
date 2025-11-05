@@ -742,7 +742,6 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#models">Our Models</a></li>
-                <li><a href="#demo">Try Our Models</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -827,42 +826,42 @@
                     <h3>Linear Regression</h3>
                     <h4>Predicting Student Performance</h4>
                     <p>Forecast future academic performance based on historical data, attendance patterns, and assessment scores to provide early intervention opportunities.</p>
-                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="{{ url_for('linear_regression') }}">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="model-card">
                     <div class="model-icon"><i class="fas fa-brain"></i></div>
                     <h3>Naive Bayes</h3>
                     <h4>Classifying At-Risk Students</h4>
                     <p>Identify students who may need additional support by analyzing behavioral patterns, engagement metrics, and academic indicators.</p>
-                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="{{ url_for('naive_bayes') }}">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="model-card">
                     <div class="model-icon"><i class="fas fa-route"></i></div>
                     <h3>K-Nearest Neighbors</h3>
                     <h4>Recommending Learning Paths</h4>
                     <p>Suggest personalized learning pathways by matching students with similar profiles and successful educational trajectories.</p>
-                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="{{ url_for('knn') }}">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="model-card">
                     <div class="model-icon"><i class="fas fa-sitemap"></i></div>
                     <h3>Support Vector Machine</h3>
                     <h4>Predicting Pass/Fail Outcomes</h4>
                     <p>Accurately classify students into pass/fail categories to enable proactive academic support and resource allocation.</p>
-                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="{{ url_for('svm') }}">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="model-card">
                     <div class="model-icon"><i class="fas fa-project-diagram"></i></div>
                     <h3>Decision Tree</h3>
                     <h4>Understanding Dropout Causes</h4>
                     <p>Analyze complex factors contributing to student dropout to implement targeted retention strategies and interventions.</p>
-                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="{{ url_for('decision_tree') }}">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="model-card">
                     <div class="model-icon"><i class="fas fa-network-wired"></i></div>
                     <h3>Neural Network</h3>
                     <h4>Personalized Learning Predictor</h4>
                     <p>Leverage deep learning to create highly personalized educational recommendations and adaptive learning experiences.</p>
-                    <a href="#">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <a href="{{ url_for('ann') }}">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -889,16 +888,6 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta" id="demo">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Interpret Your School's Data?</h2>
-                <p>Try a personalized demo and discover how EduVision Analytics can empower you.</p>
-                <a href="{{ url_for('dashboard') }}" class="btn-secondary">Try our Machine Learning Models</a>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer id="contact">
@@ -918,7 +907,6 @@
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#models">Our Models</a></li>
-                        <li><a href="#demo">Try Our Models</a></li>
                         <li><a href="#">Documentation</a></li>
                         <li><a href="#">API Access</a></li>
                     </ul>

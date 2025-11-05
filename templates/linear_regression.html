@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduVision - Linear Regression</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    /* === Base Styling === */
+    body {
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e3f2ff 0%, #f7faff 100%);
+      margin: 0;
+      padding: 40px;
+      color: #2b2b2b;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    /* === Card Styling (Glass Effect) === */
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 18px;
+      padding: 35px;
+      margin-bottom: 35px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(230, 240, 255, 0.8);
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    /* === Headings === */
+    h1 {
+      text-align: center;
+      color: #004aad;
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      color: #0056c4;
+      border-left: 4px solid #0056c4;
+      padding-left: 12px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 15.5px;
+      color: #333;
+    }
+
+    ul {
+      line-height: 1.8;
+      margin-left: 20px;
+    }
+
+    /* === Info Grid === */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .info-box {
+      background: #f5f9ff;
+      border-radius: 12px;
+      border: 1px solid #d9e6ff;
+      padding: 18px;
+      font-size: 15px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .info-box:hover {
+      background: #eaf3ff;
+      border-color: #bcd3ff;
+    }
+
+    /* === Code/Highlight Sections === */
+    .highlight {
+      background: #f2f7ff;
+      border-left: 5px solid #0078d7;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-family: 'Consolas', monospace;
+      font-size: 14px;
+      margin: 14px 0;
+      overflow-x: auto;
+    }
+
+    /* === Input Form === */
+    .input-card label {
+      display: block;
+      margin-top: 14px;
+      font-weight: 600;
+      font-size: 15px;
+      color: #222;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      margin-top: 6px;
+      border: 1px solid #ccd9f5;
+      border-radius: 10px;
+      font-size: 15px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #0056c4;
+      box-shadow: 0 0 0 3px rgba(0, 86, 196, 0.1);
+    }
+
+    button {
+      margin-top: 22px;
+      background: linear-gradient(90deg, #0078d7, #0056c4);
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      letter-spacing: 0.3px;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #0056c4, #003f9a);
+      transform: translateY(-2px);
+    }
+
+    /* === Result Box === */
+    .result {
+      background: #eef7ff;
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      font-weight: 600;
+      border-left: 5px solid #0078d7;
+      color: #003d82;
+    }
+
+    /* === Metrics Section === */
+    .metrics {
+      background: #f6fbf8;
+      border-left: 5px solid #28a745;
+      padding: 15px 18px;
+      border-radius: 10px;
+      margin-top: 12px;
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #6c757d;
+      margin-top: 45px;
+    }
+
+    /* === Responsive Tweaks === */
+    @media (max-width: 600px) {
+      body { padding: 20px; }
+      .card { padding: 25px; }
+      h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header Section -->
+    <div class="card">
+      <h1>Linear Regression Model</h1>
+      <p style="text-align:center; font-size:15.5px; color:#555;">
+        Explore how student performance can be accurately predicted through <strong>attendance rate</strong>, <strong>study hours</strong>, and <strong>previous grades</strong>.
+      </p>
+    </div>
+
+    <!-- What is Linear Regression -->
+    <div class="card">
+      <h2>What is Linear Regression?</h2>
+      <p>
+        <strong>Linear Regression</strong> is a fundamental supervised machine learning algorithm used for predicting continuous values.
+        It models the relationship between input variables (features) and an output variable (target) by fitting a linear equation to observed data.
+      </p>
+      <p>
+        In this project, the goal was to predict a student’s <strong>Final Grade</strong> based on three academic performance indicators:
+      </p>
+
+      <div class="info-grid">
+        <div class="info-box"><strong>Attendance Rate</strong> – Overall class participation percentage.</div>
+        <div class="info-box"><strong>Study Hours per Week</strong> – Number of hours dedicated to study.</div>
+        <div class="info-box"><strong>Previous Grade</strong> – Average score from past assessments.</div>
+      </div>
+    </div>
+
+    <!-- What I Did & How I Did It -->
+    <div class="card">
+      <h2>What I Did & How I Did It</h2>
+      <p>
+        Using the <strong>Student Performance Dataset</strong> from Kaggle, a Linear Regression model was trained to analyze how 
+        attendance, study time, and past grades collectively influence a student’s final outcome.
+      </p>
+      <p>The model configuration was as follows:</p>
+      <div class="highlight">
+        FEATURE_COLS = ['AttendanceRate', 'StudyHoursPerWeek', 'PreviousGrade']<br>
+        TARGET_COL = 'FinalGrade'
+      </div>
+
+      <p>
+        The model was trained using the <strong>Ordinary Least Squares (OLS)</strong> optimization method, minimizing 
+        prediction error across all observations. The coefficients represent the contribution of each feature:
+      </p>
+
+      <div class="highlight">
+        Intercept: 80.2777<br>
+        AttendanceRate: +0.9230<br>
+        StudyHoursPerWeek: −0.4658<br>
+        PreviousGrade: +9.0595
+      </div>
+
+      <p>
+        <strong>Interpretation:</strong>
+        <ul>
+          <li>Higher <strong>attendance</strong> and stronger <strong>previous grades</strong> correlate with better final results.</li>
+          <li>A slight negative correlation with <strong>study hours</strong> may indicate inefficient study habits or overcompensation.</li>
+        </ul>
+      </p>
+    </div>
+
+    <!-- Prediction Form -->
+    <div class="card input-card">
+      <h2>Predict Student Performance</h2>
+      <p>Use the form below to estimate a student's final grade based on the trained Linear Regression model.</p>
+      <form method="POST" action="{{ url_for('linear_regression') }}">
+        <input type="hidden" name="model_name" value="linear_regression">
+        <label>Attendance Rate (%):</label>
+        <input type="number" name="input_AttendanceRate" placeholder="e.g., 90" required>
+
+        <label>Study Hours per Week:</label>
+        <input type="number" name="input_StudyHoursPerWeek" placeholder="e.g., 15" required>
+
+        <label>Previous Grade:</label>
+        <input type="number" name="input_PreviousGrade" placeholder="e.g., 85" required>
+
+        <button type="submit">Predict Final Grade</button>
+      </form>
+
+      {% if result %}
+      <div class="result">
+        Predicted Final Grade: {{ result }}
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- Evaluation Section -->
+    <div class="card">
+      <h2>Model Evaluation</h2>
+      <p>
+        The model’s performance was evaluated using standard regression metrics, which measure accuracy and consistency of predictions.
+      </p>
+      <div class="metrics">
+        <strong>Mean Absolute Error (MAE):</strong> 0.3885<br>
+        <strong>Mean Squared Error (MSE):</strong> 0.2000<br>
+        <strong>R² Score:</strong> 0.9964
+      </div>
+      <p>
+        These evaluation results indicate a <strong>highly accurate fit</strong> between predicted and actual grades,
+        confirming the model’s robustness in predicting student performance.
+      </p>
+    </div>
+
+    <footer>© 2025 EduVision | Linear Regression Model Showcase</footer>
+  </div>
+</body>
+</html>

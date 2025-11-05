@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>EduVision - ANN Learning Style Predictor</title>
+  <style>
+    /* === Base Styling === */
+    body {
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e3f2ff 0%, #f7faff 100%);
+      margin: 0;
+      padding: 40px;
+      color: #2b2b2b;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    /* === Card Styling (Glass Effect) === */
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 18px;
+      padding: 35px;
+      margin-bottom: 35px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(230, 240, 255, 0.8);
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    /* === Headings === */
+    h1 {
+      text-align: center;
+      color: #004aad;
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      color: #0056c4;
+      border-left: 4px solid #0056c4;
+      padding-left: 12px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 15.5px;
+      color: #333;
+    }
+
+    ul {
+      line-height: 1.8;
+      margin-left: 20px;
+    }
+
+    /* === Info Grid === */
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .info-box {
+      background: #f5f9ff;
+      border-radius: 12px;
+      border: 1px solid #d9e6ff;
+      padding: 18px;
+      font-size: 15px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .info-box:hover {
+      background: #eaf3ff;
+      border-color: #bcd3ff;
+    }
+
+    /* === Code/Highlight Sections === */
+    .highlight {
+      background: #f2f7ff;
+      border-left: 5px solid #0078d7;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-family: 'Consolas', monospace;
+      font-size: 14px;
+      margin: 14px 0;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+
+    /* === Input Form === */
+    .input-card label {
+      display: block;
+      margin-top: 14px;
+      font-weight: 600;
+      font-size: 15px;
+      color: #222;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      margin-top: 6px;
+      border: 1px solid #ccd9f5;
+      border-radius: 10px;
+      font-size: 15px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #0056c4;
+      box-shadow: 0 0 0 3px rgba(0, 86, 196, 0.1);
+    }
+
+    button {
+      margin-top: 22px;
+      background: linear-gradient(90deg, #0078d7, #0056c4);
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      letter-spacing: 0.3px;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #0056c4, #003f9a);
+      transform: translateY(-2px);
+    }
+
+    /* === Result Box === */
+    .result {
+      background: #eef7ff;
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      font-weight: 600;
+      border-left: 5px solid #0078d7;
+      color: #003d82;
+    }
+
+    /* === Metrics Section === */
+    .metrics {
+      background: #f6fbf8;
+      border-left: 5px solid #28a745;
+      padding: 15px 18px;
+      border-radius: 10px;
+      margin-top: 12px;
+      font-size: 15px;
+      white-space: pre-wrap;
+      font-family: 'Consolas', monospace;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #6c757d;
+      margin-top: 45px;
+    }
+
+    /* === Responsive Tweaks === */
+    @media (max-width: 600px) {
+      body { padding: 20px; }
+      .card { padding: 25px; }
+      h1 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header Section -->
+    <div class="card">
+      <h1>ANN Learning Style Predictor</h1>
+      <p style="text-align:center; font-size:15.5px; color:#555;">
+        Explore how the <strong>Artificial Neural Network (ANN)</strong> predicts high achievers based on <strong>math</strong>, <strong>reading</strong>, and <strong>writing</strong> scores.
+      </p>
+    </div>
+
+    <!-- What is ANN -->
+    <div class="card">
+      <h2>What is Artificial Neural Network (ANN)?</h2>
+      <p>
+        <strong>Artificial Neural Networks</strong> are advanced machine learning models inspired by brain neural structures, capable of capturing complex patterns in data.
+      </p>
+      <p>
+        In this project, ANN is trained to classify whether a student is a <strong>high achiever</strong> based on their performance in key academic areas.
+      </p>
+    </div>
+
+    <!-- What I Did & How I Did It -->
+    <div class="card">
+      <h2>What I Did & How I Did It</h2>
+      <p>
+        Using the <strong>StudentsPerformance_with_high_achiever</strong> dataset, the model was trained on three primary features:
+      </p>
+      <div class="info-grid">
+        <div class="info-box"><strong>Math Score</strong> – Student’s score in math exams (0-100).</div>
+        <div class="info-box"><strong>Reading Score</strong> – Student’s score in reading assessments (0-100).</div>
+        <div class="info-box"><strong>Writing Score</strong> – Student’s writing proficiency score (0-100).</div>
+      </div>
+      <p>
+        <strong>Model Configuration:</strong>
+      </p>
+      <div class="highlight">
+        TARGET_COL = "high_achiever"<br>
+        FEATURES = ["math score", "reading score", "writing score"]
+      </div>
+      <p>
+        The ANN was optimized using training and validation datasets, minimizing loss to improve prediction accuracy.
+      </p>
+    </div>
+
+    <!-- Input Form -->
+    <div class="card input-card">
+      <h2>Predict Achiever Status</h2>
+      <p>Input the student's scores below to see if they are classified as a high achiever:</p>
+      <form method="POST" action="{{ url_for('ann') }}">
+        <input type="hidden" name="model_name" value="ann">
+
+        <label>Math Score:</label>
+        <input type="number" name="input_math_score" min="0" max="100" step="1" required>
+
+        <label>Reading Score:</label>
+        <input type="number" name="input_reading_score" min="0" max="100" step="1" required>
+
+        <label>Writing Score:</label>
+        <input type="number" name="input_writing_score" min="0" max="100" step="1" required>
+
+        <button type="submit">Predict Achiever Status</button>
+      </form>
+
+      {% if result %}
+      <div class="result"><strong>Predicted Output:</strong> {{ result }}</div>
+      {% endif %}
+    </div>
+
+    <!-- Model Findings -->
+    <div class="card">
+      <h2>Model Findings</h2>
+      <div class="metrics">
+Final Training Accuracy: 0.9962<br>
+Final Validation Accuracy: 0.9400<br>
+Final Training Loss: 0.1172<br>
+Final Validation Loss: 0.5016
+      </div>
+      <p style="margin-top: 20px;">
+        <strong>Interpretation:</strong><br>
+        The ANN achieved over <strong>99% accuracy</strong> during training demonstrating excellent learning capacity.<br>
+        Validation accuracy of <strong>94%</strong> indicates good generalization on unseen data.<br>
+        Loss metrics confirm the model’s solid fit despite slight overfitting risks.
+      </p>
+    </div>
+
+    <footer>© 2025 EduVision | ANN Learning Style Predictor</footer>
+  </div>
+</body>
+</html>

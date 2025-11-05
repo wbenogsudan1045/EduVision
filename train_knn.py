@@ -14,7 +14,7 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, classification_report
 from sklearn.neighbors import KNeighborsClassifier
 
-DATA_PATH = os.path.join(os.path.dirname(__file__), "eduvision_dataset.csv")
+DATA_PATH = os.path.join(os.path.dirname(__file__), "KNN_peerinfluence_overlap.csv")
 MODEL_DIR = "models"
 os.makedirs(MODEL_DIR, exist_ok=True)
 
@@ -22,8 +22,8 @@ df = pd.read_csv(DATA_PATH).dropna()
 print("Dataset preview:")
 print(df.head())
 
-FEATURE_COLS = ['interest_tags', 'parent_education_level', 'preferred_learning_style']
-TARGET_COL = 'course_enrolled'
+FEATURE_COLS = ['ParentalInvolvement', 'SchoolType', 'MotivationLevel']
+TARGET_COL = 'PeerInfluence'
 
 missing = [c for c in FEATURE_COLS + [TARGET_COL] if c not in df.columns]
 if missing:
