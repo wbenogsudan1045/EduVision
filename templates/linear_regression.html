@@ -192,6 +192,31 @@
       </p>
     </div>
 
+    <!-- Prediction Form -->
+    <div class="card input-card">
+      <h2>Predict Student Performance</h2>
+      <p>Use the form below to estimate a student's final grade based on the trained Linear Regression model.</p>
+      <form method="POST" action="{{ url_for('linear_regression') }}">
+        <input type="hidden" name="model_name" value="linear_regression">
+        <label>Attendance Rate (%):</label>
+        <input type="number" name="input_AttendanceRate" placeholder="e.g., 90" required>
+
+        <label>Study Hours per Week:</label>
+        <input type="number" name="input_StudyHoursPerWeek" placeholder="e.g., 15" required>
+
+        <label>Previous Grade:</label>
+        <input type="number" name="input_PreviousGrade" placeholder="e.g., 85" required>
+
+        <button type="submit">Predict Final Grade</button>
+      </form>
+
+      {% if result %}
+      <div class="result">
+        Predicted Final Grade: {{ result }}
+      </div>
+      {% endif %}
+    </div>
+
     <!-- What is Linear Regression -->
     <div class="card">
       <h2>What is Linear Regression?</h2>
@@ -244,31 +269,6 @@
       </p>
     </div>
 
-    <!-- Prediction Form -->
-    <div class="card input-card">
-      <h2>Predict Student Performance</h2>
-      <p>Use the form below to estimate a student's final grade based on the trained Linear Regression model.</p>
-      <form method="POST" action="{{ url_for('linear_regression') }}">
-        <input type="hidden" name="model_name" value="linear_regression">
-        <label>Attendance Rate (%):</label>
-        <input type="number" name="input_AttendanceRate" placeholder="e.g., 90" required>
-
-        <label>Study Hours per Week:</label>
-        <input type="number" name="input_StudyHoursPerWeek" placeholder="e.g., 15" required>
-
-        <label>Previous Grade:</label>
-        <input type="number" name="input_PreviousGrade" placeholder="e.g., 85" required>
-
-        <button type="submit">Predict Final Grade</button>
-      </form>
-
-      {% if result %}
-      <div class="result">
-        Predicted Final Grade: {{ result }}
-      </div>
-      {% endif %}
-    </div>
-
     <!-- Evaluation Section -->
     <div class="card">
       <h2>Model Evaluation</h2>
@@ -285,6 +285,24 @@
         confirming the model’s robustness in predicting student performance.
       </p>
     </div>
+
+    <!-- Back to Home Button -->
+<div style="text-align:center; margin-top:30px;">
+  <a href="{{ url_for('index') }}" 
+     style="
+       display:inline-block;
+       background: linear-gradient(90deg, #0078d7, #0056c4);
+       color: #fff;
+       padding: 10px 22px;
+       border-radius: 8px;
+       text-decoration: none;
+       font-weight: 600;
+       font-size: 15px;
+       transition: all 0.3s ease;">
+    ← Back to Home
+  </a>
+</div>
+
 
     <footer>© 2025 EduVision | Linear Regression Model Showcase</footer>
   </div>

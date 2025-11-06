@@ -59,6 +59,7 @@ feature_columns = {
 @app.route("/")
 def index():
     return render_template("landing.html")
+    
 
 # ===== Linear Regression =====
 @app.route("/linear_regression", methods=["GET", "POST"])

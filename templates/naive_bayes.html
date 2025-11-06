@@ -149,6 +149,26 @@
       </p>
     </div>
 
+     <!-- Input Form -->
+    <div class="card input-card">
+      <h2>Try It Yourself</h2>
+      <p>Enter details below to classify a student as Pass or Fail using the trained model:</p>
+      <form method="POST" action="{{ url_for('naive_bayes') }}">
+        <input type="hidden" name="model_name" value="naive_bayes">
+        <label>Study Hours per Week:<input type="number" name="input_Study_Hours_per_Week" required></label>
+        <label>Attendance Rate:<input type="number" name="input_Attendance_Rate" required></label>
+        <label>Final Exam Score:<input type="number" name="input_Final_Exam_Score" required></label>
+        <button type="submit">Classify Result</button>
+      </form>
+
+      {% if result %}
+      <div class="result">
+        <strong>Predicted Output:</strong> {{ result }}
+      </div>
+      {% endif %}
+    </div>
+
+
     <!-- What is Naive Bayes -->
     <div class="card">
       <h2>What is Naive Bayes?</h2>
@@ -191,53 +211,59 @@
     </div>
 
     <!-- Evaluation -->
-    <div class="card">
-      <h2>Model Evaluation</h2>
-      <p>
-        The model performed exceptionally well with consistent results across all metrics, indicating strong generalization.
-      </p>
-      <div class="metrics">
-        Accuracy: 0.9789<br>
-        Precision: 0.9790<br>
-        Recall: 0.9789<br>
-        F1 Score: 0.9789
-      </div>
+<div class="card">
+  <h2>Model Evaluation</h2>
+  <p>
+    The model performed exceptionally well with consistent results across all metrics, indicating strong generalization and reliability in classifying academic outcomes.
+  </p>
+  <div class="metrics">
+    Accuracy: 0.9789<br>
+    Precision: 0.9790<br>
+    Recall: 0.9789<br>
+    F1 Score: 0.9789
+  </div>
 
-      <h3 style="margin-top:20px;">Confusion Matrix</h3>
-      <div class="metrics">
-        [[69  2]<br>
-         [ 1 70]]
-      </div>
+  <h3 style="margin-top:20px;">Confusion Matrix</h3>
+  <div class="metrics">
+    [[69  2]<br>
+     [ 1 70]]
+  </div>
 
-      <h3 style="margin-top:20px;">Detailed Classification Report</h3>
-      <div class="metrics">
-        precision&nbsp;&nbsp;&nbsp;&nbsp;recall&nbsp;&nbsp;&nbsp;&nbsp;f1-score&nbsp;&nbsp;&nbsp;&nbsp;support<br>
-        Fail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.97&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;71<br>
-        Pass&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.97&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;71<br><br>
-        accuracy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;142<br>
-        macro avg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;142<br>
-        weighted avg&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;142
-      </div>
-    </div>
+  <h3 style="margin-top:20px;">Detailed Classification Report</h3>
+  <div class="metrics">
+    precision&nbsp;&nbsp;&nbsp;&nbsp;recall&nbsp;&nbsp;&nbsp;&nbsp;f1-score&nbsp;&nbsp;&nbsp;&nbsp;support<br>
+    Fail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.97&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;71<br>
+    Pass&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.97&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;71<br><br>
+    accuracy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;142<br>
+    macro avg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;142<br>
+    weighted avg&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.98&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;142
+  </div>
 
-    <!-- Input Form -->
-    <div class="card input-card">
-      <h2>Try It Yourself</h2>
-      <p>Enter details below to classify a student as Pass or Fail using the trained model:</p>
-      <form method="POST" action="{{ url_for('naive_bayes') }}">
-        <input type="hidden" name="model_name" value="naive_bayes">
-        <label>Study Hours per Week:<input type="number" name="input_Study_Hours_per_Week" required></label>
-        <label>Attendance Rate:<input type="number" name="input_Attendance_Rate" required></label>
-        <label>Final Exam Score:<input type="number" name="input_Final_Exam_Score" required></label>
-        <button type="submit">Classify Result</button>
-      </form>
+  <p style="margin-top:18px; font-size:15px; line-height:1.7;">
+    <strong>Interpretation:</strong>  
+    The Naive Bayes classifier achieved nearly 98% accuracy, meaning it can accurately distinguish between students who are likely to <strong>pass or fail</strong> based on their study habits, attendance, and exam results.  
+    The model’s high precision and recall demonstrate balanced performance — it correctly identifies at-risk students while minimizing false classifications.  
+    These insights empower educators to <strong>implement early interventions</strong> for students predicted to be at risk, enhancing overall academic success rates.
+  </p>
+</div>
 
-      {% if result %}
-      <div class="result">
-        <strong>Predicted Output:</strong> {{ result }}
-      </div>
-      {% endif %}
-    </div>
+<!-- Back to Home Button -->
+<div style="text-align:center; margin-top:30px;">
+  <a href="{{ url_for('index') }}" 
+     style="
+       display:inline-block;
+       background: linear-gradient(90deg, #0078d7, #0056c4);
+       color: #fff;
+       padding: 10px 22px;
+       border-radius: 8px;
+       text-decoration: none;
+       font-weight: 600;
+       font-size: 15px;
+       transition: all 0.3s ease;">
+    ← Back to Home
+  </a>
+</div>
+
 
     <footer>© 2025 EduVision | Naive Bayes Model Showcase</footer>
   </div>

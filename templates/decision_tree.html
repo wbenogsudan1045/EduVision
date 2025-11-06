@@ -3,223 +3,283 @@
 <head>
   <meta charset="UTF-8" />
   <title>EduVision - Decision Tree Grade Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #dceeff, #f8fbff);
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e3f2ff 0%, #f7faff 100%);
       margin: 0;
       padding: 40px;
-      color: #333;
+      color: #2b2b2b;
     }
 
     .container {
-      max-width: 900px;
-      margin: auto;
+      max-width: 950px;
+      margin: 0 auto;
     }
 
     .card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 30px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-      margin-bottom: 30px;
-      transition: 0.3s;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 18px;
+      padding: 35px;
+      margin-bottom: 35px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(230, 240, 255, 0.8);
     }
 
     .card:hover {
-      transform: translateY(-5px);
-    }
-
-    h1, h2 {
-      color: #0078D7;
-      border-left: 4px solid #0078D7;
-      padding-left: 10px;
-      margin-top: 25px;
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
     }
 
     h1 {
       text-align: center;
-      margin-bottom: 15px;
-      border-left: none;
-      color: #0056b3;
+      color: #004aad;
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin-bottom: 12px;
     }
 
-    label {
-      display: block;
-      margin-top: 12px;
-      font-weight: 500;
+    h2 {
+      color: #0056c4;
+      border-left: 4px solid #0056c4;
+      padding-left: 12px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-weight: 600;
     }
 
-    input[type="number"] {
+    p {
+      line-height: 1.8;
+      font-size: 15.5px;
+      color: #333;
+    }
+
+    ul {
+      line-height: 1.8;
+      margin-left: 20px;
+    }
+
+    .highlight {
+      background: #f2f7ff;
+      border-left: 5px solid #0078d7;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-family: 'Consolas', monospace;
+      font-size: 14px;
+      margin: 14px 0;
+      overflow-x: auto;
+    }
+
+    input {
       width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
+      padding: 10px 12px;
+      margin-top: 6px;
+      border: 1px solid #ccd9f5;
       border-radius: 10px;
       font-size: 15px;
-      font-family: 'Poppins', sans-serif;
-      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #0056c4;
+      box-shadow: 0 0 0 3px rgba(0, 86, 196, 0.1);
     }
 
     button {
-      margin-top: 20px;
-      background: #0078D7;
-      color: white;
+      margin-top: 22px;
+      background: linear-gradient(90deg, #0078d7, #0056c4);
+      color: #fff;
       border: none;
       padding: 12px;
       border-radius: 10px;
       width: 100%;
       font-size: 16px;
+      font-weight: 600;
       cursor: pointer;
-      transition: 0.3s;
-      font-family: 'Poppins', sans-serif;
+      transition: all 0.3s ease;
+      letter-spacing: 0.3px;
     }
 
     button:hover {
-      background: #005a9e;
+      background: linear-gradient(90deg, #0056c4, #003f9a);
+      transform: translateY(-2px);
     }
 
     .result {
-      background: #e8f4ff;
+      background: #eef7ff;
       margin-top: 20px;
       padding: 15px;
       border-radius: 10px;
-      font-weight: 500;
-      border-left: 5px solid #0078D7;
+      font-weight: 600;
+      border-left: 5px solid #0078d7;
+      color: #003d82;
     }
 
     .metrics {
-      background: #f0f8ff;
-      padding: 15px;
-      border-radius: 10px;
-      margin-top: 10px;
+      background: #f6fbf8;
       border-left: 5px solid #28a745;
-      font-family: monospace;
-      white-space: pre-wrap;
+      padding: 15px 18px;
+      border-radius: 10px;
+      margin-top: 12px;
+      font-size: 15px;
+      font-family: 'Consolas', monospace;
+      overflow-x: auto;
     }
 
     footer {
       text-align: center;
       font-size: 14px;
-      color: #666;
-      margin-top: 40px;
+      color: #6c757d;
+      margin-top: 45px;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 20px; }
+      .card { padding: 25px; }
+      h1 { font-size: 1.8rem; }
     }
   </style>
 </head>
+
 <body>
   <div class="container">
 
-    <!-- Title Card -->
+    <!-- Header Section -->
     <div class="card">
       <h1>Decision Tree Grade Predictor</h1>
-      <p style="text-align:center; font-size:15px; color:#555;">
-        Discover how the <strong>Decision Tree</strong> algorithm can accurately categorize student strands based on cognitive aptitude scores.
+      <p style="text-align:center; font-size:15.5px; color:#555;">
+        This page demonstrates how the <strong>Decision Tree</strong> algorithm classifies students into academic strands based on their <strong>cognitive aptitude</strong> and reasoning abilities.
       </p>
     </div>
 
-    <!-- Use & Purpose -->
+    <!-- Prediction Form -->
+    <div class="card input-card">
+      <h2>Predict Student Strand</h2>
+      <p>Provide the student’s aptitude test scores below to predict the most suitable academic strand using the trained Decision Tree model.</p>
+
+      <form method="POST" action="{{ url_for('decision_tree') }}">
+        <input type="hidden" name="model_name" value="decision_tree" />
+
+        <label>Numerical Aptitude:</label>
+        <input type="number" step="any" min="0" max="100" name="input_Numerical Aptitude" placeholder="e.g., 85" required />
+
+        <label>Spatial Aptitude:</label>
+        <input type="number" step="any" min="0" max="100" name="input_Spatial Aptitude" placeholder="e.g., 78" required />
+
+        <label>Perceptual Aptitude:</label>
+        <input type="number" step="any" min="0" max="100" name="input_Perceptual Aptitude" placeholder="e.g., 82" required />
+
+        <label>Abstract Reasoning:</label>
+        <input type="number" step="any" min="0" max="100" name="input_Abstract Reasoning" placeholder="e.g., 80" required />
+
+        <label>Verbal Reasoning:</label>
+        <input type="number" step="any" min="0" max="100" name="input_Verbal Reasoning" placeholder="e.g., 88" required />
+
+        <button type="submit">Predict Strand</button>
+      </form>
+
+      {% if result %}
+      <div class="result">Predicted Academic Strand: {{ result }}</div>
+      {% endif %}
+    </div>
+
+    <!-- What is Decision Tree -->
     <div class="card">
-      <h2>Use and Purpose</h2>
+      <h2>What is a Decision Tree?</h2>
       <p>
-        The Decision Tree model is designed to assist educators and academic counselors in classifying students into appropriate academic strands (ABM, GAS, HUMSS, STEM). 
-        This classification helps tailor educational paths suited to each student's strengths and abilities.
+        A <strong>Decision Tree</strong> is a supervised learning algorithm that models decisions through a flowchart-like structure.
+        Each branch represents a test on a feature, while each leaf node corresponds to a class prediction.
       </p>
-    </div>
-
-    <!-- Dataset and Features -->
-    <div class="card">
-      <h2>Dataset and Features</h2>
-      <p><strong>Dataset:</strong> Data_high_separation_strands</p>
-      <p><em>Note:</em> The dataset contains clearly defined categories, facilitating high model accuracy.</p>
-      <div class="metrics">
-        TARGET_COL = "StrandCategory"<br>
-        FEATURES = ['Numerical Aptitude', 'Spatial Aptitude', 'Perceptual Aptitude', 'Abstract Reasoning', 'Verbal Reasoning']
-      </div>
+      <p>
+        In EduVision’s system, the Decision Tree is used to categorize students into strands such as <strong>ABM</strong>, <strong>GAS</strong>, <strong>HUMSS</strong>, and <strong>STEM</strong>,
+        based on their aptitude performance across several reasoning categories.
+      </p>
     </div>
 
     <!-- What I Did & How I Did It -->
     <div class="card">
       <h2>What I Did & How I Did It</h2>
       <p>
-        The Decision Tree model was trained on the above features using the high-separation dataset. 
-        Hyperparameters were tuned to optimize classification accuracy and reduce overfitting.
+        The model was trained using the <strong>Data_High_Separation_Strands</strong> dataset, which contains aptitude scores highly correlated with strand placements.
+        Each attribute contributes to determining the most likely academic path for the student.
       </p>
+      <div class="highlight">
+        FEATURE_COLS = ['Numerical Aptitude', 'Spatial Aptitude', 'Perceptual Aptitude', 'Abstract Reasoning', 'Verbal Reasoning']<br>
+        TARGET_COL = 'StrandCategory'
+      </div>
       <p>
-        The model splits data based on feature thresholds to maximize the information gain, allowing it to predict the strand category precisely using aptitude test inputs.
+        The Decision Tree splits data based on thresholds that maximize information gain.
+        Hyperparameter tuning (depth, split criteria) ensured high classification accuracy and reduced overfitting.
       </p>
+      <ul>
+        <li>Trained and validated on multiple folds for balanced accuracy.</li>
+        <li>Visualized tree splits to interpret feature importance.</li>
+        <li>Evaluated using precision, recall, F1-score, and confusion matrix.</li>
+      </ul>
     </div>
 
-    <!-- Input Form -->
+    <!-- Evaluation Section -->
     <div class="card">
-      <h2>Try It Yourself</h2>
-      <p>Enter aptitude scores to predict the student's academic strand:</p>
-      <form method="POST" action="{{ url_for('decision_tree') }}">
-        <input type="hidden" name="model_name" value="decision_tree" />
-
-        <label>Numerical Aptitude:
-          <input type="number" step="any" min="0" max="100" name="input_Numerical Aptitude" placeholder="rate 1-10" required />
-        </label>
-
-        <label>Spatial Aptitude:
-          <input type="number" step="any" min="0" max="100" name="input_Spatial Aptitude" placeholder="rate 1-10" required />
-        </label>
-
-        <label>Perceptual Aptitude:
-          <input type="number" step="any" min="0" max="100" name="input_Perceptual Aptitude" placeholder="rate 1-10" required />
-        </label>
-
-        <label>Abstract Reasoning:
-          <input type="number" step="any" min="0" max="100" name="input_Abstract Reasoning" placeholder="rate 1-10" required />
-        </label>
-
-        <label>Verbal Reasoning:
-          <input type="number" step="any" min="0" max="100" name="input_Verbal Reasoning" placeholder="rate 1-10" required />
-        </label>
-
-        <button type="submit">Predict Strand</button>
-      </form>
-
-      {% if result %}
-      <div class="result"><strong>Predicted Output:</strong> {{ result }}</div>
-      {% endif %}
-    </div>
-
-    <!-- Model Evaluation -->
-    <div class="card">
-      <h2>Model Evaluation Metrics</h2>
+      <h2>Model Evaluation</h2>
+      <p>
+        The Decision Tree model’s performance was evaluated using key classification metrics to ensure reliability and interpretability.
+      </p>
       <div class="metrics">
-Accuracy:  0.9100<br>
-Precision: 0.9160<br>
-Recall:    0.9100<br>
-F1 Score:  0.9098
+        Accuracy: 0.9100<br>
+        Precision: 0.9160<br>
+        Recall: 0.9100<br>
+        F1 Score: 0.9098
       </div>
 
-      <h3 style="margin-top: 20px;">Confusion Matrix</h3>
-      <div class="metrics">
-[[50  0  2  3]<br>
- [ 0 33  9  0]<br>
- [ 0  2 49  0]
-      </div>
+      <p>
+        <strong>Confusion Matrix:</strong><br>
+        <div class="metrics" style="margin-top:15px;">
+        [[50  0  2  3]<br>
+         [ 0 33  9  0]<br>
+         [ 0  2 49  0]]
+        </div>
+      </p>
 
-      <h3 style="margin-top: 20px;">Classification Report</h3>
-      <div class="metrics">
-            precision    recall  f1-score   support<br><br>
-       ABM       0.96      0.91      0.93        55<br>
-       GAS       0.94      0.79      0.86        42<br>
-     HUMSS       0.82      0.96      0.88        51<br>
-      STEM       0.94      0.96      0.95        52<br><br>
-  accuracy                           0.91       200<br>
- macro avg       0.92      0.90      0.91       200<br>
-weighted avg       0.92      0.91      0.91       200
-      </div>
+      <p>
+        <strong>Classification Report:</strong><br>
+        <div class="metrics" style="margin-top:15px;">
+        ABM — precision: 0.96 | recall: 0.91 | f1: 0.93<br>
+        GAS — precision: 0.94 | recall: 0.79 | f1: 0.86<br>
+        HUMSS — precision: 0.82 | recall: 0.96 | f1: 0.88<br>
+        STEM — precision: 0.94 | recall: 0.96 | f1: 0.95<br><br>
+        Overall Accuracy: 0.91
+        </div>
+      </p>
 
-      <p style="margin-top: 20px;">
+      <p>
         <strong>Interpretation:</strong><br>
-        The Decision Tree model achieved an accuracy of <b>91%</b>, reflecting strong predictive power across all strand categories.<br>
-        The metrics indicate the model reliably distinguishes most strands, with slightly lower recall on GAS category.<br>
-        The confusion matrix highlights effective classification performance for ABM, HUMSS, and STEM, with some misclassifications in the GAS strand.
+        With an overall accuracy of <strong>91%</strong>, the Decision Tree model effectively classifies students into appropriate strands with strong precision.
+        It performs exceptionally well on <strong>ABM</strong>, <strong>HUMSS</strong>, and <strong>STEM</strong> predictions, while showing moderate misclassifications in <strong>GAS</strong>.
+        This indicates that strand boundaries for GAS are more fluid, but the model remains highly useful for guiding academic recommendations and student counseling.
       </p>
     </div>
+
+    <!-- Back to Home Button -->
+<div style="text-align:center; margin-top:30px;">
+  <a href="{{ url_for('index') }}" 
+     style="
+       display:inline-block;
+       background: linear-gradient(90deg, #0078d7, #0056c4);
+       color: #fff;
+       padding: 10px 22px;
+       border-radius: 8px;
+       text-decoration: none;
+       font-weight: 600;
+       font-size: 15px;
+       transition: all 0.3s ease;">
+    ← Back to Home
+  </a>
+</div>
+
 
     <footer>© 2025 EduVision | Decision Tree Grade Predictor</footer>
   </div>

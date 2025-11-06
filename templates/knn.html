@@ -6,113 +6,141 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #dceeff, #f8fbff);
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e3f2ff 0%, #f7faff 100%);
       margin: 0;
       padding: 40px;
-      color: #333;
+      color: #2b2b2b;
     }
 
     .container {
-      max-width: 900px;
-      margin: auto;
+      max-width: 950px;
+      margin: 0 auto;
     }
 
     .card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 30px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-      margin-bottom: 30px;
-      transition: 0.3s;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 18px;
+      padding: 35px;
+      margin-bottom: 35px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(230, 240, 255, 0.8);
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
     }
 
     h1 {
       text-align: center;
-      color: #0056b3;
-      margin-bottom: 15px;
+      color: #004aad;
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin-bottom: 12px;
     }
 
     h2 {
-      color: #0078D7;
-      border-left: 4px solid #0078D7;
-      padding-left: 10px;
-      margin-top: 25px;
+      color: #0056c4;
+      border-left: 4px solid #0056c4;
+      padding-left: 12px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-weight: 600;
     }
 
     p {
-      line-height: 1.7;
-      margin: 8px 0;
+      line-height: 1.8;
+      font-size: 15.5px;
+      color: #333;
     }
 
-    label {
-      display: block;
-      margin-top: 12px;
-      font-weight: 500;
+    ul {
+      line-height: 1.8;
+      margin-left: 20px;
     }
 
-    select {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
+    .highlight {
+      background: #f2f7ff;
+      border-left: 5px solid #0078d7;
       border-radius: 8px;
+      padding: 14px 18px;
+      font-family: 'Consolas', monospace;
+      font-size: 14px;
+      margin: 14px 0;
+      overflow-x: auto;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px 12px;
+      margin-top: 6px;
+      border: 1px solid #ccd9f5;
+      border-radius: 10px;
       font-size: 15px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: #0056c4;
+      box-shadow: 0 0 0 3px rgba(0, 86, 196, 0.1);
     }
 
     button {
-      margin-top: 20px;
-      background: #0078D7;
-      color: white;
+      margin-top: 22px;
+      background: linear-gradient(90deg, #0078d7, #0056c4);
+      color: #fff;
       border: none;
       padding: 12px;
       border-radius: 10px;
       width: 100%;
       font-size: 16px;
+      font-weight: 600;
       cursor: pointer;
-      transition: 0.3s;
+      transition: all 0.3s ease;
+      letter-spacing: 0.3px;
     }
 
     button:hover {
-      background: #005a9e;
+      background: linear-gradient(90deg, #0056c4, #003f9a);
+      transform: translateY(-2px);
     }
 
     .result {
-      background: #e8f4ff;
+      background: #eef7ff;
       margin-top: 20px;
       padding: 15px;
       border-radius: 10px;
-      font-weight: 500;
-      border-left: 5px solid #0078D7;
+      font-weight: 600;
+      border-left: 5px solid #0078d7;
+      color: #003d82;
     }
 
     .metrics {
-      background: #f0f8ff;
-      padding: 15px;
-      border-radius: 10px;
-      margin-top: 10px;
+      background: #f6fbf8;
       border-left: 5px solid #28a745;
-      font-family: monospace;
-    }
-
-    .highlight {
-      background: #eef9ff;
-      padding: 10px 15px;
-      border-radius: 8px;
-      border-left: 4px solid #0078D7;
-      margin-top: 8px;
-      font-family: monospace;
+      padding: 15px 18px;
+      border-radius: 10px;
+      margin-top: 12px;
+      font-size: 15px;
+      font-family: 'Consolas', monospace;
+      overflow-x: auto;
     }
 
     footer {
       text-align: center;
       font-size: 14px;
-      color: #666;
-      margin-top: 40px;
+      color: #6c757d;
+      margin-top: 45px;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 20px; }
+      .card { padding: 25px; }
+      h1 { font-size: 1.8rem; }
     }
   </style>
 </head>
@@ -120,96 +148,95 @@
 <body>
   <div class="container">
 
-    <!-- Title Card -->
+    <!-- Header Section -->
     <div class="card">
       <h1>K-Nearest Neighbors (KNN) Model</h1>
-      <p style="text-align:center; font-size:15px; color:#555;">
-        Explore how the <strong>K-Nearest Neighbors (KNN)</strong> algorithm predicts peer influence based on student-related factors such as 
-        <strong>Parental Involvement</strong>, <strong>School Type</strong>, and <strong>Motivation Level</strong>.
+      <p style="text-align:center; font-size:15.5px; color:#555;">
+        This page showcases how EduVision utilizes the <strong>K-Nearest Neighbors (KNN)</strong> algorithm to classify <strong>peer influence</strong> 
+        among students based on behavioral and academic indicators such as <strong>Parental Involvement</strong>, <strong>School Type</strong>, and <strong>Motivation Level</strong>.
       </p>
+    </div>
+
+    <!-- Prediction Form -->
+    <div class="card input-card">
+      <h2>Predict Peer Influence</h2>
+      <p>Provide student details below to predict the type of peer influence using the trained KNN model.</p>
+
+      <form method="POST" action="{{ url_for('knn') }}">
+        <input type="hidden" name="model_name" value="knn">
+
+        <label>Parental Involvement:</label>
+        <select name="input_ParentalInvolvement" required>
+          <option value="">-- Select Level --</option>
+          <option>High</option>
+          <option>Medium</option>
+          <option>Low</option>
+        </select>
+
+        <label>School Type:</label>
+        <select name="input_SchoolType" required>
+          <option value="">-- Select Type --</option>
+          <option>Private</option>
+          <option>Public</option>
+        </select>
+
+        <label>Motivation Level:</label>
+        <select name="input_MotivationLevel" required>
+          <option value="">-- Select Level --</option>
+          <option>High</option>
+          <option>Medium</option>
+          <option>Low</option>
+        </select>
+
+        <button type="submit">Classify Peer Influence</button>
+      </form>
+
+      {% if result %}
+      <div class="result">Predicted Peer Influence: {{ result }}</div>
+      {% endif %}
     </div>
 
     <!-- What is KNN -->
     <div class="card">
       <h2>What is K-Nearest Neighbors (KNN)?</h2>
       <p>
-        <strong>K-Nearest Neighbors (KNN)</strong> is a simple, supervised machine learning algorithm used for classification and regression tasks. 
-        It works by comparing a new data point to its closest “neighbors” in the training dataset and classifies it based on the majority class 
-        among those neighbors.
+        The <strong>K-Nearest Neighbors (KNN)</strong> algorithm is a non-parametric, instance-based learning method used for both classification and regression.
+        It predicts the output class of a new data point based on the <strong>majority class</strong> among its closest data points—or "neighbors"—in the training dataset.
       </p>
       <p>
-        In this project, KNN was applied to identify whether peer influence among students is <strong>Positive</strong>, <strong>Neutral</strong>, 
-        or <strong>Negative</strong> based on real academic and behavioral attributes.
+        In EduVision’s context, KNN classifies students’ <strong>peer influence</strong> as <strong>Positive</strong>, <strong>Neutral</strong>, or <strong>Negative</strong>,
+        reflecting whether their social circles contribute to supportive, neutral, or harmful academic behaviors.
       </p>
     </div>
 
-    <!-- What and How -->
+    <!-- What I Did & How I Did It -->
     <div class="card">
       <h2>What I Did & How I Did It</h2>
       <p>
-        Using the <strong>KNN_PeerInfluence_RealFeatures</strong> dataset, the model was trained to analyze the relationship between 
-        student characteristics and their social influence outcomes. 
+        The model was trained using the <strong>KNN_PeerInfluence_RealFeatures</strong> dataset to study how social and academic attributes 
+        interact to shape peer influence patterns among students.
       </p>
-
       <div class="highlight">
         FEATURE_COLS = ['ParentalInvolvement', 'SchoolType', 'MotivationLevel']<br>
         TARGET_COL = 'PeerInfluence'
       </div>
-
       <p>
-        The model was built by standardizing categorical data and selecting the optimal <strong>K value</strong> (number of neighbors) 
-        for balanced accuracy. Each classification prediction depends on how close the test data is to its neighboring data points.
+        Each categorical feature was encoded into numerical form and standardized to ensure fair distance comparisons between data points. 
+        The optimal <strong>K value</strong> was determined experimentally for balanced accuracy.
       </p>
+      <ul>
+        <li>Normalized all input features to prevent distance bias.</li>
+        <li>Tested multiple <em>K</em> values to find the best-performing configuration.</li>
+        <li>Evaluated using accuracy, precision, recall, and F1-score metrics.</li>
+      </ul>
     </div>
 
-    <!-- Input Form -->
-    <div class="card">
-      <h2>Try It Yourself</h2>
-      <p>Provide the following details to classify a student’s peer influence category:</p>
-
-      <form method="POST" action="{{ url_for('knn') }}">
-        <input type="hidden" name="model_name" value="knn">
-        <label>Parental Involvement:
-          <select name="input_ParentalInvolvement" required>
-            <option value="">-- Select Level --</option>
-            <option>High</option>
-            <option>Medium</option>
-            <option>Low</option>
-          </select>
-        </label>
-
-        <label>School Type:
-          <select name="input_SchoolType" required>
-            <option value="">-- Select Type --</option>
-            <option>Private</option>
-            <option>Public</option>
-          </select>
-        </label>
-
-        <label>Motivation Level:
-          <select name="input_MotivationLevel" required>
-            <option value="">-- Select Level --</option>
-            <option>High</option>
-            <option>Medium</option>
-            <option>Low</option>
-          </select>
-        </label>
-
-        <button type="submit">Classify Peer Influence</button>
-      </form>
-
-      {% if result %}
-      <div class="result">
-        <strong>Predicted Peer Influence:</strong> {{ result }}
-      </div>
-      {% endif %}
-    </div>
-
-    <!-- Evaluation -->
+    <!-- Evaluation Section -->
     <div class="card">
       <h2>Model Evaluation</h2>
-      <p>The KNN model was assessed using common classification metrics to evaluate its accuracy and reliability.</p>
-
+      <p>
+        The KNN Peer Influence Classifier was evaluated using multiple performance metrics to assess prediction reliability and category balance.
+      </p>
       <div class="metrics">
         Accuracy: 0.7150<br>
         Precision: 0.7135<br>
@@ -217,27 +244,49 @@
         F1 Score: 0.7141
       </div>
 
-      <h3 style="margin-top: 20px;">Confusion Matrix</h3>
-      <div class="metrics">
+      <p>
+        <strong>Confusion Matrix:</strong><br>
+        <div class="metrics" style="margin-top:15px;">
         [[53 12  2]<br>
          [ 1 14 52]]
-      </div>
+        </div>
+      </p>
 
-      <h3 style="margin-top: 20px;">Classification Report</h3>
-      <div class="metrics">
+      <p>
+        <strong>Classification Report:</strong><br>
+        <div class="metrics" style="margin-top:15px;">
         Negative — precision: 0.76 | recall: 0.79 | f1: 0.77<br>
         Neutral — precision: 0.59 | recall: 0.58 | f1: 0.58<br>
         Positive — precision: 0.79 | recall: 0.78 | f1: 0.78
-      </div>
+        </div>
+      </p>
 
-      <p style="margin-top: 20px;">
-        <strong>Interpretation:</strong>  
-        The model achieved an accuracy of 71%, which suggests a reasonably good performance for a classification task with three categories. 
-        The results show that the model performs strongest when predicting <strong>Positive</strong> and <strong>Negative</strong> influences, 
-        while <strong>Neutral</strong> predictions are less consistent.  
-        This implies that peer influence patterns with clearer behavioral traits are more easily distinguishable by the model.
+      <p>
+        <strong>Interpretation:</strong><br>
+        The KNN model achieved an overall accuracy of <strong>71%</strong>, showing dependable performance in classifying peer influence categories.
+        It performs best when recognizing <strong>Positive</strong> and <strong>Negative</strong> influences, suggesting that distinct behavioral traits are easier to detect.
+        Meanwhile, <strong>Neutral</strong> classifications show moderate overlap, reflecting real-world social complexities.
+        These findings help schools identify whether peer groups have a constructive or adverse effect, supporting more targeted student guidance.
       </p>
     </div>
+
+    <!-- Back to Home Button -->
+<div style="text-align:center; margin-top:30px;">
+  <a href="{{ url_for('index') }}" 
+     style="
+       display:inline-block;
+       background: linear-gradient(90deg, #0078d7, #0056c4);
+       color: #fff;
+       padding: 10px 22px;
+       border-radius: 8px;
+       text-decoration: none;
+       font-weight: 600;
+       font-size: 15px;
+       transition: all 0.3s ease;">
+    ← Back to Home
+  </a>
+</div>
+
 
     <footer>© 2025 EduVision | KNN Peer Influence Classifier</footer>
   </div>

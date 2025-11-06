@@ -2,222 +2,282 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>EduVision - SVM Motivation Predictor</title>
+  <title>EduVision - Support Vector Machine (SVM)</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #dceeff, #f8fbff);
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e3f2ff 0%, #f7faff 100%);
       margin: 0;
       padding: 40px;
-      color: #333;
+      color: #2b2b2b;
     }
 
     .container {
-      max-width: 900px;
-      margin: auto;
+      max-width: 950px;
+      margin: 0 auto;
     }
 
     .card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 30px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-      margin-bottom: 30px;
-      transition: 0.3s;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 18px;
+      padding: 35px;
+      margin-bottom: 35px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(230, 240, 255, 0.8);
     }
 
     .card:hover {
-      transform: translateY(-5px);
-    }
-
-    h1, h2 {
-      color: #0078D7;
-      border-left: 4px solid #0078D7;
-      padding-left: 10px;
-      margin-top: 25px;
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
     }
 
     h1 {
       text-align: center;
-      margin-bottom: 15px;
-      border-left: none;
-      color: #0056b3;
+      color: #004aad;
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      color: #0056c4;
+      border-left: 4px solid #0056c4;
+      padding-left: 12px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-weight: 600;
     }
 
     p {
-      line-height: 1.7;
-      margin: 8px 0;
+      line-height: 1.8;
+      font-size: 15.5px;
+      color: #333;
     }
 
-    label {
-      display: block;
-      margin-top: 12px;
-      font-weight: 500;
+    ul {
+      line-height: 1.8;
+      margin-left: 20px;
+    }
+
+    .highlight {
+      background: #f2f7ff;
+      border-left: 5px solid #0078d7;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-family: 'Consolas', monospace;
+      font-size: 14px;
+      margin: 14px 0;
+      overflow-x: auto;
     }
 
     input, select {
       width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
+      padding: 10px 12px;
+      margin-top: 6px;
+      border: 1px solid #ccd9f5;
       border-radius: 10px;
       font-size: 15px;
-      font-family: 'Poppins', sans-serif;
-      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: #0056c4;
+      box-shadow: 0 0 0 3px rgba(0, 86, 196, 0.1);
     }
 
     button {
-      margin-top: 20px;
-      background: #0078D7;
-      color: white;
+      margin-top: 22px;
+      background: linear-gradient(90deg, #0078d7, #0056c4);
+      color: #fff;
       border: none;
       padding: 12px;
       border-radius: 10px;
       width: 100%;
       font-size: 16px;
+      font-weight: 600;
       cursor: pointer;
-      transition: 0.3s;
-      font-family: 'Poppins', sans-serif;
+      transition: all 0.3s ease;
+      letter-spacing: 0.3px;
     }
 
     button:hover {
-      background: #005a9e;
+      background: linear-gradient(90deg, #0056c4, #003f9a);
+      transform: translateY(-2px);
     }
 
     .result {
-      background: #e8f4ff;
+      background: #eef7ff;
       margin-top: 20px;
       padding: 15px;
       border-radius: 10px;
-      font-weight: 500;
-      border-left: 5px solid #0078D7;
+      font-weight: 600;
+      border-left: 5px solid #0078d7;
+      color: #003d82;
     }
 
     .metrics {
-      background: #f0f8ff;
-      padding: 15px;
-      border-radius: 10px;
-      margin-top: 10px;
+      background: #f6fbf8;
       border-left: 5px solid #28a745;
-      font-family: monospace;
-      white-space: pre-wrap;
+      padding: 15px 18px;
+      border-radius: 10px;
+      margin-top: 12px;
+      font-size: 15px;
+      font-family: 'Consolas', monospace;
+      overflow-x: auto;
     }
 
     footer {
       text-align: center;
       font-size: 14px;
-      color: #666;
-      margin-top: 40px;
+      color: #6c757d;
+      margin-top: 45px;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 20px; }
+      .card { padding: 25px; }
+      h1 { font-size: 1.8rem; }
     }
   </style>
 </head>
+
 <body>
   <div class="container">
 
-    <!-- Title Card -->
+    <!-- Header Section -->
     <div class="card">
-      <h1>Support Vector Machine (SVM) - Motivation Predictor</h1>
-      <p style="text-align:center; font-size:15px; color:#555;">
-        Explore how the <strong>Support Vector Machine (SVM)</strong> algorithm predicts student motivation levels 
-        based on factors including <strong>Attendance Rate</strong>, <strong>Previous Exam Score</strong>, and <strong>Parental Involvement</strong>.
+      <h1>Support Vector Machine (SVM) Model</h1>
+      <p style="text-align:center; font-size:15.5px; color:#555;">
+        This page demonstrates how EduVision Analytics applies <strong>Support Vector Machine (SVM)</strong> to classify <strong>student motivation levels</strong> based on attendance, exam performance, and parental involvement.
       </p>
+    </div>
+
+    <!-- Prediction Form -->
+    <div class="card input-card">
+      <h2>Predict Student Motivation</h2>
+      <p>Input the student’s academic and behavioral information to estimate motivation level using the trained SVM model.</p>
+
+      <form method="POST" action="{{ url_for('svm') }}">
+        <input type="hidden" name="model_name" value="svm">
+
+        <label>Attendance Rate (%):</label>
+        <input type="number" name="input_Attendance" placeholder="e.g., 90" required>
+
+        <label>Previous Exam Score:</label>
+        <input type="number" name="input_PreviousScores" placeholder="e.g., 85" required>
+
+        <label>Parental Involvement:</label>
+        <select name="input_Parental_Involvement" required>
+          <option value="">-- Select Level --</option>
+          <option>High</option>
+          <option>Medium</option>
+          <option>Low</option>
+        </select>
+
+        <button type="submit">Predict Motivation Level</button>
+      </form>
+
+      {% if result %}
+      <div class="result">Predicted Motivation Level: {{ result }}</div>
+      {% endif %}
     </div>
 
     <!-- What is SVM -->
     <div class="card">
       <h2>What is Support Vector Machine (SVM)?</h2>
       <p>
-        <strong>Support Vector Machine (SVM)</strong> is a powerful supervised machine learning algorithm used for classification tasks.
-        It finds the optimal hyperplane that maximizes the margin between different classes in the feature space.
+        <strong>Support Vector Machine (SVM)</strong> is a supervised learning algorithm designed for classification tasks. It separates data into distinct classes by identifying the <strong>optimal hyperplane</strong> that best divides the categories with the maximum margin.
       </p>
       <p>
-        In this project, SVM is used to predict student motivation categories such as High, Medium, or Low based on academic and behavioral features.
+        In EduVision’s context, the SVM model categorizes students into <strong>Low</strong>, <strong>Medium</strong>, or <strong>High Motivation</strong> levels. This helps educators identify students requiring emotional or academic support early on.
       </p>
     </div>
 
-    <!-- What and How -->
+    <!-- What I Did & How I Did It -->
     <div class="card">
       <h2>What I Did & How I Did It</h2>
       <p>
-        Using the <strong>SVM_motivation_dataset</strong>, the model was trained to analyze relationships between student features and motivation outcomes.
+        The model was developed using the <strong>SVM Motivation Dataset</strong> to uncover patterns between academic behavior and motivation. Each feature was scaled and preprocessed to enhance classification accuracy.
       </p>
-      <div class="metrics" style="border-left-color: #0078D7; font-family: monospace;">
+      <div class="highlight">
         FEATURE_COLS = ['Attendance', 'PreviousScores', 'Parental_Involvement']<br>
         TARGET_COL = 'MotivationLevel'
       </div>
       <p>
-        The model was optimized and evaluated using metrics like accuracy, precision, recall, and F1 score to ensure high reliability and performance.
+        The dataset was divided into training and test subsets. Using a <strong>Radial Basis Function (RBF) kernel</strong>, the model effectively separated motivation categories based on non-linear relationships.
       </p>
+      <ul>
+        <li>Trained with grid search optimization for best parameters.</li>
+        <li>Evaluated using accuracy, precision, recall, and F1-score metrics.</li>
+        <li>Validated through confusion matrix and classification report for consistency.</li>
+      </ul>
     </div>
 
-    <!-- Input Form -->
-    <div class="card">
-      <h2>Try It Yourself</h2>
-      <p>Provide the details below to predict a student's motivation level:</p>
-      <form method="POST" action="{{ url_for('svm') }}">
-        <input type="hidden" name="model_name" value="svm">
-
-        <label>Attendance Rate (%):
-          <input type="number" name="input_Attendance" min="0" max="100" placeholder="e.g., 85" required>
-        </label>
-
-        <label>Previous Exam Score:
-          <input type="number" name="input_PreviousScores" min="0" max="100" placeholder="e.g., 78" required>
-        </label>
-
-        <label>Parental Involvement:
-          <select name="input_Parental_Involvement" required>
-            <option value="">-- Select Level --</option>
-            <option>High</option>
-            <option>Medium</option>
-            <option>Low</option>
-          </select>
-        </label>
-
-        <button type="submit">Predict Motivation Level</button>
-      </form>
-
-      {% if result %}
-      <div class="result"><strong>Predicted Motivation Level:</strong> {{ result }}</div>
-      {% endif %}
-    </div>
-
-    <!-- Evaluation Metrics -->
+    <!-- Evaluation Section -->
     <div class="card">
       <h2>Model Evaluation</h2>
-      <p>The performance of the SVM model was assessed using key classification metrics and a detailed report.</p>
+      <p>
+        The SVM Motivation Predictor achieved excellent performance across all evaluation metrics, confirming its ability to generalize well to unseen data.
+      </p>
       <div class="metrics">
-=== SVM Model Evaluation ===<br>
-Accuracy: 0.9900<br>
-Precision: 0.9901<br>
-Recall: 0.9900<br>
-F1 Score: 0.9900<br><br>
-
-Confusion Matrix:<br>
-[[64  0  1]<br>
- [ 0 65  0]<br>
- [ 0  1 69]]<br><br>
-
-Detailed Classification Report:<br>
-precision    recall  f1-score   support<br>
-High       1.00      0.98      0.99        65<br>
-Low       0.98      1.00      0.99        65<br>
-Medium     0.99      0.99      0.99        70<br><br>
-
-accuracy                           0.99       200<br>
-macro avg       0.99      0.99      0.99       200<br>
-weighted avg       0.99      0.99      0.99       200
+        Accuracy: 0.9900<br>
+        Precision: 0.9901<br>
+        Recall: 0.9900<br>
+        F1 Score: 0.9900
       </div>
-      <p style="margin-top: 20px;">
+      
+      <p>
+        <strong>Confusion Matrix:</strong><br>
+        <div class="metrics" style="margin-top:15px;">
+        [[64  0  1]<br>
+         [ 0 65  0]<br>
+         [ 0  1 69]]
+      </p>
+      </div>
+
+
+      <p>
+        <strong>Classification Report:</strong><br>
+        <div class="metrics" style="margin-top:15px;">
+        precision   recall   f1-score   support<br>
+        High        1.00      0.98      0.99        65<br>
+        Low         0.98      1.00      0.99        65<br>
+        Medium      0.99      0.99      0.99        70<br><br>
+        accuracy                        0.99        200
+      </p>
+      </div>
+
+      <p>
         <strong>Interpretation:</strong><br>
-        The SVM model achieved <strong>99% overall accuracy</strong>, demonstrating exceptional reliability in predicting motivation levels.<br>
-        Precision, recall, and F1-scores near 1.00 indicate very few classification errors.<br>
-        The confusion matrix highlights highly consistent predictions across all motivation categories (High, Medium, Low).
+        With an overall accuracy of <strong>99%</strong>, the SVM model demonstrates outstanding reliability in classifying motivation categories.
+        Its balanced precision and recall scores indicate minimal misclassification, meaning it can effectively distinguish students who are highly motivated from those at risk of low engagement.  
+        This allows schools to <strong>design timely motivation-boosting interventions</strong> and foster a more supportive learning environment.
       </p>
     </div>
 
-    <footer>© 2025 EduVision | SVM Motivation Predictor</footer>
+    <!-- Back to Home Button -->
+<div style="text-align:center; margin-top:30px;">
+  <a href="{{ url_for('index') }}" 
+     style="
+       display:inline-block;
+       background: linear-gradient(90deg, #0078d7, #0056c4);
+       color: #fff;
+       padding: 10px 22px;
+       border-radius: 8px;
+       text-decoration: none;
+       font-weight: 600;
+       font-size: 15px;
+       transition: all 0.3s ease;">
+    ← Back to Home
+  </a>
+</div>
+
+
+    <footer>© 2025 EduVision | Support Vector Machine Model Showcase</footer>
   </div>
 </body>
 </html>
